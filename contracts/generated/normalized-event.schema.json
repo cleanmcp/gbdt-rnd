@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "SignalShape": {
+      "enum": [
+        "numeric_series",
+        "state_machine",
+        "event_burst",
+        "document_versions"
+      ],
+      "title": "SignalShape",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "account_id": {
+      "title": "Account Id",
+      "type": "string"
+    },
+    "available_at": {
+      "format": "date-time",
+      "title": "Available At",
+      "type": "string"
+    },
+    "delivered_at": {
+      "format": "date-time",
+      "title": "Delivered At",
+      "type": "string"
+    },
+    "event_id": {
+      "title": "Event Id",
+      "type": "string"
+    },
+    "ingested_at": {
+      "format": "date-time",
+      "title": "Ingested At",
+      "type": "string"
+    },
+    "kind": {
+      "title": "Kind",
+      "type": "string"
+    },
+    "occurred_at": {
+      "format": "date-time",
+      "title": "Occurred At",
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "shape": {
+      "$ref": "#/$defs/SignalShape"
+    },
+    "signal_instance_id": {
+      "title": "Signal Instance Id",
+      "type": "string"
+    },
+    "signal_type": {
+      "title": "Signal Type",
+      "type": "string"
+    },
+    "source_id": {
+      "title": "Source Id",
+      "type": "string"
+    },
+    "source_record_id": {
+      "title": "Source Record Id",
+      "type": "string"
+    },
+    "strength": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Strength",
+      "type": "number"
+    }
+  },
+  "required": [
+    "event_id",
+    "account_id",
+    "signal_instance_id",
+    "signal_type",
+    "source_id",
+    "source_record_id",
+    "shape",
+    "kind",
+    "occurred_at",
+    "delivered_at",
+    "ingested_at",
+    "available_at",
+    "strength",
+    "payload"
+  ],
+  "title": "NormalizedEvent",
+  "type": "object"
+}

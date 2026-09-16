@@ -1,0 +1,85 @@
+schema_version: 1
+sources:
+  - source_id: sba_7a_504
+    name: SBA 7(a)/504 FOIA
+    status: implemented
+    access: official_bulk
+    cost_class: free_public
+    landing_page: https://data.sba.gov/dataset/7-a-504-foia
+    cadence: quarterly
+    role: financing lifecycle and expansion proxy
+
+  - source_id: epa_tri
+    name: EPA Toxics Release Inventory
+    status: implemented
+    access: official_bulk
+    cost_class: free_public
+    landing_page: https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present
+    cadence: annual_with_revisions
+    role: facility and production trajectory
+    runtime_note: The official national CSV endpoint returned HTTP 500 on 2026-08-29; adapter retained for retry.
+
+  - source_id: osha_ita
+    name: OSHA establishment injury and illness data
+    status: implemented
+    access: official_bulk
+    cost_class: free_public
+    landing_page: https://www.osha.gov/itadata
+    cadence: annual
+    role: workforce size and operational-pressure trajectory
+
+  - source_id: usaspending
+    name: USAspending contract awards
+    status: planned
+    access: unauthenticated_api_and_bulk
+    cost_class: free_public
+    landing_page: https://www.usaspending.gov/download_center/award_data_archive
+    cadence: monthly_full_and_delta
+    role: new work, renewal, and capacity-change sequences
+
+  - source_id: fda_device_registration
+    name: FDA medical-device establishment registration
+    status: planned
+    access: official_bulk_and_api
+    cost_class: free_public
+    landing_page: https://open.fda.gov/data/downloads/
+    cadence: weekly_public_projection
+    role: regulated-manufacturer fit and establishment lifecycle
+
+  - source_id: sam_entities
+    name: SAM.gov entity management
+    status: blocked
+    access: approved_api_key_or_extract_only
+    cost_class: free_authenticated
+    landing_page: https://sam.gov/entity-information
+    cadence: source_defined
+    role: UEI, NAICS, government-contractor identity
+    blocker: Terms prohibit scraping; system-account/API approval is required.
+
+  - source_id: ppp
+    name: PPP loan data
+    status: deferred
+    access: official_bulk
+    cost_class: free_public
+    landing_page: https://data.sba.gov/dataset/ppp-foia
+    cadence: historical_closed_program
+    role: historical financing and employment context only
+
+  - source_id: uspto_patents
+    name: USPTO Open Data Portal patents
+    status: deferred
+    access: official_bulk
+    cost_class: free_public
+    landing_page: https://data.uspto.gov/bulkdata/datasets/pvgpatdis
+    cadence: source_defined
+    role: innovation context, weak direct Sidekick timing evidence
+
+  - source_id: state_sos
+    name: State Secretary of State filings
+    status: deferred
+    access: state_specific
+    cost_class: mixed
+    landing_page: https://www.nass.org/business-services/corporate-registration
+    cadence: state_specific
+    role: legal identity, officers, formation events
+    blocker: No uniform nationwide free bulk contract.

@@ -1,0 +1,166 @@
+{
+  "datasets": {
+    "hillstrom": {
+      "models": [
+        {
+          "detail": null,
+          "fitSeconds": 7.814806508000004,
+          "ipwPolicyConversion": 0.011611613677615786,
+          "modelId": "lightgbm-v1",
+          "policyContactShare": 1.0,
+          "scoreSeconds": 0.5115269109999758,
+          "status": "ok",
+          "top20ObservedUplift": 0.005800139762403914,
+          "trainRows": 34158,
+          "trainRowsUsed": 34158
+        },
+        {
+          "detail": null,
+          "fitSeconds": 1.9223300259999974,
+          "ipwPolicyConversion": 0.011611613677615786,
+          "modelId": "tabpfn-local-v2",
+          "policyContactShare": 1.0,
+          "scoreSeconds": 8.142638537000039,
+          "status": "ok",
+          "top20ObservedUplift": 0.00899571497488578,
+          "trainRows": 34158,
+          "trainRowsUsed": 34158
+        }
+      ],
+      "reportPath": "data/manifests/remote/hillstrom-uplift-benchmark-gpu-v1.json",
+      "reportSha256": "e12aaa02bdbbea7d91c52c428aff9d5990ccc6bb3e1c11ff6ea0a1bbc62ac109",
+      "status": "ok",
+      "wallSeconds": 21.397684450999975
+    },
+    "olist": {
+      "models": [
+        {
+          "brier": 0.1636504424778761,
+          "detail": null,
+          "fitSeconds": 1.5820000385247113e-06,
+          "modelId": "heuristic-v1",
+          "prAuc": 0.13716814159292035,
+          "precisionAtK": 0.07,
+          "rocAuc": 0.5,
+          "scoreSeconds": 0.01638995100000784,
+          "status": "ok",
+          "trainRows": 2842,
+          "trainRowsUsed": 2842
+        },
+        {
+          "brier": 0.11821084462588022,
+          "detail": null,
+          "fitSeconds": 1.5685548429999585,
+          "modelId": "lightgbm-v1",
+          "prAuc": 0.1859594888824113,
+          "precisionAtK": 0.21,
+          "rocAuc": 0.6138544251447476,
+          "scoreSeconds": 0.14516137099997195,
+          "status": "ok",
+          "trainRows": 2842,
+          "trainRowsUsed": 2842
+        },
+        {
+          "brier": 0.11987953230963669,
+          "detail": null,
+          "fitSeconds": 1.3147044140000048,
+          "modelId": "tabpfn-local-v2",
+          "prAuc": 0.20754423313755166,
+          "precisionAtK": 0.23,
+          "rocAuc": 0.6322218775847808,
+          "scoreSeconds": 1.9311139490000073,
+          "status": "ok",
+          "trainRows": 2842,
+          "trainRowsUsed": 2842
+        }
+      ],
+      "reportPath": "data/manifests/remote/olist-outcome-benchmark-gpu-v1.json",
+      "reportSha256": "bf55c1565948e664e7f2d61362f83b545a786bc9aa058a113b56f0061956ab53",
+      "status": "ok",
+      "wallSeconds": 5.546976393000023
+    },
+    "uci-bank": {
+      "models": [
+        {
+          "brier": 0.1938421550094518,
+          "detail": null,
+          "fitSeconds": 2.429999995001708e-06,
+          "modelId": "heuristic-v1",
+          "prAuc": 0.23780718336483933,
+          "precisionAtK": 0.488,
+          "rocAuc": 0.5,
+          "scoreSeconds": 0.058911438999984966,
+          "status": "ok",
+          "trainRows": 22103,
+          "trainRowsUsed": 22103
+        },
+        {
+          "brier": 0.20932562199357835,
+          "detail": null,
+          "fitSeconds": 2.513679116999981,
+          "modelId": "lightgbm-v1",
+          "prAuc": 0.35318721495628663,
+          "precisionAtK": 0.456,
+          "rocAuc": 0.6382564286976051,
+          "scoreSeconds": 0.34706108400001767,
+          "status": "ok",
+          "trainRows": 22103,
+          "trainRowsUsed": 22103
+        },
+        {
+          "brier": 0.19890860564996074,
+          "detail": null,
+          "fitSeconds": 1.4487765110000055,
+          "modelId": "tabpfn-local-v2",
+          "prAuc": 0.4528758348078638,
+          "precisionAtK": 0.52,
+          "rocAuc": 0.7577365968910086,
+          "scoreSeconds": 4.509601185999998,
+          "status": "ok",
+          "trainRows": 22103,
+          "trainRowsUsed": 22103
+        }
+      ],
+      "reportPath": "data/manifests/remote/uci-bank-outcome-benchmark-gpu-v1.json",
+      "reportSha256": "00d335ef16b6d71308b73e1c667999d874e747052d0d3b1874c9ab7f5489de7c",
+      "status": "ok",
+      "wallSeconds": 13.599499664999996
+    }
+  },
+  "finishedAt": "2026-09-01T04:47:50.490137+00:00",
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "profile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "randomSeed": 7,
+  "schemaVersion": 1,
+  "startedAt": "2026-09-01T04:47:08.628963+00:00"
+}

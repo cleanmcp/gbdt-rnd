@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "epa_tri",
+  "landingPage": "https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present",
+  "retrievalUrl": "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2024_US/csv",
+  "attemptedAt": "2026-08-29T05:56:27+07:00",
+  "httpStatus": 500,
+  "error": "EPA national CSV endpoint returned INTERNAL SERVER ERROR for both 2024 and 2023.",
+  "bytesAccepted": 0,
+  "nextAction": "Retry the official endpoint later; do not replace it with scraped or guessed data."
+}

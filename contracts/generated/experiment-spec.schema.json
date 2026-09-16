@@ -1,0 +1,421 @@
+{
+  "$defs": {
+    "GoalSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "goal_version": {
+          "title": "Goal Version",
+          "type": "string"
+        },
+        "horizon_days": {
+          "maximum": 730,
+          "minimum": 1,
+          "title": "Horizon Days",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "objective": {
+          "title": "Objective",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "target_outcome": {
+          "title": "Target Outcome",
+          "type": "string"
+        }
+      },
+      "required": [
+        "goal_version",
+        "name",
+        "objective",
+        "target_outcome",
+        "horizon_days"
+      ],
+      "title": "GoalSpec",
+      "type": "object"
+    },
+    "IcpSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "buyer_titles": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Buyer Titles",
+          "type": "array"
+        },
+        "employee_max": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Max"
+        },
+        "employee_min": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Min"
+        },
+        "exclusions": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Exclusions",
+          "type": "array"
+        },
+        "geographies": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Geographies",
+          "type": "array"
+        },
+        "icp_version": {
+          "title": "Icp Version",
+          "type": "string"
+        },
+        "industries": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Industries",
+          "type": "array"
+        },
+        "naics_prefixes": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Naics Prefixes",
+          "type": "array"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "operational_traits": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Operational Traits",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "icp_version",
+        "name",
+        "industries"
+      ],
+      "title": "IcpSpec",
+      "type": "object"
+    },
+    "ProductSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "capabilities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Capabilities",
+          "type": "array"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "problems_solved": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Problems Solved",
+          "type": "array"
+        },
+        "product_version": {
+          "title": "Product Version",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "website": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Website",
+          "type": "string"
+        }
+      },
+      "required": [
+        "product_version",
+        "name",
+        "website",
+        "description",
+        "capabilities",
+        "problems_solved"
+      ],
+      "title": "ProductSpec",
+      "type": "object"
+    },
+    "SequenceRule": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "max_gap_days": {
+          "maximum": 3650,
+          "minimum": 1,
+          "title": "Max Gap Days",
+          "type": "integer"
+        },
+        "ordered_signal_types": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Ordered Signal Types",
+          "type": "array"
+        },
+        "rule_id": {
+          "title": "Rule Id",
+          "type": "string"
+        },
+        "weight": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "rule_id",
+        "ordered_signal_types",
+        "max_gap_days",
+        "weight",
+        "description"
+      ],
+      "title": "SequenceRule",
+      "type": "object"
+    },
+    "SignalPolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "entries": {
+          "items": {
+            "$ref": "#/$defs/SignalPolicyEntry"
+          },
+          "title": "Entries",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "sequence_rules": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/SequenceRule"
+          },
+          "title": "Sequence Rules",
+          "type": "array"
+        },
+        "signal_policy_version": {
+          "title": "Signal Policy Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "signal_policy_version",
+        "entries"
+      ],
+      "title": "SignalPolicy",
+      "type": "object"
+    },
+    "SignalPolicyEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "applicability_naics_prefixes": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Applicability Naics Prefixes",
+          "type": "array"
+        },
+        "half_life_days": {
+          "exclusiveMinimum": 0,
+          "title": "Half Life Days",
+          "type": "number"
+        },
+        "initial_weight": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Initial Weight",
+          "type": "number"
+        },
+        "pinned": {
+          "default": false,
+          "title": "Pinned",
+          "type": "boolean"
+        },
+        "signal_type": {
+          "title": "Signal Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "signal_type",
+        "initial_weight",
+        "half_life_days"
+      ],
+      "title": "SignalPolicyEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "candidate_multiplier": {
+      "default": 3,
+      "maximum": 20,
+      "minimum": 1,
+      "title": "Candidate Multiplier",
+      "type": "integer"
+    },
+    "capacity": {
+      "maximum": 10000,
+      "minimum": 1,
+      "title": "Capacity",
+      "type": "integer"
+    },
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "engine_version": {
+      "title": "Engine Version",
+      "type": "string"
+    },
+    "experiment_id": {
+      "title": "Experiment Id",
+      "type": "string"
+    },
+    "feature_version": {
+      "title": "Feature Version",
+      "type": "string"
+    },
+    "goal": {
+      "$ref": "#/$defs/GoalSpec"
+    },
+    "icp": {
+      "$ref": "#/$defs/IcpSpec"
+    },
+    "max_accounts": {
+      "default": 5000,
+      "maximum": 1000000,
+      "minimum": 10,
+      "title": "Max Accounts",
+      "type": "integer"
+    },
+    "max_llm_story_cards": {
+      "default": 0,
+      "maximum": 10000,
+      "minimum": 0,
+      "title": "Max Llm Story Cards",
+      "type": "integer"
+    },
+    "model_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Model Ids",
+      "type": "array"
+    },
+    "product": {
+      "$ref": "#/$defs/ProductSpec"
+    },
+    "random_seed": {
+      "default": 7,
+      "title": "Random Seed",
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "signal_contracts": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Signal Contracts",
+      "type": "object"
+    },
+    "signal_policy": {
+      "$ref": "#/$defs/SignalPolicy"
+    }
+  },
+  "required": [
+    "experiment_id",
+    "engine_version",
+    "feature_version",
+    "signal_contracts",
+    "product",
+    "icp",
+    "goal",
+    "signal_policy",
+    "corpus_version",
+    "as_of",
+    "model_ids",
+    "capacity"
+  ],
+  "title": "ExperimentSpec",
+  "type": "object"
+}

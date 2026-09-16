@@ -1,0 +1,120 @@
+{
+  "averageDaysToClose": 48.44061757719715,
+  "benchmarks": [
+    {
+      "brier_score": 0.1636504424778761,
+      "detail": null,
+      "fit_seconds": 2.4000000848900527e-06,
+      "label_kind": "real_outcome",
+      "model_id": "heuristic-v1",
+      "pr_auc": 0.13716814159292035,
+      "precision_at_k": 0.07,
+      "roc_auc": 0.5,
+      "schema_version": 1,
+      "score_seconds": 0.03971829999863985,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    },
+    {
+      "brier_score": 0.11836277046391373,
+      "detail": null,
+      "fit_seconds": 3.480225300001621,
+      "label_kind": "real_outcome",
+      "model_id": "lightgbm-v1",
+      "pr_auc": 0.18129091605470174,
+      "precision_at_k": 0.23,
+      "roc_auc": 0.5866521918941274,
+      "schema_version": 1,
+      "score_seconds": 0.29928230000223266,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    },
+    {
+      "brier_score": 0.11729192585602163,
+      "detail": null,
+      "fit_seconds": 1.4041357999994943,
+      "label_kind": "real_outcome",
+      "model_id": "tabpfn-local-v2",
+      "pr_auc": 0.18269706708586936,
+      "precision_at_k": 0.2,
+      "roc_auc": 0.6220740281224152,
+      "schema_version": 1,
+      "score_seconds": 4.138539100000344,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    }
+  ],
+  "contentSha256": "d476efe8d16ab267ce10535859ed3dd2d6e186bbb50c9d405a1e7bc05c200171",
+  "dataset": "Olist Marketing Funnel",
+  "executionProfile": {
+    "description": "Local CPU configuration: TabPFN capped at 600 training rows, 2 estimators.",
+    "lightgbmDevice": "cpu",
+    "name": "laptop-cpu",
+    "tabpfn": {
+      "device": "auto",
+      "ignore_pretraining_limits": false,
+      "max_training_rows": 600,
+      "n_estimators": 2,
+      "oom_floor_rows": 4000
+    }
+  },
+  "featureBoundary": "Only fields available in the marketing-qualified-lead file are features; closed-deal fields are labels only.",
+  "generatedAt": "2026-09-01T04:25:21.659687+00:00",
+  "hardware": {
+    "cpuCount": 20,
+    "cuda": {
+      "available": false
+    },
+    "hostname": "DESKTOP-T91T9SP",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.13.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9"
+  },
+  "leads": 8000,
+  "license": "Kaggle dataset terms; verify before commercial use",
+  "modelRuntimes": {
+    "lightgbm-v1": {
+      "calibrated": true,
+      "calibration": "time_series_cv",
+      "calibrationFraction": 0.2,
+      "calibrationNote": null,
+      "plattCoefficient": 0.2236426482503976,
+      "trainingRowsUsed": 2842
+    },
+    "tabpfn-local-v2": {
+      "attempts": [
+        {
+          "phase": "fit",
+          "seconds": 1.0277405999986513,
+          "status": "ok",
+          "trainingRows": 600
+        }
+      ],
+      "cudaAvailable": false,
+      "device": "auto",
+      "ignore_pretraining_limits": false,
+      "max_training_rows": 600,
+      "n_estimators": 2,
+      "oom_floor_rows": 4000,
+      "resolvedDevice": "(device(type='cpu'),)",
+      "tabpfnVersion": "8.5.0",
+      "torchVersion": "2.13.0+cpu",
+      "trainingRowsAvailable": 2842,
+      "trainingRowsUsed": 600
+    }
+  },
+  "schemaVersion": 1,
+  "source": "https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist",
+  "target": "closed deal",
+  "winRate": 0.10525,
+  "won": 842
+}

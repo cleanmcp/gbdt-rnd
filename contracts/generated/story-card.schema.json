@@ -1,0 +1,116 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Confidence",
+      "type": "number"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "evidence_fact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Fact Ids",
+      "type": "array"
+    },
+    "generator": {
+      "enum": [
+        "deterministic",
+        "llm"
+      ],
+      "title": "Generator",
+      "type": "string"
+    },
+    "implications": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Implications",
+      "type": "array"
+    },
+    "model": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model"
+    },
+    "phase": {
+      "title": "Phase",
+      "type": "string"
+    },
+    "prompt_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Prompt Version"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "scope": {
+      "enum": [
+        "signal",
+        "account"
+      ],
+      "title": "Scope",
+      "type": "string"
+    },
+    "semantic_hash": {
+      "title": "Semantic Hash",
+      "type": "string"
+    },
+    "story_card_id": {
+      "title": "Story Card Id",
+      "type": "string"
+    },
+    "story_type": {
+      "title": "Story Type",
+      "type": "string"
+    },
+    "subject_id": {
+      "title": "Subject Id",
+      "type": "string"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    }
+  },
+  "required": [
+    "story_card_id",
+    "scope",
+    "subject_id",
+    "story_type",
+    "phase",
+    "confidence",
+    "summary",
+    "evidence_fact_ids",
+    "semantic_hash",
+    "generator",
+    "created_at"
+  ],
+  "title": "StoryCard",
+  "type": "object"
+}

@@ -1,0 +1,97 @@
+product:
+  schema_version: 1
+  product_version: sidekick-v1
+  name: Sidekick
+  website: https://textside.com/
+  description: >
+    SMS-based AI for frontline manufacturing operations, work-order routing,
+    training, maintenance history, and preserving tribal knowledge.
+  capabilities:
+    - frontline SMS assistant
+    - work-order creation and routing
+    - searchable plant history
+    - SOP and manual retrieval
+    - frontline training
+  problems_solved:
+    - tribal knowledge loss
+    - slow issue reporting
+    - fragmented maintenance history
+    - frontline training friction
+    - inaccessible operating procedures
+
+icp:
+  schema_version: 1
+  icp_version: sidekick-manufacturing-v1
+  name: US frontline manufacturers
+  industries: [manufacturing]
+  naics_prefixes: ["31", "32", "33"]
+  geographies: []
+  employee_min: 20
+  employee_max: 5000
+  operational_traits:
+    - deskless frontline workforce
+    - asset-intensive facilities
+    - repeatable maintenance processes
+    - knowledge concentrated among experienced workers
+  buyer_titles:
+    - Plant Manager
+    - VP Operations
+    - Maintenance Director
+    - EHS Director
+  exclusions: []
+
+goal:
+  schema_version: 1
+  goal_version: frontline-knowledge-v1
+  name: Frontline knowledge and workflow urgency
+  objective: >
+    Rank manufacturers whose operational trajectories suggest growing need for
+    frontline knowledge capture, training, maintenance, or work-order coordination.
+  target_outcome: research_proxy_future_operational_change
+  horizon_days: 180
+
+signal_policy:
+  schema_version: 1
+  signal_policy_version: side-signals-v1
+  entries:
+    - signal_type: sba_loan
+      applicability_naics_prefixes: ["31", "32", "33"]
+      initial_weight: 0.75
+      half_life_days: 90
+      pinned: true
+    - signal_type: osha_injury_summary
+      applicability_naics_prefixes: ["31", "32", "33"]
+      initial_weight: 0.8
+      half_life_days: 365
+      pinned: true
+    - signal_type: epa_tri_report
+      applicability_naics_prefixes: ["31", "32", "33"]
+      initial_weight: 0.4
+      half_life_days: 365
+      pinned: false
+    - signal_type: usaspending_award
+      applicability_naics_prefixes: ["31", "32", "33"]
+      initial_weight: 0.6
+      half_life_days: 120
+      pinned: false
+    - signal_type: job_posting
+      applicability_naics_prefixes: ["31", "32", "33"]
+      initial_weight: 0.55
+      half_life_days: 60
+      pinned: false
+  sequence_rules:
+    - rule_id: financed_then_operational_pressure
+      ordered_signal_types: [sba_loan, osha_injury_summary]
+      max_gap_days: 365
+      weight: 0.9
+      description: Financing followed by operational pressure can indicate expansion complexity.
+    - rule_id: production_growth_then_safety_pressure
+      ordered_signal_types: [epa_tri_report, osha_injury_summary]
+      max_gap_days: 365
+      weight: 0.75
+      description: Production change followed by safety pressure can indicate process strain.
+    - rule_id: contract_then_frontline_hiring
+      ordered_signal_types: [usaspending_award, job_posting]
+      max_gap_days: 180
+      weight: 0.65
+      description: New work followed by frontline hiring can indicate capacity expansion.

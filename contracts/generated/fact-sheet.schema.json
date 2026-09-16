@@ -1,0 +1,245 @@
+{
+  "$defs": {
+    "CoverageStatus": {
+      "enum": [
+        "observed",
+        "not_observed",
+        "not_collected",
+        "not_applicable"
+      ],
+      "title": "CoverageStatus",
+      "type": "string"
+    },
+    "EvidenceRef": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observed At"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_record_id": {
+          "title": "Source Record Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "source_record_id"
+      ],
+      "title": "EvidenceRef",
+      "type": "object"
+    },
+    "Fact": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_refs": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/EvidenceRef"
+          },
+          "title": "Evidence Refs",
+          "type": "array"
+        },
+        "fact_id": {
+          "title": "Fact Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "fact_id",
+        "name",
+        "value"
+      ],
+      "title": "Fact",
+      "type": "object"
+    },
+    "SignalShape": {
+      "enum": [
+        "numeric_series",
+        "state_machine",
+        "event_burst",
+        "document_versions"
+      ],
+      "title": "SignalShape",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "account_id": {
+      "title": "Account Id",
+      "type": "string"
+    },
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "coverage": {
+      "$ref": "#/$defs/CoverageStatus"
+    },
+    "current_state": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Current State",
+      "type": "object"
+    },
+    "facts": {
+      "items": {
+        "$ref": "#/$defs/Fact"
+      },
+      "title": "Facts",
+      "type": "array"
+    },
+    "factsheet_id": {
+      "title": "Factsheet Id",
+      "type": "string"
+    },
+    "identity": {
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": "Identity",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "semantic_hash": {
+      "title": "Semantic Hash",
+      "type": "string"
+    },
+    "shape": {
+      "$ref": "#/$defs/SignalShape"
+    },
+    "signal_instance_id": {
+      "title": "Signal Instance Id",
+      "type": "string"
+    },
+    "signal_type": {
+      "title": "Signal Type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "factsheet_id",
+    "signal_instance_id",
+    "signal_type",
+    "account_id",
+    "shape",
+    "as_of",
+    "coverage",
+    "identity",
+    "current_state",
+    "facts",
+    "semantic_hash"
+  ],
+  "title": "FactSheet",
+  "type": "object"
+}

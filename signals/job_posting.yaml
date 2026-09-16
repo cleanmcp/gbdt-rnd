@@ -1,0 +1,17 @@
+schema_version: 1
+signal_type: job_posting
+version: 1
+description: Versioned manufacturing job posting used to demonstrate document trajectories.
+shape: document_versions
+source_ids: [fixture_jobs]
+durable: true
+identity_fields: [job_id, title, location]
+state_field: status
+terminal_states: [filled, expired]
+material_kinds: [created, updated, reposted, filled, expired]
+numeric_features:
+  - field: minimum_experience_years
+    unit: years
+    reducers: [latest, delta]
+default_half_life_days: 60
+applicability_naics_prefixes: ["31", "32", "33"]

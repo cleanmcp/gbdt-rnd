@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "baseline_rate": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Baseline Rate",
+      "type": "number"
+    },
+    "exposed_rate": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Exposed Rate",
+      "type": "number"
+    },
+    "observations": {
+      "minimum": 0,
+      "title": "Observations",
+      "type": "integer"
+    },
+    "positives": {
+      "minimum": 0,
+      "title": "Positives",
+      "type": "integer"
+    },
+    "previous_weight": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Previous Weight",
+      "type": "number"
+    },
+    "proposed_weight": {
+      "maximum": 1,
+      "minimum": 0.05,
+      "title": "Proposed Weight",
+      "type": "number"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "signal_type": {
+      "title": "Signal Type",
+      "type": "string"
+    },
+    "smoothed_lift": {
+      "minimum": 0,
+      "title": "Smoothed Lift",
+      "type": "number"
+    }
+  },
+  "required": [
+    "signal_type",
+    "observations",
+    "positives",
+    "baseline_rate",
+    "exposed_rate",
+    "smoothed_lift",
+    "previous_weight",
+    "proposed_weight"
+  ],
+  "title": "PortfolioWeight",
+  "type": "object"
+}

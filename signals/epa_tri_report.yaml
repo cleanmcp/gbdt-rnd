@@ -1,0 +1,18 @@
+schema_version: 1
+signal_type: epa_tri_report
+version: 1
+description: Annual EPA TRI facility report indicating production and operational complexity.
+shape: numeric_series
+source_ids: [epa_tri]
+durable: true
+identity_fields: [facility_name, tri_facility_id, naics_code, state]
+material_kinds: [annual_report, revised]
+numeric_features:
+  - field: production_ratio
+    unit: ratio
+    reducers: [latest, max, mean, delta, slope]
+  - field: total_releases_lb
+    unit: pounds
+    reducers: [latest, max, mean, delta, slope]
+default_half_life_days: 365
+applicability_naics_prefixes: ["31", "32", "33"]

@@ -1,0 +1,119 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "brier_score": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Brier Score"
+    },
+    "detail": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Detail"
+    },
+    "fit_seconds": {
+      "minimum": 0,
+      "title": "Fit Seconds",
+      "type": "number"
+    },
+    "label_kind": {
+      "title": "Label Kind",
+      "type": "string"
+    },
+    "model_id": {
+      "title": "Model Id",
+      "type": "string"
+    },
+    "pr_auc": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Pr Auc"
+    },
+    "precision_at_k": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Precision At K"
+    },
+    "roc_auc": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Roc Auc"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "score_seconds": {
+      "minimum": 0,
+      "title": "Score Seconds",
+      "type": "number"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "unavailable",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "test_rows": {
+      "minimum": 0,
+      "title": "Test Rows",
+      "type": "integer"
+    },
+    "train_rows": {
+      "minimum": 0,
+      "title": "Train Rows",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "model_id",
+    "label_kind",
+    "train_rows",
+    "test_rows",
+    "pr_auc",
+    "roc_auc",
+    "brier_score",
+    "precision_at_k",
+    "fit_seconds",
+    "score_seconds",
+    "status"
+  ],
+  "title": "BenchmarkResult",
+  "type": "object"
+}

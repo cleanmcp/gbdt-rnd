@@ -1,0 +1,23 @@
+schema_version: 1
+signal_type: sba_loan
+version: 1
+description: SBA 7(a) or 504 financing lifecycle for a manufacturer.
+shape: state_machine
+source_ids: [sba_7a_504]
+durable: true
+identity_fields: [loan_id, borrower_name, naics_code, state]
+state_field: status
+terminal_states: [paid_in_full, cancelled, charged_off]
+material_kinds: [approved, disbursed, paid_in_full, cancelled, charged_off]
+numeric_features:
+  - field: loan_amount_usd
+    unit: USD
+    reducers: [latest, max]
+  - field: jobs_supported
+    unit: jobs
+    reducers: [latest, max]
+  - field: term_months
+    unit: months
+    reducers: [latest]
+default_half_life_days: 90
+applicability_naics_prefixes: ["31", "32", "33"]

@@ -1,0 +1,3496 @@
+{
+  "aggregates": [
+    {
+      "brierMean": 0.12196621844267941,
+      "brierStd": 3.82134516129548e-09,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.11252377549809477,
+          0.18022310349531448
+        ],
+        "precisionAtK": [
+          0.05,
+          0.17
+        ],
+        "rocAuc": [
+          0.45109916439574166,
+          0.55588096657303
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.0003555783333316261,
+      "fitSecondsStd": 9.323548042677357e-05,
+      "mask": "none",
+      "modelKey": "positive-rate",
+      "ok": 3,
+      "prAucMean": 0.14954924919492016,
+      "prAucStd": 0.009876175321246341,
+      "precisionAtKMean": 0.15,
+      "precisionAtKStd": 0.03741657386773942,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.5190239867659222,
+      "rocAucStd": 0.01462271037214877,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.20347411015664393,
+      "brierStd": 0.0,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.16024398574921503,
+          0.24540419792370957
+        ],
+        "precisionAtK": [
+          0.13,
+          0.26
+        ],
+        "rocAuc": [
+          0.5942362647409758,
+          0.6880427076831814
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.03744406999999228,
+      "fitSecondsStd": 0.001042369295666418,
+      "mask": "none",
+      "modelKey": "logistic",
+      "ok": 3,
+      "prAucMean": 0.1950493121333743,
+      "prAucStd": 0.0,
+      "precisionAtKMean": 0.20000000000000004,
+      "precisionAtKStd": 2.7755575615628914e-17,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6455490074441688,
+      "rocAucStd": 0.0,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.14885119715346318,
+      "brierStd": 0.0015074684244421762,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.1789096343342756,
+          0.2944907200993975
+        ],
+        "precisionAtK": [
+          0.24,
+          0.42
+        ],
+        "rocAuc": [
+          0.5654022401416223,
+          0.6816473385656727
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 1.2832004243333206,
+      "fitSecondsStd": 0.007250493835742699,
+      "mask": "none",
+      "modelKey": "random-forest",
+      "ok": 3,
+      "prAucMean": 0.23153675985807576,
+      "prAucStd": 0.007025922807522521,
+      "precisionAtKMean": 0.30666666666666664,
+      "precisionAtKStd": 0.016996731711975965,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6394316928591123,
+      "rocAucStd": 0.01251437039950148,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "xgboost",
+      "ok": 0,
+      "protocol": "point_in_time",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "catboost",
+      "ok": 0,
+      "protocol": "point_in_time",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "brierMean": 0.1304289586981449,
+      "brierStd": 0.0,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.13191096994325618,
+          0.21356353450156393
+        ],
+        "precisionAtK": [
+          0.1,
+          0.25
+        ],
+        "rocAuc": [
+          0.5254355222798295,
+          0.6379745194908852
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.5739994543333372,
+      "fitSecondsStd": 0.4706138118373657,
+      "mask": "none",
+      "modelKey": "lightgbm-default",
+      "ok": 3,
+      "prAucMean": 0.16834744785259692,
+      "prAucStd": 0.0,
+      "precisionAtKMean": 0.17,
+      "precisionAtKStd": 0.0,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.5828422249793217,
+      "rocAucStd": 0.0,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.11815830878513832,
+      "brierStd": 0.00016949775333944937,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.14824012555659744,
+          0.23674731359140874
+        ],
+        "precisionAtK": [
+          0.14,
+          0.3
+        ],
+        "rocAuc": [
+          0.5602601661853962,
+          0.6617071358055027
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 1.6446444389999897,
+      "fitSecondsStd": 0.1384699923514122,
+      "mask": "none",
+      "modelKey": "lightgbm",
+      "ok": 3,
+      "prAucMean": 0.18280090701637142,
+      "prAucStd": 0.00376033509402967,
+      "precisionAtKMean": 0.21999999999999997,
+      "precisionAtKStd": 0.01414213562373095,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6006841053212021,
+      "rocAucStd": 0.009338670899458149,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.1193072957625357,
+      "brierStd": 0.00046760712754520805,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.1410415941316163,
+          0.22954380540565605
+        ],
+        "precisionAtK": [
+          0.14,
+          0.30524999999999974
+        ],
+        "rocAuc": [
+          0.5265051430084025,
+          0.6285107761831806
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.43766501266664665,
+      "fitSecondsStd": 0.03639153745324054,
+      "mask": "none",
+      "modelKey": "lightgbm-holdout",
+      "ok": 3,
+      "prAucMean": 0.172404205146977,
+      "prAucStd": 0.004148604963031794,
+      "precisionAtKMean": 0.20333333333333337,
+      "precisionAtKStd": 0.02054804667656326,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.5708901985111662,
+      "rocAucStd": 0.008651648141918955,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.13170269393818543,
+      "brierStd": 0.0009622118288747195,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.14824012555659744,
+          0.23674731359140874
+        ],
+        "precisionAtK": [
+          0.14,
+          0.3
+        ],
+        "rocAuc": [
+          0.5602601661853962,
+          0.6617071358055027
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.4281774686666798,
+      "fitSecondsStd": 0.005242063885225298,
+      "mask": "none",
+      "modelKey": "lightgbm-full-train",
+      "ok": 3,
+      "prAucMean": 0.18280090701637142,
+      "prAucStd": 0.00376033509402967,
+      "precisionAtKMean": 0.21999999999999997,
+      "precisionAtKStd": 0.01414213562373095,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6006841053212021,
+      "rocAucStd": 0.009338670899458149,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.1196366522122358,
+      "brierStd": 0.0003384071300071277,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.17462919389011688,
+          0.26712014548801005
+        ],
+        "precisionAtK": [
+          0.15,
+          0.3
+        ],
+        "rocAuc": [
+          0.612388446910655,
+          0.7146793186422775
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.22640223633330456,
+      "fitSecondsStd": 0.0047581356308927895,
+      "mask": "none",
+      "modelKey": "lightgbm-regularized",
+      "ok": 3,
+      "prAucMean": 0.214753655748436,
+      "prAucStd": 0.002113747839364824,
+      "precisionAtKMean": 0.22333333333333336,
+      "precisionAtKStd": 0.004714045207910321,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6651002894954509,
+      "rocAucStd": 0.0015012926743297478,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.11933088538726644,
+      "brierStd": 0.0004077614599985212,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.16104264015946143,
+          0.269147849708621
+        ],
+        "precisionAtK": [
+          0.14,
+          0.31
+        ],
+        "rocAuc": [
+          0.5760134688032285,
+          0.680942320304202
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.6601596296666609,
+      "fitSecondsStd": 0.0019019199189905548,
+      "mask": "none",
+      "modelKey": "tabpfn",
+      "ok": 3,
+      "prAucMean": 0.21193252874830196,
+      "prAucStd": 0.0034487727556703424,
+      "precisionAtKMean": 0.25666666666666665,
+      "precisionAtKStd": 0.02494438257849293,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6350375654811139,
+      "rocAucStd": 0.00244202318765896,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09397509767917643,
+      "brierStd": 2.2501370390254054e-09,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.08635635722656976,
+          0.12966327414777748
+        ],
+        "precisionAtK": [
+          0.04,
+          0.16
+        ],
+        "rocAuc": [
+          0.44266063052101196,
+          0.5273631452880099
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.0008382803333309615,
+      "fitSecondsStd": 1.5997598207247148e-05,
+      "mask": "none",
+      "modelKey": "positive-rate",
+      "ok": 3,
+      "prAucMean": 0.11253145260050841,
+      "prAucStd": 0.009805211197344428,
+      "precisionAtKMean": 0.11666666666666665,
+      "precisionAtKStd": 0.02054804667656326,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.4996314400993172,
+      "rocAucStd": 0.011630917657611239,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.22020985331419504,
+      "brierStd": 0.0034818812594780008,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.13398791858504275,
+          0.1957887604963192
+        ],
+        "precisionAtK": [
+          0.08,
+          0.21524999999999977
+        ],
+        "rocAuc": [
+          0.6368600595321146,
+          0.7118473511483323
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.07647983166672627,
+      "fitSecondsStd": 0.00022074295296935906,
+      "mask": "none",
+      "modelKey": "logistic",
+      "ok": 3,
+      "prAucMean": 0.16853523089960457,
+      "prAucStd": 0.007661122268560177,
+      "precisionAtKMean": 0.18000000000000002,
+      "precisionAtKStd": 0.02943920288775948,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6761231378026071,
+      "rocAucStd": 0.016152997135082534,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.17016411921042582,
+      "brierStd": 0.0027963179897667876,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.13909806801275001,
+          0.21903606257914784
+        ],
+        "precisionAtK": [
+          0.14,
+          0.29524999999999973
+        ],
+        "rocAuc": [
+          0.6271689035085389,
+          0.7084170010907026
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 1.3796579496666557,
+      "fitSecondsStd": 0.006885165886143096,
+      "mask": "none",
+      "modelKey": "random-forest",
+      "ok": 3,
+      "prAucMean": 0.18151488785071113,
+      "prAucStd": 0.012056789907620406,
+      "precisionAtKMean": 0.22666666666666666,
+      "precisionAtKStd": 0.03091206165165235,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.67955656424581,
+      "rocAucStd": 0.014877605268690926,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "xgboost",
+      "ok": 0,
+      "protocol": "random_stratified",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "catboost",
+      "ok": 0,
+      "protocol": "random_stratified",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "brierMean": 0.0940881165602158,
+      "brierStd": 0.0006985658097727576,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.14573349039924172,
+          0.23510674703220158
+        ],
+        "precisionAtK": [
+          0.13,
+          0.29
+        ],
+        "rocAuc": [
+          0.6276156917601575,
+          0.704704638412778
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 1.2281093330000203,
+      "fitSecondsStd": 0.9664926071983079,
+      "mask": "none",
+      "modelKey": "lightgbm-default",
+      "ok": 3,
+      "prAucMean": 0.17492403404398651,
+      "prAucStd": 0.0073358463429058,
+      "precisionAtKMean": 0.21333333333333335,
+      "precisionAtKStd": 0.0262466929133727,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6675257160592357,
+      "rocAucStd": 0.011547770343880529,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09254589439613066,
+      "brierStd": 0.0003573174993189522,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.14137669052135465,
+          0.2258199620408917
+        ],
+        "precisionAtK": [
+          0.11,
+          0.25
+        ],
+        "rocAuc": [
+          0.6100006741081555,
+          0.6911593424479167
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 18.968782860333324,
+      "fitSecondsStd": 24.158999266997025,
+      "mask": "none",
+      "modelKey": "lightgbm",
+      "ok": 3,
+      "prAucMean": 0.1852263169914549,
+      "prAucStd": 0.007361704106640821,
+      "precisionAtKMean": 0.23,
+      "precisionAtKStd": 0.0496655480858378,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6656032466524785,
+      "rocAucStd": 0.0104801008439165,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09259043696965454,
+      "brierStd": 0.0007296943945093207,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.13527261558554604,
+          0.21749789853584048
+        ],
+        "precisionAtK": [
+          0.1,
+          0.25524999999999975
+        ],
+        "rocAuc": [
+          0.60462731646001,
+          0.6880484585455716
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.4786573586666236,
+      "fitSecondsStd": 0.01691673578837907,
+      "mask": "none",
+      "modelKey": "lightgbm-holdout",
+      "ok": 3,
+      "prAucMean": 0.1735954890089784,
+      "prAucStd": 0.0038911849341284792,
+      "precisionAtKMean": 0.20666666666666667,
+      "precisionAtKStd": 0.02054804667656326,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6574949288374569,
+      "rocAucStd": 0.010856178292427092,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.19129089729077994,
+      "brierStd": 0.0032575327959053707,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.14137669052135465,
+          0.2258199620408917
+        ],
+        "precisionAtK": [
+          0.11,
+          0.25
+        ],
+        "rocAuc": [
+          0.6100006741081555,
+          0.6911593424479167
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.4472043833333146,
+      "fitSecondsStd": 0.0018923010947078166,
+      "mask": "none",
+      "modelKey": "lightgbm-full-train",
+      "ok": 3,
+      "prAucMean": 0.1852263169914549,
+      "prAucStd": 0.007361704106640821,
+      "precisionAtKMean": 0.23,
+      "precisionAtKStd": 0.0496655480858378,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6656032466524785,
+      "rocAucStd": 0.0104801008439165,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09091262734025267,
+      "brierStd": 0.000857485932495074,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.13677680944824258,
+          0.20245505347987586
+        ],
+        "precisionAtK": [
+          0.11,
+          0.26
+        ],
+        "rocAuc": [
+          0.6343399992915404,
+          0.7139703638876866
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 2.69052180666669,
+      "fitSecondsStd": 3.367427007115675,
+      "mask": "none",
+      "modelKey": "lightgbm-regularized",
+      "ok": 3,
+      "prAucMean": 0.18057909847802459,
+      "prAucStd": 0.012034791031050564,
+      "precisionAtKMean": 0.22,
+      "precisionAtKStd": 0.021602468994692866,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6851459275516539,
+      "rocAucStd": 0.011869455367410086,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09120765862901965,
+      "brierStd": 0.0005047350925093467,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.12824044215842934,
+          0.18256121377636292
+        ],
+        "precisionAtK": [
+          0.06,
+          0.2
+        ],
+        "rocAuc": [
+          0.6299191501761604,
+          0.7023873194918416
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "fitSecondsMean": 0.7705325843333336,
+      "fitSecondsStd": 0.053238771533404616,
+      "mask": "none",
+      "modelKey": "tabpfn",
+      "ok": 3,
+      "prAucMean": 0.1761615418617972,
+      "prAucStd": 0.01854205592581256,
+      "precisionAtKMean": 0.19999999999999998,
+      "precisionAtKStd": 0.058878405775518984,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.672689711359404,
+      "rocAucStd": 0.01373593081851102,
+      "seeds": 3,
+      "status": "ok"
+    }
+  ],
+  "cells": [
+    {
+      "brier": 0.12196622264871541,
+      "ci95": {
+        "prAuc": [
+          0.11252377549809477,
+          0.18022310349531448
+        ],
+        "precisionAtK": [
+          0.05,
+          0.17
+        ],
+        "rocAuc": [
+          0.45109916439574166,
+          0.55588096657303
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.0004874109999946086,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.135985510234037,
+      "precisionAtK": 0.11,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5022022332506204,
+      "runtime": {
+        "trainingPrevalence": 0.07705840957072484
+      },
+      "scoreSeconds": 0.006273570000075779,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.20347411015664393,
+      "ci95": {
+        "prAuc": [
+          0.16024398574921503,
+          0.24540419792370957
+        ],
+        "precisionAtK": [
+          0.13,
+          0.26
+        ],
+        "rocAuc": [
+          0.5942362647409758,
+          0.6880427076831814
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.03796307900006468,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.1950493121333743,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6455490074441688,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.01358159300002626,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.15010330718160197,
+      "ci95": {
+        "prAuc": [
+          0.1789096343342756,
+          0.2944907200993975
+        ],
+        "precisionAtK": [
+          0.24,
+          0.42
+        ],
+        "rocAuc": [
+          0.5654022401416223,
+          0.6816473385656727
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.2934541629999785,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.2271928221930511,
+      "precisionAtK": 0.33,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6242400744416874,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.12727714999994078,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1304289586981449,
+      "ci95": {
+        "prAuc": [
+          0.13191096994325618,
+          0.21356353450156393
+        ],
+        "precisionAtK": [
+          0.1,
+          0.25
+        ],
+        "rocAuc": [
+          0.5254355222798295,
+          0.6379745194908852
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.238821637000001,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.16834744785259692,
+      "precisionAtK": 0.17,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5828422249793217,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.014595527999972546,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11821084462588022,
+      "ci95": {
+        "prAuc": [
+          0.14824012555659744,
+          0.23674731359140874
+        ],
+        "precisionAtK": [
+          0.14,
+          0.3
+        ],
+        "rocAuc": [
+          0.5602601661853962,
+          0.6617071358055027
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.8346139839999296,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.1859594888824113,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6138544251447476,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.2236426482503976,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.1565709159999642,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11885665299094945,
+      "ci95": {
+        "prAuc": [
+          0.1410415941316163,
+          0.22954380540565605
+        ],
+        "precisionAtK": [
+          0.14,
+          0.30524999999999974
+        ],
+        "rocAuc": [
+          0.5265051430084025,
+          0.6285107761831806
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.4142719709999483,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.17749410280254066,
+      "precisionAtK": 0.23,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5806348221670803,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.3134701276590946,
+        "trainingRowsUsed": 2273
+      },
+      "scoreSeconds": 0.14958215900003324,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.131326520395387,
+      "ci95": {
+        "prAuc": [
+          0.14824012555659744,
+          0.23674731359140874
+        ],
+        "precisionAtK": [
+          0.14,
+          0.3
+        ],
+        "rocAuc": [
+          0.5602601661853962,
+          0.6617071358055027
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.42111901299995225,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.1859594888824113,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6138544251447476,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.08339342800002214,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11990735004259219,
+      "ci95": {
+        "prAuc": [
+          0.17462919389011688,
+          0.26712014548801005
+        ],
+        "precisionAtK": [
+          0.15,
+          0.3
+        ],
+        "rocAuc": [
+          0.612388446910655,
+          0.7146793186422775
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.2310900129999709,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.21193280159523642,
+      "precisionAtK": 0.22,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6632289081885856,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.014686508000067988,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11987953230963669,
+      "ci95": {
+        "prAuc": [
+          0.16104264015946143,
+          0.269147849708621
+        ],
+        "precisionAtK": [
+          0.14,
+          0.31
+        ],
+        "rocAuc": [
+          0.5760134688032285,
+          0.680942320304202
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.659322565000025,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.20754423313755166,
+      "precisionAtK": 0.23,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6322218775847808,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.6593002250000382,
+            "status": "ok",
+            "trainingRows": 2842
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 2842,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 1.1563042689999747,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.12196621927836247,
+      "ci95": {
+        "prAuc": [
+          0.12267439413649016,
+          0.20038530491862214
+        ],
+        "precisionAtK": [
+          0.07,
+          0.21
+        ],
+        "rocAuc": [
+          0.46570919022464397,
+          0.5682112799603867
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.0002875659999972413,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.15344546493404798,
+      "precisionAtK": 0.14,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5170181968569065,
+      "runtime": {
+        "trainingPrevalence": 0.07705840957072484
+      },
+      "scoreSeconds": 0.005882848000055674,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.20347411015664393,
+      "ci95": {
+        "prAuc": [
+          0.15868279750694447,
+          0.23937461870870996
+        ],
+        "precisionAtK": [
+          0.12,
+          0.26
+        ],
+        "rocAuc": [
+          0.602480411139799,
+          0.6904325215117109
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.038379459999987375,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.1950493121333743,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6455490074441688,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.013482500000009168,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1467308674209732,
+      "ci95": {
+        "prAuc": [
+          0.1793652519178297,
+          0.29406283945479383
+        ],
+        "precisionAtK": [
+          0.21,
+          0.37
+        ],
+        "rocAuc": [
+          0.5785013134146745,
+          0.6858198156522619
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.2780624279999984,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.22596966924400919,
+      "precisionAtK": 0.29,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6391645988420182,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.13696506999997382,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1304289586981449,
+      "ci95": {
+        "prAuc": [
+          0.13868291962733334,
+          0.2112363619463681
+        ],
+        "precisionAtK": [
+          0.11,
+          0.24
+        ],
+        "rocAuc": [
+          0.5327445426676599,
+          0.63090513370024
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.21466924500009554,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.16834744785259692,
+      "precisionAtK": 0.17,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5828422249793217,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.015416467000022749,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11833458523437275,
+      "ci95": {
+        "prAuc": [
+          0.14598780811601852,
+          0.21834029893318602
+        ],
+        "precisionAtK": [
+          0.13,
+          0.29
+        ],
+        "rocAuc": [
+          0.5384194609401879,
+          0.639999259992091
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.590825030000019,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.17751652492715442,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5932485525227461,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.20824945617000776,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.16192683200006286,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1191134805859659,
+      "ci95": {
+        "prAuc": [
+          0.14194113371952052,
+          0.22324111296744745
+        ],
+        "precisionAtK": [
+          0.12,
+          0.24524999999999977
+        ],
+        "rocAuc": [
+          0.5187338449796471,
+          0.6287254249087738
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.40966153099998337,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.17238632796456924,
+      "precisionAtK": 0.18,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5724255583126551,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.24298249977091282,
+        "trainingRowsUsed": 2273
+      },
+      "scoreSeconds": 0.138910065999994,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1307582404212445,
+      "ci95": {
+        "prAuc": [
+          0.14598780811601852,
+          0.21834029893318602
+        ],
+        "precisionAtK": [
+          0.13,
+          0.29
+        ],
+        "rocAuc": [
+          0.5384194609401879,
+          0.639999259992091
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.42974391699999615,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.17751652492715442,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5932485525227461,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.08536840399995071,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11984309430328764,
+      "ci95": {
+        "prAuc": [
+          0.17910928255979114,
+          0.269123263165167
+        ],
+        "precisionAtK": [
+          0.15,
+          0.32
+        ],
+        "rocAuc": [
+          0.6175468681662237,
+          0.7148377522099405
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.228239058999975,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.2153073557521522,
+      "precisionAtK": 0.23,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6669044665012407,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.015020153000023129,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11890279577791979,
+      "ci95": {
+        "prAuc": [
+          0.1718377088846981,
+          0.27168867734681357
+        ],
+        "precisionAtK": [
+          0.17,
+          0.34
+        ],
+        "rocAuc": [
+          0.5868401571331462,
+          0.6844648834997233
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.6627918559998989,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.21228325676836418,
+      "precisionAtK": 0.25,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.634713606286187,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.6627800839999054,
+            "status": "ok",
+            "trainingRows": 2842
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 2842,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 1.1408949950000533,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.12196621340096031,
+      "ci95": {
+        "prAuc": [
+          0.12713625662480338,
+          0.20667748110569317
+        ],
+        "precisionAtK": [
+          0.12,
+          0.29
+        ],
+        "rocAuc": [
+          0.4801342014665955,
+          0.5922973203967661
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.00029175800000302843,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.15921677241667548,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5378515301902398,
+      "runtime": {
+        "trainingPrevalence": 0.07705840957072484
+      },
+      "scoreSeconds": 0.005854032000002007,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.20347411015664393,
+      "ci95": {
+        "prAuc": [
+          0.15914922530844222,
+          0.2497245835164082
+        ],
+        "precisionAtK": [
+          0.12,
+          0.27
+        ],
+        "rocAuc": [
+          0.5964199420636164,
+          0.6909527907771101
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.03598967099992478,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.1950493121333743,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6455490074441688,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.01338991399995848,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1497194168578144,
+      "ci95": {
+        "prAuc": [
+          0.19069097266223275,
+          0.32068283331961106
+        ],
+        "precisionAtK": [
+          0.21,
+          0.39524999999999977
+        ],
+        "rocAuc": [
+          0.6012344840078386,
+          0.7106432400516506
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.2780846819999852,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.24144778813716705,
+      "precisionAtK": 0.3,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6548904052936311,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.12624957200000608,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.1304289586981449,
+      "ci95": {
+        "prAuc": [
+          0.13810608767863855,
+          0.213560253175484
+        ],
+        "precisionAtK": [
+          0.1,
+          0.25
+        ],
+        "rocAuc": [
+          0.5315777212576864,
+          0.6332402956548987
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.26850748099991506,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.16834744785259692,
+      "precisionAtK": 0.17,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5828422249793217,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.014328187000046455,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.117929496495162,
+      "ci95": {
+        "prAuc": [
+          0.15159858632200718,
+          0.23495651963645334
+        ],
+        "precisionAtK": [
+          0.17,
+          0.32524999999999976
+        ],
+        "rocAuc": [
+          0.5410780798858251,
+          0.6507207749453882
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.5084943030000204,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.18492670723954857,
+      "precisionAtK": 0.24,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5949493382961124,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.2219934960943378,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.1588321790000009,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11995175371069176,
+      "ci95": {
+        "prAuc": [
+          0.13487194846477069,
+          0.21974888341384202
+        ],
+        "precisionAtK": [
+          0.12,
+          0.28
+        ],
+        "rocAuc": [
+          0.5004918112021238,
+          0.6159975056329401
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.48906153600000835,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.16733218467382108,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5596102150537634,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.27522051945958614,
+        "trainingRowsUsed": 2273
+      },
+      "scoreSeconds": 0.14669822600001226,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.13302332099792474,
+      "ci95": {
+        "prAuc": [
+          0.15159858632200718,
+          0.23495651963645334
+        ],
+        "precisionAtK": [
+          0.17,
+          0.32524999999999976
+        ],
+        "rocAuc": [
+          0.5410780798858251,
+          0.6507207749453882
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.433669476000091,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.18492670723954857,
+      "precisionAtK": 0.24,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5949493382961124,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.0850414759999012,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11915951229082755,
+      "ci95": {
+        "prAuc": [
+          0.1737407551657299,
+          0.28808951160746243
+        ],
+        "precisionAtK": [
+          0.14475000000000002,
+          0.31
+        ],
+        "rocAuc": [
+          0.6130246066068913,
+          0.7221574712830692
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.21987763699996776,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.2170208098979194,
+      "precisionAtK": 0.22,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6651674937965261,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 0.014810649000082776,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.11921032807424287,
+      "ci95": {
+        "prAuc": [
+          0.17161958270697958,
+          0.2921239321616876
+        ],
+        "precisionAtK": [
+          0.18,
+          0.38
+        ],
+        "rocAuc": [
+          0.5920368908743947,
+          0.6911766292276148
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.6583644680000589,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.21597009633899006,
+      "precisionAtK": 0.29,
+      "precisionK": 100,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6381772125723739,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.6583534779999809,
+            "status": "ok",
+            "trainingRows": 2842
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 2842,
+        "trainingRowsUsed": 2842
+      },
+      "scoreSeconds": 1.1338271249999252,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 124,
+      "testPrevalence": 0.13716814159292035,
+      "testRows": 904,
+      "trainPositives": 219,
+      "trainPrevalence": 0.07705840957072484,
+      "trainRows": 2842
+    },
+    {
+      "brier": 0.09397510033306848,
+      "ci95": {
+        "prAuc": [
+          0.08635635722656976,
+          0.12966327414777748
+        ],
+        "precisionAtK": [
+          0.04,
+          0.16
+        ],
+        "rocAuc": [
+          0.44266063052101196,
+          0.5273631452880099
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.0008420710000791587,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.10343279223663676,
+      "precisionAtK": 0.09,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.48582568502261236,
+      "runtime": {
+        "trainingPrevalence": 0.1053125
+      },
+      "scoreSeconds": 0.010320879000005334,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.22037733289596007,
+      "ci95": {
+        "prAuc": [
+          0.13398791858504275,
+          0.1957887604963192
+        ],
+        "precisionAtK": [
+          0.08,
+          0.21524999999999977
+        ],
+        "rocAuc": [
+          0.6368600595321146,
+          0.7118473511483323
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.07678213600001982,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.16014687444352166,
+      "precisionAtK": 0.14,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6746329642192073,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.023167169999965154,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.17237830137309423,
+      "ci95": {
+        "prAuc": [
+          0.13909806801275001,
+          0.21903606257914784
+        ],
+        "precisionAtK": [
+          0.14,
+          0.29524999999999973
+        ],
+        "rocAuc": [
+          0.6271689035085389,
+          0.7084170010907026
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.3833146169999964,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.16993225042396012,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6686348596701249,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.14904131399998732,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09402675940881902,
+      "ci95": {
+        "prAuc": [
+          0.14573349039924172,
+          0.23510674703220158
+        ],
+        "precisionAtK": [
+          0.13,
+          0.29
+        ],
+        "rocAuc": [
+          0.6276156917601575,
+          0.704704638412778
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.8718054500000108,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.18135999691873778,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.669304086858207,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.026184333999935916,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09276993515222759,
+      "ci95": {
+        "prAuc": [
+          0.14137669052135465,
+          0.2258199620408917
+        ],
+        "precisionAtK": [
+          0.11,
+          0.25
+        ],
+        "rocAuc": [
+          0.6100006741081555,
+          0.6911593424479167
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 2.142148683999949,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.17521173740439427,
+      "precisionAtK": 0.16,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6542090649108805,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.159086499411036,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.20354783000004772,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09347265539532454,
+      "ci95": {
+        "prAuc": [
+          0.13527261558554604,
+          0.21749789853584048
+        ],
+        "precisionAtK": [
+          0.1,
+          0.25524999999999975
+        ],
+        "rocAuc": [
+          0.60462731646001,
+          0.6880484585455716
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.4719198409999308,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.16929857457909148,
+      "precisionAtK": 0.18,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6448710594573026,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.05009266912237822,
+        "trainingRowsUsed": 5120
+      },
+      "scoreSeconds": 0.1834694159999799,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.19156583243540062,
+      "ci95": {
+        "prAuc": [
+          0.14137669052135465,
+          0.2258199620408917
+        ],
+        "precisionAtK": [
+          0.11,
+          0.25
+        ],
+        "rocAuc": [
+          0.6100006741081555,
+          0.6911593424479167
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.44472069400001146,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.17521173740439427,
+      "precisionAtK": 0.16,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6542090649108805,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.1391893259999506,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09197941138010368,
+      "ci95": {
+        "prAuc": [
+          0.13677680944824258,
+          0.20245505347987586
+        ],
+        "precisionAtK": [
+          0.11,
+          0.26
+        ],
+        "rocAuc": [
+          0.6343399992915404,
+          0.7139703638876866
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.30560931000002256,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.163945060784477,
+      "precisionAtK": 0.19,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6750340848629954,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.026013318999957846,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09167921581063762,
+      "ci95": {
+        "prAuc": [
+          0.12824044215842934,
+          0.18256121377636292
+        ],
+        "precisionAtK": [
+          0.06,
+          0.2
+        ],
+        "rocAuc": [
+          0.6299191501761604,
+          0.7023873194918416
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.7339867470000172,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.14999693191572808,
+      "precisionAtK": 0.12,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6632935122372972,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.7339754269999048,
+            "status": "ok",
+            "trainingRows": 6400
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 6400,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 1.4981653739999956,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09397509483159969,
+      "ci95": {
+        "prAuc": [
+          0.10062074320927988,
+          0.1675898177565845
+        ],
+        "precisionAtK": [
+          0.08,
+          0.22
+        ],
+        "rocAuc": [
+          0.46845363408521307,
+          0.5642637464638486
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.000855700999977671,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.1261430139990915,
+      "precisionAtK": 0.14,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.5142782322426177,
+      "runtime": {
+        "trainingPrevalence": 0.1053125
+      },
+      "scoreSeconds": 0.01041412200004288,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.2158641646029329,
+      "ci95": {
+        "prAuc": [
+          0.1510908485704533,
+          0.21481590573611054
+        ],
+        "precisionAtK": [
+          0.12,
+          0.27
+        ],
+        "rocAuc": [
+          0.6569683584205032,
+          0.7337938664896072
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.07626122400006352,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.17866791050383615,
+      "precisionAtK": 0.19,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.696609387470072,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.023549899000045116,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.16621939893155172,
+      "ci95": {
+        "prAuc": [
+          0.16178112438936315,
+          0.24927553557494236
+        ],
+        "precisionAtK": [
+          0.18,
+          0.35524999999999973
+        ],
+        "rocAuc": [
+          0.6674623266262246,
+          0.7395334123099331
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.3700142559999904,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.198142772302136,
+      "precisionAtK": 0.27,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.7005914970736897,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.1482979959999966,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09326488193139365,
+      "ci95": {
+        "prAuc": [
+          0.14454750363155378,
+          0.2206267203222055
+        ],
+        "precisionAtK": [
+          0.15,
+          0.33
+        ],
+        "rocAuc": [
+          0.6454999452789445,
+          0.7232794259256086
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.2634806319999825,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.17875273613549195,
+      "precisionAtK": 0.25,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6806954974727322,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.02469750699992801,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09204161390325409,
+      "ci95": {
+        "prAuc": [
+          0.1509233698950249,
+          0.23456297093676234
+        ],
+        "precisionAtK": [
+          0.18475,
+          0.35
+        ],
+        "rocAuc": [
+          0.6424467914700166,
+          0.7233237745802925
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 53.133491272000015,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.18776922495551557,
+      "precisionAtK": 0.27,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6795087623038042,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.19016225926989583,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.21204023899997537,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09261295352306183,
+      "ci95": {
+        "prAuc": [
+          0.14273284377357517,
+          0.22502026483698756
+        ],
+        "precisionAtK": [
+          0.15,
+          0.31
+        ],
+        "rocAuc": [
+          0.633987110566974,
+          0.7138445913043556
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.5019062159999521,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.17872125626388324,
+      "precisionAtK": 0.23,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6713741187815908,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.09369769762807602,
+        "trainingRowsUsed": 5120
+      },
+      "scoreSeconds": 0.21307490499998494,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.18717089436090048,
+      "ci95": {
+        "prAuc": [
+          0.1509233698950249,
+          0.23456297093676234
+        ],
+        "precisionAtK": [
+          0.18475,
+          0.35
+        ],
+        "rocAuc": [
+          0.6424467914700166,
+          0.7233237745802925
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.4493091709999817,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.18776922495551557,
+      "precisionAtK": 0.27,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6795087623038042,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.14111431300000277,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.08987983363242474,
+      "ci95": {
+        "prAuc": [
+          0.15434054802051636,
+          0.2357870268292277
+        ],
+        "precisionAtK": [
+          0.16475,
+          0.31524999999999975
+        ],
+        "rocAuc": [
+          0.6669125056526104,
+          0.7394560676705462
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 7.45278074700002,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.1920163553363627,
+      "precisionAtK": 0.24,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.7018052507315776,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.02754511000000548,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09050780931217421,
+      "ci95": {
+        "prAuc": [
+          0.1534295327343929,
+          0.2423960814388684
+        ],
+        "precisionAtK": [
+          0.15,
+          0.31
+        ],
+        "rocAuc": [
+          0.6542321543177825,
+          0.7318920832365013
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.8458129719999761,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.1907510451334928,
+      "precisionAtK": 0.22,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6921118482309125,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.8458005719999164,
+            "status": "ok",
+            "trainingRows": 6400
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 6400,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 1.5133601969999972,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09397509787286111,
+      "ci95": {
+        "prAuc": [
+          0.08921183700481734,
+          0.13592378580359737
+        ],
+        "precisionAtK": [
+          0.06,
+          0.19
+        ],
+        "rocAuc": [
+          0.4532685514657139,
+          0.5486683141714515
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.0008170689999360548,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.10801855156579698,
+      "precisionAtK": 0.12,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.4987904030327215,
+      "runtime": {
+        "trainingPrevalence": 0.1053125
+      },
+      "scoreSeconds": 0.010371233000000757,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.22438806244369214,
+      "ci95": {
+        "prAuc": [
+          0.13853258728155476,
+          0.20477176340634767
+        ],
+        "precisionAtK": [
+          0.14,
+          0.3
+        ],
+        "rocAuc": [
+          0.614171883209005,
+          0.6996924087115755
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.07639613500009546,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.16679090775145589,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6571270617185421,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.023668465000014294,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.17189465732663145,
+      "ci95": {
+        "prAuc": [
+          0.14670068498632638,
+          0.2239395013745112
+        ],
+        "precisionAtK": [
+          0.12,
+          0.29
+        ],
+        "rocAuc": [
+          0.6372249529017381,
+          0.7103965952099979
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.3856449759999805,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.17646964082603717,
+      "precisionAtK": 0.2,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6694433359936154,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.14022572500005026,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "control": "none",
+      "dataset": "olist",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 47,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09497270834043475,
+      "ci95": {
+        "prAuc": [
+          0.13715117790685552,
+          0.2101290013501475
+        ],
+        "precisionAtK": [
+          0.12,
+          0.27
+        ],
+        "rocAuc": [
+          0.6174377631858046,
+          0.6897521842764344
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 2.5490419170000678,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.16465936907772977,
+      "precisionAtK": 0.19,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6525775638467678,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.024421261999918897,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09282613413291031,
+      "ci95": {
+        "prAuc": [
+          0.15585286856404837,
+          0.250415496639626
+        ],
+        "precisionAtK": [
+          0.17,
+          0.35
+        ],
+        "rocAuc": [
+          0.6261560113408678,
+          0.7067018094049416
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 1.6307086250000111,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.19269798861445483,
+      "precisionAtK": 0.26,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6630919127427507,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.23948158198927105,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.204154367000001,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09168570199057725,
+      "ci95": {
+        "prAuc": [
+          0.1426620205689294,
+          0.21810188013407958
+        ],
+        "precisionAtK": [
+          0.13,
+          0.3
+        ],
+        "rocAuc": [
+          0.6158410486363606,
+          0.70048931263081
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.462146018999988,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.1727666361839605,
+      "precisionAtK": 0.21,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.656239608273477,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.21295575732834296,
+        "trainingRowsUsed": 5120
+      },
+      "scoreSeconds": 0.20529165200002808,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.19513596507603864,
+      "ci95": {
+        "prAuc": [
+          0.15585286856404837,
+          0.250415496639626
+        ],
+        "precisionAtK": [
+          0.17,
+          0.35
+        ],
+        "rocAuc": [
+          0.6261560113408678,
+          0.7067018094049416
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.4475832849999506,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.19269798861445483,
+      "precisionAtK": 0.26,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6630919127427507,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.13541552799995316,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.0908786370082296,
+      "ci95": {
+        "prAuc": [
+          0.15330114739504494,
+          0.23997645859592623
+        ],
+        "precisionAtK": [
+          0.15,
+          0.31524999999999975
+        ],
+        "rocAuc": [
+          0.6435329544380535,
+          0.7216819025820614
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.3131753630000276,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.1857758793132341,
+      "precisionAtK": 0.23,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6785984470603885,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 0.025282724000021517,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    },
+    {
+      "brier": 0.09143595076424718,
+      "ci95": {
+        "prAuc": [
+          0.14772237541279726,
+          0.2325257033877387
+        ],
+        "precisionAtK": [
+          0.18,
+          0.34
+        ],
+        "rocAuc": [
+          0.6263033621108044,
+          0.7061837559220602
+        ]
+      },
+      "control": "none",
+      "dataset": "olist",
+      "detail": null,
+      "featureCount": 47,
+      "fitSeconds": 0.7317980340000076,
+      "mask": "none",
+      "maskedFeatureCount": 47,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.1877366485361707,
+      "precisionAtK": 0.26,
+      "precisionK": 100,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6626637736100027,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 0.7317877440000302,
+            "status": "ok",
+            "trainingRows": 6400
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 6400,
+        "trainingRowsUsed": 6400
+      },
+      "scoreSeconds": 1.492401706999999,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 168,
+      "testPrevalence": 0.105,
+      "testRows": 1600,
+      "trainPositives": 674,
+      "trainPrevalence": 0.1053125,
+      "trainRows": 6400
+    }
+  ],
+  "dataset": "olist",
+  "generatedAt": "2026-09-01T04:57:02.913409+00:00",
+  "grid": {
+    "bootstrapSamples": 300,
+    "controls": [
+      "none"
+    ],
+    "masks": [
+      "none"
+    ],
+    "models": [
+      "positive-rate",
+      "logistic",
+      "random-forest",
+      "xgboost",
+      "catboost",
+      "lightgbm-default",
+      "lightgbm",
+      "lightgbm-holdout",
+      "lightgbm-full-train",
+      "lightgbm-regularized",
+      "tabpfn"
+    ],
+    "precisionK": 100,
+    "protocols": [
+      "point_in_time",
+      "random_stratified"
+    ],
+    "seeds": [
+      7,
+      8,
+      9
+    ]
+  },
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "kind": "outcome-ablation",
+  "profile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "schemaVersion": 1
+}

@@ -1,0 +1,4228 @@
+{
+  "aggregates": [
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.0043896309173067655,
+          0.008733103689479651
+        ],
+        "qiniNormalized": [
+          -0.18133428306322927,
+          0.1704470140256806
+        ],
+        "upliftAt20": [
+          -0.00356576341245088,
+          0.009685241799711888
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.014337067666929215,
+      "fitSecondsStd": 0.0012457022163247168,
+      "ipwPolicyTop20Mean": 0.0067944125051501965,
+      "ipwPolicyTop20Std": 0.0005964647426565132,
+      "learner": "random",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.015846171162101172,
+      "qiniNormalizedStd": 0.11311759440167457,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.004648941751332559,
+      "upliftAt20Std": 0.0027665896630765944
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.005439595098270037,
+          0.010068123929942165
+        ],
+        "qiniNormalized": [
+          -0.0921816589333509,
+          0.24708311383971548
+        ],
+        "upliftAt20": [
+          0.001978871983584281,
+          0.017876473890806557
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 5.360586927333618,
+      "fitSecondsStd": 6.747609525697962,
+      "ipwPolicyTop20Mean": 0.007103856726605042,
+      "ipwPolicyTop20Std": 0.0004518886128108075,
+      "learner": "response-propensity",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": -0.003166834539037248,
+      "qiniNormalizedStd": 0.04005906103695919,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.006665223363764569,
+      "upliftAt20Std": 0.0022107679160912985
+    },
+    {
+      "base": "logistic",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.005266388171651485,
+          0.00965904645471638
+        ],
+        "qiniNormalized": [
+          -0.2756395055043441,
+          0.11557016728492851
+        ],
+        "upliftAt20": [
+          -0.0017747631548752866,
+          0.017220584704101417
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.28949778133331466,
+      "fitSecondsStd": 0.18363220658651658,
+      "ipwPolicyTop20Mean": 0.007607513721766725,
+      "ipwPolicyTop20Std": 0.0,
+      "learner": "response-propensity",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": -0.07372566247170415,
+      "qiniNormalizedStd": 0.0,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.008083995636590307,
+      "upliftAt20Std": 0.0
+    },
+    {
+      "base": "tabpfn",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.0053191180244703245,
+          0.009428381025395978
+        ],
+        "qiniNormalized": [
+          -0.25458000188992097,
+          0.13607732901216857
+        ],
+        "upliftAt20": [
+          -0.004504523559209829,
+          0.017126040157428968
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 13.22505720066662,
+      "fitSecondsStd": 1.3152673018754986,
+      "ipwPolicyTop20Mean": 0.007138756622898278,
+      "ipwPolicyTop20Std": 0.00016544456617228253,
+      "learner": "response-propensity",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": -0.07823781480118713,
+      "qiniNormalizedStd": 0.011386942897432863,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.005630913416616125,
+      "upliftAt20Std": 0.0008283175976841581
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004911691714829824,
+          0.009666985780632478
+        ],
+        "qiniNormalized": [
+          -0.08350908261972566,
+          0.32537106373608765
+        ],
+        "upliftAt20": [
+          0.0005110133124816179,
+          0.015745176561853345
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 8.311831318333438,
+      "fitSecondsStd": 6.651929597236157,
+      "ipwPolicyTop20Mean": 0.0071836481878614356,
+      "ipwPolicyTop20Std": 0.0003357562812062985,
+      "learner": "s-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.12521951361330963,
+      "qiniNormalizedStd": 0.008196989722576317,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.007008870311253967,
+      "upliftAt20Std": 0.0015797681916367423
+    },
+    {
+      "base": "logistic",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.005142498917827298,
+          0.009598549944648678
+        ],
+        "qiniNormalized": [
+          -0.2744334562990115,
+          0.1171537180979033
+        ],
+        "upliftAt20": [
+          -0.001955457620006253,
+          0.01704362197430806
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.4016504803330463,
+      "fitSecondsStd": 0.3311136264929753,
+      "ipwPolicyTop20Mean": 0.0073730001497829085,
+      "ipwPolicyTop20Std": 8.673617379884035e-19,
+      "learner": "s-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": -0.07220883836108555,
+      "qiniNormalizedStd": 0.0,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.006793176154878279,
+      "upliftAt20Std": 8.673617379884035e-19
+    },
+    {
+      "base": "tabpfn",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004734940446284441,
+          0.008659645014650974
+        ],
+        "qiniNormalized": [
+          -0.20628766317876587,
+          0.18687090258049752
+        ],
+        "upliftAt20": [
+          -0.006375988305535363,
+          0.014172968893714428
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 23.850821032000265,
+      "fitSecondsStd": 0.0914107965100363,
+      "ipwPolicyTop20Mean": 0.006671349749525767,
+      "ipwPolicyTop20Std": 0.00016563518630917522,
+      "learner": "s-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.010283289802994014,
+      "qiniNormalizedStd": 0.018514319417786924,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.0036606219764501666,
+      "upliftAt20Std": 0.000866685826310811
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004801026889905315,
+          0.00937013264077901
+        ],
+        "qiniNormalized": [
+          -0.0742452939003778,
+          0.3015156949614769
+        ],
+        "upliftAt20": [
+          -0.002342845202082484,
+          0.013548305398591818
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 7.790712102999957,
+      "fitSecondsStd": 8.597285186596592,
+      "ipwPolicyTop20Mean": 0.006597499280451488,
+      "ipwPolicyTop20Std": 0.00029176819420174076,
+      "learner": "t-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.09929608629102864,
+      "qiniNormalizedStd": 0.007029119908744331,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.0036261333908217514,
+      "upliftAt20Std": 0.0015237391679276846
+    },
+    {
+      "base": "logistic",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004564467726295158,
+          0.008726926407835749
+        ],
+        "qiniNormalized": [
+          -0.1516019930767875,
+          0.27839561815625685
+        ],
+        "upliftAt20": [
+          -0.0065078929017413426,
+          0.012760080350700462
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.24493138766653524,
+      "fitSecondsStd": 0.05653567319502257,
+      "ipwPolicyTop20Mean": 0.006556658391976136,
+      "ipwPolicyTop20Std": 0.0,
+      "learner": "t-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.060979723678836216,
+      "qiniNormalizedStd": 6.938893903907228e-18,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.0028919441685399117,
+      "upliftAt20Std": 0.0
+    },
+    {
+      "base": "tabpfn",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004970689474597038,
+          0.009311225506316264
+        ],
+        "qiniNormalized": [
+          -0.12527285011559694,
+          0.24361015771912428
+        ],
+        "upliftAt20": [
+          -0.0037098378525437033,
+          0.014532782945944315
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 11.30603789766701,
+      "fitSecondsStd": 0.09512263914449536,
+      "ipwPolicyTop20Mean": 0.006946704209984936,
+      "ipwPolicyTop20Std": 5.527636847002394e-05,
+      "learner": "t-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.0711767653116968,
+      "qiniNormalizedStd": 0.013268088142738499,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.0051919048494033235,
+      "upliftAt20Std": 0.00022586376023699884
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004213102435968213,
+          0.008544838887934187
+        ],
+        "qiniNormalized": [
+          -0.12536475977163408,
+          0.2754092344790423
+        ],
+        "upliftAt20": [
+          -0.006269624091793075,
+          0.009975496542403883
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 2.0856207966665656,
+      "fitSecondsStd": 0.11802477485413562,
+      "ipwPolicyTop20Mean": 0.0070264956712413305,
+      "ipwPolicyTop20Std": 0.0005061073756571015,
+      "learner": "x-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.10470032336232865,
+      "qiniNormalizedStd": 0.03559086026475555,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.005711880635039986,
+      "upliftAt20Std": 0.002556385316706682
+    },
+    {
+      "base": "logistic",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004972147718132649,
+          0.009428887359956954
+        ],
+        "qiniNormalized": [
+          -0.11180444806097593,
+          0.25952509786879985
+        ],
+        "upliftAt20": [
+          -0.004612686149328785,
+          0.01438999156362384
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.23999616200035234,
+      "fitSecondsStd": 0.01260633685678356,
+      "ipwPolicyTop20Mean": 0.007025685535943769,
+      "ipwPolicyTop20Std": 0.0,
+      "learner": "x-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.07582150478948628,
+      "qiniNormalizedStd": 0.0,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.005334399563105848,
+      "upliftAt20Std": 8.673617379884035e-19
+    },
+    {
+      "base": "tabpfn",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.005035540461889133,
+          0.00913106205774641
+        ],
+        "qiniNormalized": [
+          -0.11841253905096533,
+          0.2641874293564975
+        ],
+        "upliftAt20": [
+          -0.0025002470108916475,
+          0.015736937540102254
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 27.315931205999732,
+      "fitSecondsStd": 1.5639172056013115,
+      "ipwPolicyTop20Mean": 0.0074151912637541945,
+      "ipwPolicyTop20Std": 0.00030669711677519984,
+      "learner": "x-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.07037266572772115,
+      "qiniNormalizedStd": 0.021168629836858396,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.0072573672356218396,
+      "upliftAt20Std": 0.0013498853439217228
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.003514037717535787,
+          0.007730198414252293
+        ],
+        "qiniNormalized": [
+          -0.26828908703189935,
+          0.14495393169871487
+        ],
+        "upliftAt20": [
+          -0.009282363321669837,
+          0.007609897654959949
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 4.912791448666819,
+      "fitSecondsStd": 2.1764913158243187,
+      "ipwPolicyTop20Mean": 0.006519598134889402,
+      "ipwPolicyTop20Std": 0.0008617421852112899,
+      "learner": "dr-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.02103260729249984,
+      "qiniNormalizedStd": 0.08368132608981638,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.003312203131257066,
+      "upliftAt20Std": 0.004032868003474774
+    },
+    {
+      "base": "logistic",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004910456258501043,
+          0.009311225506316264
+        ],
+        "qiniNormalized": [
+          -0.12049393276692343,
+          0.24867569104449228
+        ],
+        "upliftAt20": [
+          -0.0033871621156003453,
+          0.014333709929693591
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 0.5157999743332766,
+      "fitSecondsStd": 0.03477111856660977,
+      "ipwPolicyTop20Mean": 0.007025685535943769,
+      "ipwPolicyTop20Std": 9.540902850269321e-05,
+      "learner": "dr-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.06612830819252855,
+      "qiniNormalizedStd": 0.0032211412555368164,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.005473162756286284,
+      "upliftAt20Std": 0.00045045578164111175
+    },
+    {
+      "base": "tabpfn",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004680509309340724,
+          0.008725508671065016
+        ],
+        "qiniNormalized": [
+          -0.29537357546076926,
+          0.08742627473693018
+        ],
+        "upliftAt20": [
+          -0.0054301965735789265,
+          0.013959081388902304
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 43.211309800000286,
+      "fitSecondsStd": 0.1324620134714069,
+      "ipwPolicyTop20Mean": 0.0067103003223068095,
+      "ipwPolicyTop20Std": 0.00014610061478724133,
+      "learner": "dr-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": -0.09607849646575788,
+      "qiniNormalizedStd": 0.012068911832306128,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.004247065212992967,
+      "upliftAt20Std": 0.0007207966421391952
+    },
+    {
+      "base": "lightgbm",
+      "ci95FirstSeed": {
+        "ipwPolicyTop20": [
+          0.004331574424906463,
+          0.008728121357399652
+        ],
+        "qiniNormalized": [
+          -0.19156280570950487,
+          0.22870047774269148
+        ],
+        "upliftAt20": [
+          -0.004811042255748098,
+          0.010526286021028529
+        ]
+      },
+      "dataset": "hillstrom",
+      "fitSecondsMean": 10.323762237333236,
+      "fitSecondsStd": 5.090775861579279,
+      "ipwPolicyTop20Mean": 0.006753841661774031,
+      "ipwPolicyTop20Std": 0.00030731453234560157,
+      "learner": "r-learner",
+      "mask": "none",
+      "ok": 3,
+      "protocol": "hashed_holdout",
+      "qiniNormalizedMean": 0.0684623373511194,
+      "qiniNormalizedStd": 0.027305408182366375,
+      "seeds": 3,
+      "status": "ok",
+      "upliftAt20Mean": 0.004443948225921036,
+      "upliftAt20Std": 0.0013708713162572455
+    },
+    {
+      "base": "logistic",
+      "dataset": "hillstrom",
+      "detail": "logistic does not support sample weights (R-learner)",
+      "learner": "r-learner",
+      "mask": "none",
+      "ok": 0,
+      "protocol": "hashed_holdout",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "base": "tabpfn",
+      "dataset": "hillstrom",
+      "detail": "tabpfn does not support sample weights (R-learner)",
+      "learner": "r-learner",
+      "mask": "none",
+      "ok": 0,
+      "protocol": "hashed_holdout",
+      "seeds": 3,
+      "status": "unavailable"
+    }
+  ],
+  "cells": [
+    {
+      "auuc": -0.28771199669156783,
+      "auucNormalized": -0.0003252842178105224,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.0043896309173067655,
+          0.008733103689479651
+        ],
+        "qiniNormalized": [
+          -0.18133428306322927,
+          0.1704470140256806
+        ],
+        "upliftAt20": [
+          -0.00356576341245088,
+          0.009685241799711888
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.0160983670002679,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006560709068463942,
+      "learner": "random",
+      "learnerDetail": {
+        "learner": "random"
+      },
+      "mask": "none",
+      "modelKey": "random/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -0.159874834564351,
+      "qiniNormalized": -0.003659491126843669,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 438,
+          "controlRate": 0.00228310502283105,
+          "treated": 844,
+          "treatedRate": 0.004739336492890996,
+          "uplift": 0.0024562314700599455
+        },
+        "20": {
+          "control": 867,
+          "controlRate": 0.00461361014994233,
+          "treated": 1697,
+          "treatedRate": 0.008249852681202121,
+          "uplift": 0.003636242531259791
+        },
+        "30": {
+          "control": 1284,
+          "controlRate": 0.003894080996884735,
+          "treated": 2562,
+          "treatedRate": 0.00702576112412178,
+          "uplift": 0.0031316801272370447
+        }
+      },
+      "upliftAt20": 0.003636242531259791
+    },
+    {
+      "auuc": 3.34157106282061,
+      "auucNormalized": 0.003777945799712753,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005439595098270037,
+          0.010068123929942165
+        ],
+        "qiniNormalized": [
+          -0.0921816589333509,
+          0.24708311383971548
+        ],
+        "upliftAt20": [
+          0.001978871983584281,
+          0.017876473890806557
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.6067140010000003,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007728416116597658,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.229662705957778,
+      "qiniNormalized": 0.05103636798462169,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 448,
+          "controlRate": 0.006696428571428571,
+          "treated": 834,
+          "treatedRate": 0.017985611510791366,
+          "uplift": 0.011289182939362794
+        },
+        "20": {
+          "control": 877,
+          "controlRate": 0.005701254275940707,
+          "treated": 1687,
+          "treatedRate": 0.015411973918197985,
+          "uplift": 0.009710719642257278
+        },
+        "30": {
+          "control": 1294,
+          "controlRate": 0.0061823802163833074,
+          "treated": 2552,
+          "treatedRate": 0.01371473354231975,
+          "uplift": 0.007532353325936442
+        }
+      },
+      "upliftAt20": 0.009710719642257278
+    },
+    {
+      "auuc": -5.018773933004745,
+      "auucNormalized": -0.005674174076638818,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005266388171651485,
+          0.00965904645471638
+        ],
+        "qiniNormalized": [
+          -0.2756395055043441,
+          0.11557016728492851
+        ],
+        "upliftAt20": [
+          -0.0017747631548752866,
+          0.017220584704101417
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.16057416300009208,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007607513721766725,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.2209063179167012,
+      "qiniNormalized": -0.07372566247170415,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.0170316301703163,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.004782376718317452
+        },
+        "20": {
+          "control": 828,
+          "controlRate": 0.012077294685990338,
+          "treated": 1736,
+          "treatedRate": 0.020161290322580645,
+          "uplift": 0.008083995636590307
+        },
+        "30": {
+          "control": 1249,
+          "controlRate": 0.01120896717373899,
+          "treated": 2597,
+          "treatedRate": 0.01771274547554871,
+          "uplift": 0.00650377830180972
+        }
+      },
+      "upliftAt20": 0.008083995636590307
+    },
+    {
+      "auuc": -4.459572232798111,
+      "auucNormalized": -0.005041946398468594,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.0053191180244703245,
+          0.009428381025395978
+        ],
+        "qiniNormalized": [
+          -0.25458000188992097,
+          0.13607732901216857
+        ],
+        "upliftAt20": [
+          -0.004504523559209829,
+          0.017126040157428968
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 15.085046723999767,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007255338296142219,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -2.830629109250723,
+      "qiniNormalized": -0.06479232417606642,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 412,
+          "controlRate": 0.014563106796116505,
+          "treated": 870,
+          "treatedRate": 0.020689655172413793,
+          "uplift": 0.0061265483762972875
+        },
+        "20": {
+          "control": 827,
+          "controlRate": 0.014510278113663845,
+          "treated": 1737,
+          "treatedRate": 0.02072538860103627,
+          "uplift": 0.006215110487372425
+        },
+        "30": {
+          "control": 1241,
+          "controlRate": 0.0136986301369863,
+          "treated": 2605,
+          "treatedRate": 0.017658349328214973,
+          "uplift": 0.003959719191228672
+        }
+      },
+      "upliftAt20": 0.006215110487372425
+    },
+    {
+      "auuc": 7.6670605231065325,
+      "auucNormalized": 0.008668299597664068,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004911691714829824,
+          0.009666985780632478
+        ],
+        "qiniNormalized": [
+          -0.08350908261972566,
+          0.32537106373608765
+        ],
+        "upliftAt20": [
+          0.0005110133124816179,
+          0.015745176561853345
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.589862044000256,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.01040223333843106,
+      "ipwPolicyTop20": 0.00714415752488202,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/lightgbm",
+      "policyPositiveShare": 0.9099204492278896,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 5.108290842737963,
+      "qiniNormalized": 0.11692737673990806,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 443,
+          "controlRate": 0.009029345372460496,
+          "treated": 839,
+          "treatedRate": 0.0166865315852205,
+          "uplift": 0.007657186212760006
+        },
+        "20": {
+          "control": 881,
+          "controlRate": 0.0056753688989784334,
+          "treated": 1683,
+          "treatedRate": 0.012477718360071301,
+          "uplift": 0.006802349461092868
+        },
+        "30": {
+          "control": 1301,
+          "controlRate": 0.006917755572636433,
+          "treated": 2545,
+          "treatedRate": 0.012573673870333988,
+          "uplift": 0.005655918297697554
+        }
+      },
+      "upliftAt20": 0.006802349461092868
+    },
+    {
+      "auuc": -4.921183317407259,
+      "auucNormalized": -0.005563839132579094,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005142498917827298,
+          0.009598549944648678
+        ],
+        "qiniNormalized": [
+          -0.2744334562990115,
+          0.1171537180979033
+        ],
+        "upliftAt20": [
+          -0.001955457620006253,
+          0.01704362197430806
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.18383615499988082,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007373000149782908,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.154639726376274,
+      "qiniNormalized": -0.07220883836108555,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.014598540145985401,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.007215466742648353
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.013333333333333334,
+          "treated": 1739,
+          "treatedRate": 0.020126509488211614,
+          "uplift": 0.00679317615487828
+        },
+        "30": {
+          "control": 1248,
+          "controlRate": 0.011217948717948718,
+          "treated": 2598,
+          "treatedRate": 0.01770592763664357,
+          "uplift": 0.006487978918694853
+        }
+      },
+      "upliftAt20": 0.00679317615487828
+    },
+    {
+      "auuc": -0.7636480376833179,
+      "auucNormalized": -0.000863372599949839,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004734940446284441,
+          0.008659645014650974
+        ],
+        "qiniNormalized": [
+          -0.20628766317876587,
+          0.18687090258049752
+        ],
+        "upliftAt20": [
+          -0.006375988305535363,
+          0.014172968893714428
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 23.93770686300013,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006554227986083452,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -0.451595973688099,
+      "qiniNormalized": -0.010336908013904684,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 408,
+          "controlRate": 0.012254901960784314,
+          "treated": 874,
+          "treatedRate": 0.020594965675057208,
+          "uplift": 0.008340063714272894
+        },
+        "20": {
+          "control": 837,
+          "controlRate": 0.014336917562724014,
+          "treated": 1727,
+          "treatedRate": 0.017371163867979156,
+          "uplift": 0.0030342463052551415
+        },
+        "30": {
+          "control": 1282,
+          "controlRate": 0.0109204368174727,
+          "treated": 2564,
+          "treatedRate": 0.01638065522620905,
+          "uplift": 0.00546021840873635
+        }
+      },
+      "upliftAt20": 0.0030342463052551415
+    },
+    {
+      "auuc": 6.530832869393959,
+      "auucNormalized": 0.007383692324270482,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004801026889905315,
+          0.00937013264077901
+        ],
+        "qiniNormalized": [
+          -0.0742452939003778,
+          0.3015156949614769
+        ],
+        "upliftAt20": [
+          -0.002342845202082484,
+          0.013548305398591818
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 19.923112131999915,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010752788493460442,
+      "ipwPolicyTop20": 0.006909643952898202,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/lightgbm",
+      "policyPositiveShare": 0.9094525035095928,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 4.420158271649283,
+      "qiniNormalized": 0.10117621086784867,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 433,
+          "controlRate": 0.009237875288683603,
+          "treated": 849,
+          "treatedRate": 0.012956419316843345,
+          "uplift": 0.0037185440281597426
+        },
+        "20": {
+          "control": 854,
+          "controlRate": 0.00702576112412178,
+          "treated": 1710,
+          "treatedRate": 0.012280701754385965,
+          "uplift": 0.005254940630264185
+        },
+        "30": {
+          "control": 1283,
+          "controlRate": 0.007014809041309431,
+          "treated": 2563,
+          "treatedRate": 0.013655872024970737,
+          "uplift": 0.006641062983661306
+        }
+      },
+      "upliftAt20": 0.005254940630264185
+    },
+    {
+      "auuc": 3.9498838577205975,
+      "auucNormalized": 0.004465697975320849,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004564467726295158,
+          0.008726926407835749
+        ],
+        "qiniNormalized": [
+          -0.1516019930767875,
+          0.27839561815625685
+        ],
+        "upliftAt20": [
+          -0.0065078929017413426,
+          0.012760080350700462
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.20173077799972816,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010635126639819754,
+      "ipwPolicyTop20": 0.006556658391976136,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/logistic",
+      "policyPositiveShare": 0.9720792388082983,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.6640652749286615,
+      "qiniNormalized": 0.06097972367883621,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 417,
+          "controlRate": 0.007194244604316547,
+          "treated": 865,
+          "treatedRate": 0.016184971098265895,
+          "uplift": 0.008990726493949348
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.01090909090909091,
+          "treated": 1739,
+          "treatedRate": 0.013801035077630822,
+          "uplift": 0.0028919441685399117
+        },
+        "30": {
+          "control": 1264,
+          "controlRate": 0.00870253164556962,
+          "treated": 2582,
+          "treatedRate": 0.012393493415956624,
+          "uplift": 0.0036909617703870037
+        }
+      },
+      "upliftAt20": 0.0028919441685399117
+    },
+    {
+      "auuc": 4.561319288312885,
+      "auucNormalized": 0.005156980570655468,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004970689474597038,
+          0.009311225506316264
+        ],
+        "qiniNormalized": [
+          -0.12527285011559694,
+          0.24361015771912428
+        ],
+        "upliftAt20": [
+          -0.0037098378525437033,
+          0.014532782945944315
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 11.438959947000512,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007024875400646208,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.0469106009395834,
+      "qiniNormalized": 0.06974294821825938,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 409,
+          "controlRate": 0.009779951100244499,
+          "treated": 873,
+          "treatedRate": 0.018327605956471937,
+          "uplift": 0.008547654856227438
+        },
+        "20": {
+          "control": 837,
+          "controlRate": 0.009557945041816009,
+          "treated": 1727,
+          "treatedRate": 0.015055008685581933,
+          "uplift": 0.005497063643765924
+        },
+        "30": {
+          "control": 1269,
+          "controlRate": 0.008668242710795903,
+          "treated": 2577,
+          "treatedRate": 0.015133876600698487,
+          "uplift": 0.006465633889902584
+        }
+      },
+      "upliftAt20": 0.005497063643765924
+    },
+    {
+      "auuc": 3.6169272469265237,
+      "auucNormalized": 0.0040892606631739445,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004213102435968213,
+          0.008544838887934187
+        ],
+        "qiniNormalized": [
+          -0.12536475977163408,
+          0.2754092344790423
+        ],
+        "upliftAt20": [
+          -0.006269624091793075,
+          0.009975496542403883
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 2.2507105750000846,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010288622161278176,
+      "ipwPolicyTop20": 0.006323765090587441,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/lightgbm",
+      "policyPositiveShare": 0.8049446264233349,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.460630677228958,
+      "qiniNormalized": 0.056323161517544816,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 419,
+          "controlRate": 0.014319809069212411,
+          "treated": 863,
+          "treatedRate": 0.016222479721900347,
+          "uplift": 0.0019026706526879354
+        },
+        "20": {
+          "control": 847,
+          "controlRate": 0.009445100354191263,
+          "treated": 1717,
+          "treatedRate": 0.011648223645894,
+          "uplift": 0.002203123291702738
+        },
+        "30": {
+          "control": 1281,
+          "controlRate": 0.00858704137392662,
+          "treated": 2565,
+          "treatedRate": 0.011306042884990253,
+          "uplift": 0.002719001511063633
+        }
+      },
+      "upliftAt20": 0.002203123291702738
+    },
+    {
+      "auuc": 4.9240973828940025,
+      "auucNormalized": 0.0055671337449810935,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004972147718132649,
+          0.009428887359956954
+        ],
+        "qiniNormalized": [
+          -0.11180444806097593,
+          0.25952509786879985
+        ],
+        "upliftAt20": [
+          -0.004612686149328785,
+          0.01438999156362384
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.22548027399989223,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010634316504522194,
+      "ipwPolicyTop20": 0.007025685535943769,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/logistic",
+      "policyPositiveShare": 0.9783965060053034,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.3124688964868496,
+      "qiniNormalized": 0.07582150478948628,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 407,
+          "controlRate": 0.007371007371007371,
+          "treated": 875,
+          "treatedRate": 0.018285714285714287,
+          "uplift": 0.010914706914706916
+        },
+        "20": {
+          "control": 826,
+          "controlRate": 0.00847457627118644,
+          "treated": 1738,
+          "treatedRate": 0.01380897583429229,
+          "uplift": 0.0053343995631058485
+        },
+        "30": {
+          "control": 1279,
+          "controlRate": 0.006254886630179828,
+          "treated": 2567,
+          "treatedRate": 0.01168679392286716,
+          "uplift": 0.005431907292687332
+        }
+      },
+      "upliftAt20": 0.0053343995631058485
+    },
+    {
+      "auuc": 5.088526601194117,
+      "auucNormalized": 0.00575303572430414,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005035540461889133,
+          0.00913106205774641
+        ],
+        "qiniNormalized": [
+          -0.11841253905096533,
+          0.2641874293564975
+        ],
+        "upliftAt20": [
+          -0.0025002470108916475,
+          0.015736937540102254
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 29.517993499999648,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007142537254286897,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/tabpfn",
+      "policyPositiveShare": 0.9999220090469505,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.427843855794971,
+      "qiniNormalized": 0.0784624059732062,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 414,
+          "controlRate": 0.007246376811594203,
+          "treated": 868,
+          "treatedRate": 0.019585253456221197,
+          "uplift": 0.012338876644626993
+        },
+        "20": {
+          "control": 828,
+          "controlRate": 0.008454106280193236,
+          "treated": 1736,
+          "treatedRate": 0.014400921658986175,
+          "uplift": 0.005946815378792939
+        },
+        "30": {
+          "control": 1271,
+          "controlRate": 0.0055074744295830055,
+          "treated": 2575,
+          "treatedRate": 0.012815533980582524,
+          "uplift": 0.007308059550999518
+        }
+      },
+      "upliftAt20": 0.005946815378792939
+    },
+    {
+      "auuc": -2.9719021601093703,
+      "auucNormalized": -0.003360001948743594,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.003514037717535787,
+          0.007730198414252293
+        ],
+        "qiniNormalized": [
+          -0.26828908703189935,
+          0.14495393169871487
+        ],
+        "upliftAt20": [
+          -0.009282363321669837,
+          0.007609897654959949
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 3.4427646690000984,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.009938877141546355,
+      "ipwPolicyTop20": 0.005504992926887985,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/lightgbm",
+      "policyPositiveShare": 0.7978474496958353,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -1.9255521917834055,
+      "qiniNormalized": -0.044075361699714266,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 430,
+          "controlRate": 0.009302325581395349,
+          "treated": 852,
+          "treatedRate": 0.014084507042253521,
+          "uplift": 0.004782181460858173
+        },
+        "20": {
+          "control": 882,
+          "controlRate": 0.01020408163265306,
+          "treated": 1682,
+          "treatedRate": 0.0089179548156956,
+          "uplift": -0.0012861268169574603
+        },
+        "30": {
+          "control": 1308,
+          "controlRate": 0.006880733944954129,
+          "treated": 2538,
+          "treatedRate": 0.009850275807722617,
+          "uplift": 0.0029695418627684877
+        }
+      },
+      "upliftAt20": -0.0012861268169574603
+    },
+    {
+      "auuc": 4.418530255193587,
+      "auucNormalized": 0.004995544761637313,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004910456258501043,
+          0.009311225506316264
+        ],
+        "qiniNormalized": [
+          -0.12049393276692343,
+          0.24867569104449228
+        ],
+        "upliftAt20": [
+          -0.0033871621156003453,
+          0.014333709929693591
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.5292700589998276,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010634316504522194,
+      "ipwPolicyTop20": 0.007142537254286896,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/logistic",
+      "policyPositiveShare": 0.9790204336296989,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.9757695867755243,
+      "qiniNormalized": 0.06811454991031152,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 406,
+          "controlRate": 0.0049261083743842365,
+          "treated": 876,
+          "treatedRate": 0.0182648401826484,
+          "uplift": 0.013338731808264163
+        },
+        "20": {
+          "control": 833,
+          "controlRate": 0.008403361344537815,
+          "treated": 1731,
+          "treatedRate": 0.014442518775274409,
+          "uplift": 0.006039157430736594
+        },
+        "30": {
+          "control": 1278,
+          "controlRate": 0.006259780907668232,
+          "treated": 2568,
+          "treatedRate": 0.012071651090342679,
+          "uplift": 0.005811870182674447
+        }
+      },
+      "upliftAt20": 0.006039157430736594
+    },
+    {
+      "auuc": -7.354662381145956,
+      "auucNormalized": -0.008315105478469786,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004680509309340724,
+          0.008725508671065016
+        ],
+        "qiniNormalized": [
+          -0.29537357546076926,
+          0.08742627473693018
+        ],
+        "upliftAt20": [
+          -0.0054301965735789265,
+          0.013959081388902304
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 43.39654459200028,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.00667107970442658,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/tabpfn",
+      "policyPositiveShare": 0.9994540633286538,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -4.876117240131206,
+      "qiniNormalized": -0.11161298663628753,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 417,
+          "controlRate": 0.016786570743405275,
+          "treated": 865,
+          "treatedRate": 0.020809248554913295,
+          "uplift": 0.004022677811508019
+        },
+        "20": {
+          "control": 857,
+          "controlRate": 0.014002333722287048,
+          "treated": 1707,
+          "treatedRate": 0.01816051552431166,
+          "uplift": 0.00415818180202461
+        },
+        "30": {
+          "control": 1295,
+          "controlRate": 0.011583011583011582,
+          "treated": 2551,
+          "treatedRate": 0.014112112896903175,
+          "uplift": 0.002529101313891592
+        }
+      },
+      "upliftAt20": 0.00415818180202461
+    },
+    {
+      "auuc": 2.0827872246184183,
+      "auucNormalized": 0.0023547777674075934,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004331574424906463,
+          0.008728121357399652
+        ],
+        "qiniNormalized": [
+          -0.19156280570950487,
+          0.22870047774269148
+        ],
+        "upliftAt20": [
+          -0.004811042255748098,
+          0.010526286021028529
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 15.614541939999981,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010173390713530172,
+      "ipwPolicyTop20": 0.0063245752258850015,
+      "learner": "r-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "r",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "r-learner/lightgbm",
+      "policyPositiveShare": 0.7858368429262206,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 1.4481723103492767,
+      "qiniNormalized": 0.0331482671072335,
+      "seed": 7,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 449,
+          "controlRate": 0.011135857461024499,
+          "treated": 833,
+          "treatedRate": 0.012004801920768308,
+          "uplift": 0.000868944459743809
+        },
+        "20": {
+          "control": 868,
+          "controlRate": 0.008064516129032258,
+          "treated": 1696,
+          "treatedRate": 0.01061320754716981,
+          "uplift": 0.002548691418137553
+        },
+        "30": {
+          "control": 1301,
+          "controlRate": 0.006917755572636433,
+          "treated": 2545,
+          "treatedRate": 0.011787819253438114,
+          "uplift": 0.004870063680801681
+        }
+      },
+      "upliftAt20": 0.002548691418137553
+    },
+    {
+      "base": "logistic",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "logistic does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/logistic",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 7,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    },
+    {
+      "base": "tabpfn",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "tabpfn does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/tabpfn",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 7,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    },
+    {
+      "auuc": -7.2737396509347505,
+      "auucNormalized": -0.008223615073820228,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004218003754518457,
+          0.008380887757090267
+        ],
+        "qiniNormalized": [
+          -0.2464464480825178,
+          0.060795510203030034
+        ],
+        "upliftAt20": [
+          -0.004219553661816975,
+          0.00853873962876813
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.013424331999885908,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006209343778136996,
+      "learner": "random",
+      "learnerDetail": {
+        "learner": "random"
+      },
+      "mask": "none",
+      "modelKey": "random/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -4.888982892883062,
+      "qiniNormalized": -0.11190747790012379,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 430,
+          "controlRate": 0.0069767441860465115,
+          "treated": 852,
+          "treatedRate": 0.008215962441314555,
+          "uplift": 0.001239218255268043
+        },
+        "20": {
+          "control": 866,
+          "controlRate": 0.005773672055427252,
+          "treated": 1698,
+          "treatedRate": 0.0076560659599528855,
+          "uplift": 0.0018823939045256336
+        },
+        "30": {
+          "control": 1293,
+          "controlRate": 0.005413766434648105,
+          "treated": 2553,
+          "treatedRate": 0.008617312965139052,
+          "uplift": 0.003203546530490947
+        }
+      },
+      "upliftAt20": 0.0018823939045256336
+    },
+    {
+      "auuc": -1.0169792013223493,
+      "auucNormalized": -0.0011497862022984784,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004798211669746291,
+          0.009196500393129236
+        ],
+        "qiniNormalized": [
+          -0.181740390333354,
+          0.14574476208736928
+        ],
+        "upliftAt20": [
+          -0.0012862886211326388,
+          0.014381015985169686
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.5719200930006991,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006908833817600641,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -0.6989822518404265,
+      "qiniNormalized": -0.01599951208957569,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 457,
+          "controlRate": 0.00437636761487965,
+          "treated": 825,
+          "treatedRate": 0.01696969696969697,
+          "uplift": 0.012593329354817322
+        },
+        "20": {
+          "control": 883,
+          "controlRate": 0.007927519818799546,
+          "treated": 1681,
+          "treatedRate": 0.013682331945270671,
+          "uplift": 0.005754812126471125
+        },
+        "30": {
+          "control": 1292,
+          "controlRate": 0.007739938080495356,
+          "treated": 2554,
+          "treatedRate": 0.011746280344557557,
+          "uplift": 0.004006342264062201
+        }
+      },
+      "upliftAt20": 0.005754812126471125
+    },
+    {
+      "auuc": -5.018773933004745,
+      "auucNormalized": -0.005674174076638818,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005264767901056363,
+          0.00965823631941882
+        ],
+        "qiniNormalized": [
+          -0.26282323382876127,
+          0.1297718119001091
+        ],
+        "upliftAt20": [
+          -0.0013605946791952531,
+          0.018098728041119023
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.15872842899989337,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007607513721766725,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.2209063179167012,
+      "qiniNormalized": -0.07372566247170415,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.0170316301703163,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.004782376718317452
+        },
+        "20": {
+          "control": 828,
+          "controlRate": 0.012077294685990338,
+          "treated": 1736,
+          "treatedRate": 0.020161290322580645,
+          "uplift": 0.008083995636590307
+        },
+        "30": {
+          "control": 1249,
+          "controlRate": 0.01120896717373899,
+          "treated": 2597,
+          "treatedRate": 0.01771274547554871,
+          "uplift": 0.00650377830180972
+        }
+      },
+      "upliftAt20": 0.008083995636590307
+    },
+    {
+      "auuc": -5.235936714727069,
+      "auucNormalized": -0.005919696079205261,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005084604452486508,
+          0.009363145223837546
+        ],
+        "qiniNormalized": [
+          -0.2651388567409915,
+          0.1311316026248886
+        ],
+        "upliftAt20": [
+          -0.003144070675108502,
+          0.017753061596032554
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 12.28018484200038,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.00725614843143978,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.3764239803893776,
+      "qiniNormalized": -0.0772854191240693,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 416,
+          "controlRate": 0.014423076923076924,
+          "treated": 866,
+          "treatedRate": 0.021939953810623556,
+          "uplift": 0.007516876887546632
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.013333333333333334,
+          "treated": 1739,
+          "treatedRate": 0.019551466359977,
+          "uplift": 0.006218133026643665
+        },
+        "30": {
+          "control": 1258,
+          "controlRate": 0.014308426073131956,
+          "treated": 2588,
+          "treatedRate": 0.01738794435857805,
+          "uplift": 0.0030795182854460954
+        }
+      },
+      "upliftAt20": 0.006218133026643665
+    },
+    {
+      "auuc": 8.068041855719628,
+      "auucNormalized": 0.009121644959121128,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005325295306114228,
+          0.010015616864330154
+        ],
+        "qiniNormalized": [
+          -0.06625602712868345,
+          0.30118043971709607
+        ],
+        "upliftAt20": [
+          0.002558558737254162,
+          0.015266158740828605
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 7.519790708999608,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010051678183401677,
+      "ipwPolicyTop20": 0.007613184668849653,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/lightgbm",
+      "policyPositiveShare": 0.9099204492278896,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 5.345199385567744,
+      "qiniNormalized": 0.12235014832695283,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 435,
+          "controlRate": 0.004597701149425287,
+          "treated": 847,
+          "treatedRate": 0.008264462809917356,
+          "uplift": 0.0036667616604920683
+        },
+        "20": {
+          "control": 878,
+          "controlRate": 0.003416856492027335,
+          "treated": 1686,
+          "treatedRate": 0.012455516014234875,
+          "uplift": 0.00903865952220754
+        },
+        "30": {
+          "control": 1289,
+          "controlRate": 0.005430566330488751,
+          "treated": 2557,
+          "treatedRate": 0.012514665623777864,
+          "uplift": 0.0070840992932891126
+        }
+      },
+      "upliftAt20": 0.00903865952220754
+    },
+    {
+      "auuc": -4.921183317407259,
+      "auucNormalized": -0.005563839132579094,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005264383086790021,
+          0.009479996942180673
+        ],
+        "qiniNormalized": [
+          -0.26210833164975644,
+          0.13207521702361613
+        ],
+        "upliftAt20": [
+          -0.0019934465122099943,
+          0.017068128866686513
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.15157012199961173,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007373000149782908,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.154639726376274,
+      "qiniNormalized": -0.07220883836108555,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.014598540145985401,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.007215466742648353
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.013333333333333334,
+          "treated": 1739,
+          "treatedRate": 0.020126509488211614,
+          "uplift": 0.00679317615487828
+        },
+        "30": {
+          "control": 1248,
+          "controlRate": 0.011217948717948718,
+          "treated": 2598,
+          "treatedRate": 0.01770592763664357,
+          "uplift": 0.006487978918694853
+        }
+      },
+      "upliftAt20": 0.00679317615487828
+    },
+    {
+      "auuc": 2.2241975489581525,
+      "auucNormalized": 0.002514654822490889,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004384729598756521,
+          0.008547269293826869
+        ],
+        "qiniNormalized": [
+          -0.16451373150218757,
+          0.2223126977488544
+        ],
+        "upliftAt20": [
+          -0.006267504615859878,
+          0.012827885935562635
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 23.72448034900026,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006554227986083452,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 1.5101750987566829,
+      "qiniNormalized": 0.03456749393323619,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 413,
+          "controlRate": 0.007263922518159807,
+          "treated": 869,
+          "treatedRate": 0.018411967779056387,
+          "uplift": 0.011148045260896581
+        },
+        "20": {
+          "control": 838,
+          "controlRate": 0.014319809069212411,
+          "treated": 1726,
+          "treatedRate": 0.01738122827346466,
+          "uplift": 0.003061419204252248
+        },
+        "30": {
+          "control": 1280,
+          "controlRate": 0.0109375,
+          "treated": 2566,
+          "treatedRate": 0.014029618082618862,
+          "uplift": 0.0030921180826188627
+        }
+      },
+      "upliftAt20": 0.003061419204252248
+    },
+    {
+      "auuc": 5.809700493847457,
+      "auucNormalized": 0.0065683874936938325,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004681744765669505,
+          0.008783403136405809
+        ],
+        "qiniNormalized": [
+          -0.10680720724914003,
+          0.26857348664586944
+        ],
+        "upliftAt20": [
+          -0.004200797161298899,
+          0.012187370996128427
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 1.036310794000201,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010636746910414876,
+      "ipwPolicyTop20": 0.0066751303809143864,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/lightgbm",
+      "policyPositiveShare": 0.9071127749181095,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.9276366238235885,
+      "qiniNormalized": 0.08990252539440989,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 437,
+          "controlRate": 0.006864988558352402,
+          "treated": 845,
+          "treatedRate": 0.015384615384615385,
+          "uplift": 0.008519626826262984
+        },
+        "20": {
+          "control": 851,
+          "controlRate": 0.008225616921269096,
+          "treated": 1713,
+          "treatedRate": 0.012259194395796848,
+          "uplift": 0.004033577474527752
+        },
+        "30": {
+          "control": 1269,
+          "controlRate": 0.006304176516942475,
+          "treated": 2577,
+          "treatedRate": 0.011253395421032208,
+          "uplift": 0.004949218904089734
+        }
+      },
+      "upliftAt20": 0.004033577474527752
+    },
+    {
+      "auuc": 3.9498838577205975,
+      "auucNormalized": 0.004465697975320849,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004329144019013779,
+          0.008314720299939639
+        ],
+        "qiniNormalized": [
+          -0.17378227808004276,
+          0.23581134037600734
+        ],
+        "upliftAt20": [
+          -0.006006580793841613,
+          0.011228865489170447
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.20826760399995692,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010635126639819754,
+      "ipwPolicyTop20": 0.006556658391976136,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/logistic",
+      "policyPositiveShare": 0.9720792388082983,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.6640652749286615,
+      "qiniNormalized": 0.06097972367883621,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 417,
+          "controlRate": 0.007194244604316547,
+          "treated": 865,
+          "treatedRate": 0.016184971098265895,
+          "uplift": 0.008990726493949348
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.01090909090909091,
+          "treated": 1739,
+          "treatedRate": 0.013801035077630822,
+          "uplift": 0.0028919441685399117
+        },
+        "30": {
+          "control": 1264,
+          "controlRate": 0.00870253164556962,
+          "treated": 2582,
+          "treatedRate": 0.012393493415956624,
+          "uplift": 0.0036909617703870037
+        }
+      },
+      "upliftAt20": 0.0028919441685399117
+    },
+    {
+      "auuc": 3.639518532606656,
+      "auucNormalized": 0.004114802137899705,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004619972292508143,
+          0.009076752441097326
+        ],
+        "qiniNormalized": [
+          -0.15814793608287325,
+          0.23473890609222017
+        ],
+        "upliftAt20": [
+          -0.003712833027999694,
+          0.013441429195944304
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 11.257500916000026,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.00690721354700552,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.433020083907247,
+      "qiniNormalized": 0.05569116260700321,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 414,
+          "controlRate": 0.00966183574879227,
+          "treated": 868,
+          "treatedRate": 0.018433179723502304,
+          "uplift": 0.008771343974710034
+        },
+        "20": {
+          "control": 848,
+          "controlRate": 0.01061320754716981,
+          "treated": 1716,
+          "treatedRate": 0.015734265734265736,
+          "uplift": 0.005121058187095925
+        },
+        "30": {
+          "control": 1274,
+          "controlRate": 0.009419152276295133,
+          "treated": 2572,
+          "treatedRate": 0.015163297045101089,
+          "uplift": 0.005744144768805956
+        }
+      },
+      "upliftAt20": 0.005121058187095925
+    },
+    {
+      "auuc": 9.148412007329826,
+      "auucNormalized": 0.010343100316400148,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005035115140857913,
+          0.009663826252971991
+        ],
+        "qiniNormalized": [
+          -0.0481626298588985,
+          0.31946144836804485
+        ],
+        "upliftAt20": [
+          -0.0012432089592569941,
+          0.014428196682197027
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 1.981773441999394,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010523135733261992,
+      "ipwPolicyTop20": 0.007260199107927587,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/lightgbm",
+      "policyPositiveShare": 0.8139135860240212,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 6.15657267473197,
+      "qiniNormalized": 0.1409222604441936,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 430,
+          "controlRate": 0.009302325581395349,
+          "treated": 852,
+          "treatedRate": 0.014084507042253521,
+          "uplift": 0.004782181460858173
+        },
+        "20": {
+          "control": 836,
+          "controlRate": 0.007177033492822967,
+          "treated": 1728,
+          "treatedRate": 0.013888888888888888,
+          "uplift": 0.0067118553960659215
+        },
+        "30": {
+          "control": 1284,
+          "controlRate": 0.006230529595015576,
+          "treated": 2562,
+          "treatedRate": 0.0117096018735363,
+          "uplift": 0.0054790722785207245
+        }
+      },
+      "upliftAt20": 0.0067118553960659215
+    },
+    {
+      "auuc": 4.9240973828940025,
+      "auucNormalized": 0.0055671337449810935,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004682554900967065,
+          0.008784172764938493
+        ],
+        "qiniNormalized": [
+          -0.11389465996856182,
+          0.2547155172017466
+        ],
+        "upliftAt20": [
+          -0.00377520271667288,
+          0.013155204668174984
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.23829049400046642,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010634316504522194,
+      "ipwPolicyTop20": 0.007025685535943769,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/logistic",
+      "policyPositiveShare": 0.9783965060053034,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.3124688964868496,
+      "qiniNormalized": 0.07582150478948628,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 407,
+          "controlRate": 0.007371007371007371,
+          "treated": 875,
+          "treatedRate": 0.018285714285714287,
+          "uplift": 0.010914706914706916
+        },
+        "20": {
+          "control": 826,
+          "controlRate": 0.00847457627118644,
+          "treated": 1738,
+          "treatedRate": 0.01380897583429229,
+          "uplift": 0.0053343995631058485
+        },
+        "30": {
+          "control": 1279,
+          "controlRate": 0.006254886630179828,
+          "treated": 2567,
+          "treatedRate": 0.01168679392286716,
+          "uplift": 0.005431907292687332
+        }
+      },
+      "upliftAt20": 0.0053343995631058485
+    },
+    {
+      "auuc": 2.6572167055680604,
+      "auucNormalized": 0.0030042218175224665,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005556062002346824,
+          0.010068772038180216
+        ],
+        "qiniNormalized": [
+          -0.15126337425866979,
+          0.20658665822276942
+        ],
+        "upliftAt20": [
+          0.0005079256125398704,
+          0.01749821969879933
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 26.036163439999655,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007843647564345664,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 1.807193199532403,
+      "qiniNormalized": 0.041366156820128536,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 409,
+          "controlRate": 0.009779951100244499,
+          "treated": 873,
+          "treatedRate": 0.019473081328751432,
+          "uplift": 0.009693130228506933
+        },
+        "20": {
+          "control": 814,
+          "controlRate": 0.0085995085995086,
+          "treated": 1750,
+          "treatedRate": 0.017714285714285714,
+          "uplift": 0.009114777114777114
+        },
+        "30": {
+          "control": 1259,
+          "controlRate": 0.007148530579825258,
+          "treated": 2587,
+          "treatedRate": 0.013915732508697333,
+          "uplift": 0.006767201928872074
+        }
+      },
+      "upliftAt20": 0.009114777114777114
+    },
+    {
+      "auuc": 8.930261548147628,
+      "auucNormalized": 0.010096461655878256,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005385285481620954,
+          0.009901155045114832
+        ],
+        "qiniNormalized": [
+          -0.08148126222073898,
+          0.33018375369500047
+        ],
+        "upliftAt20": [
+          0.0010427312527274523,
+          0.016191998236525958
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 3.305810470000324,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.00982283555850079,
+      "ipwPolicyTop20": 0.00761156439825453,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/lightgbm",
+      "policyPositiveShare": 0.8008111059117142,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 6.080030876463801,
+      "qiniNormalized": 0.13917023966895223,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 427,
+          "controlRate": 0.00702576112412178,
+          "treated": 855,
+          "treatedRate": 0.016374269005847954,
+          "uplift": 0.009348507881726174
+        },
+        "20": {
+          "control": 839,
+          "controlRate": 0.0059594755661501785,
+          "treated": 1725,
+          "treatedRate": 0.014492753623188406,
+          "uplift": 0.008533278057038227
+        },
+        "30": {
+          "control": 1256,
+          "controlRate": 0.005573248407643312,
+          "treated": 2590,
+          "treatedRate": 0.013513513513513514,
+          "uplift": 0.007940265105870203
+        }
+      },
+      "upliftAt20": 0.008533278057038227
+    },
+    {
+      "auuc": 4.454522993503759,
+      "auucNormalized": 0.005036237780568444,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004559516289205318,
+          0.00878336262964093
+        ],
+        "qiniNormalized": [
+          -0.12540224427363234,
+          0.24538957171094553
+        ],
+        "upliftAt20": [
+          -0.0034585484476494757,
+          0.013123982370465246
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.4681080809996274,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010634316504522194,
+      "ipwPolicyTop20": 0.006908833817600641,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/logistic",
+      "policyPositiveShare": 0.9777725783809078,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.000713338121189,
+      "qiniNormalized": 0.06868550553924706,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 407,
+          "controlRate": 0.004914004914004914,
+          "treated": 875,
+          "treatedRate": 0.017142857142857144,
+          "uplift": 0.01222885222885223
+        },
+        "20": {
+          "control": 836,
+          "controlRate": 0.008373205741626795,
+          "treated": 1728,
+          "treatedRate": 0.013310185185185185,
+          "uplift": 0.004936979443558391
+        },
+        "30": {
+          "control": 1274,
+          "controlRate": 0.006279434850863423,
+          "treated": 2572,
+          "treatedRate": 0.012052877138413685,
+          "uplift": 0.005773442287550262
+        }
+      },
+      "upliftAt20": 0.004936979443558391
+    },
+    {
+      "auuc": -6.277109033565349,
+      "auucNormalized": -0.007096834770791851,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004680083988309504,
+          0.0084267112064974
+        ],
+        "qiniNormalized": [
+          -0.27468413757497195,
+          0.082340044289034
+        ],
+        "upliftAt20": [
+          -0.0057697583791680475,
+          0.013039559028412048
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 43.14288602700071,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006554227986083452,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/tabpfn",
+      "policyPositiveShare": 0.9998440180939011,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -4.125640713744735,
+      "qiniNormalized": -0.09443478472164965,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.0170316301703163,
+          "treated": 871,
+          "treatedRate": 0.02525832376578645,
+          "uplift": 0.008226693595470149
+        },
+        "20": {
+          "control": 851,
+          "controlRate": 0.01410105757931845,
+          "treated": 1713,
+          "treatedRate": 0.017513134851138354,
+          "uplift": 0.0034120772718199046
+        },
+        "30": {
+          "control": 1275,
+          "controlRate": 0.011764705882352941,
+          "treated": 2571,
+          "treatedRate": 0.015169194865810968,
+          "uplift": 0.0034044889834580275
+        }
+      },
+      "upliftAt20": 0.0034120772718199046
+    },
+    {
+      "auuc": 6.295836190331727,
+      "auucNormalized": 0.007118007501198004,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.0047998319403414124,
+          0.009315235676039191
+        ],
+        "qiniNormalized": [
+          -0.08180731501794887,
+          0.2809736021481413
+        ],
+        "upliftAt20": [
+          -0.001069524996589661,
+          0.012474616603498285
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 11.906816060999518,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.009938877141546355,
+      "ipwPolicyTop20": 0.0070273058065388905,
+      "learner": "r-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "r",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "r-learner/lightgbm",
+      "policyPositiveShare": 0.7965216034939947,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 4.353461292362314,
+      "qiniNormalized": 0.09964953529972044,
+      "seed": 8,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 430,
+          "controlRate": 0.009302325581395349,
+          "treated": 852,
+          "treatedRate": 0.012910798122065728,
+          "uplift": 0.0036084725406703797
+        },
+        "20": {
+          "control": 847,
+          "controlRate": 0.0059031877213695395,
+          "treated": 1717,
+          "treatedRate": 0.011648223645894,
+          "uplift": 0.005745035924524461
+        },
+        "30": {
+          "control": 1256,
+          "controlRate": 0.005573248407643312,
+          "treated": 2590,
+          "treatedRate": 0.011583011583011582,
+          "uplift": 0.006009763175368271
+        }
+      },
+      "upliftAt20": 0.005745035924524461
+    },
+    {
+      "base": "logistic",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "logistic does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/logistic",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 8,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    },
+    {
+      "base": "tabpfn",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "tabpfn does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/tabpfn",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 8,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    },
+    {
+      "auuc": 10.542799596588033,
+      "auucNormalized": 0.011919580551886445,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005386095616918516,
+          0.009956315303826355
+        ],
+        "qiniNormalized": [
+          -0.02792548787341087,
+          0.3402489643890702
+        ],
+        "upliftAt20": [
+          0.0015124542098880537,
+          0.015484036046491144
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.013488504000633839,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007613184668849652,
+      "learner": "random",
+      "learnerDetail": {
+        "learner": "random"
+      },
+      "mask": "none",
+      "modelKey": "random/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 7.125707135089827,
+      "qiniNormalized": 0.16310548251327098,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 413,
+          "controlRate": 0.002421307506053269,
+          "treated": 869,
+          "treatedRate": 0.012658227848101266,
+          "uplift": 0.010236920342047998
+        },
+        "20": {
+          "control": 824,
+          "controlRate": 0.0036407766990291263,
+          "treated": 1740,
+          "treatedRate": 0.01206896551724138,
+          "uplift": 0.008428188818212253
+        },
+        "30": {
+          "control": 1252,
+          "controlRate": 0.004792332268370607,
+          "treated": 2594,
+          "treatedRate": 0.012721665381649962,
+          "uplift": 0.007929333113279355
+        }
+      },
+      "upliftAt20": 0.008428188818212253
+    },
+    {
+      "auuc": -2.8810910735459645,
+      "auucNormalized": -0.0032573318703284495,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.00450551047329282,
+          0.008846289545601316
+        ],
+        "qiniNormalized": [
+          -0.2272109179163096,
+          0.09632919197436032
+        ],
+        "upliftAt20": [
+          -0.0054880370474549535,
+          0.011665267226024073
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 14.903126688000157,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006674320245616826,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/lightgbm",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -1.9457358242266405,
+      "qiniNormalized": -0.044537359512157745,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 464,
+          "controlRate": 0.00646551724137931,
+          "treated": 818,
+          "treatedRate": 0.013447432762836185,
+          "uplift": 0.006981915521456875
+        },
+        "20": {
+          "control": 878,
+          "controlRate": 0.009111617312072893,
+          "treated": 1686,
+          "treatedRate": 0.013641755634638196,
+          "uplift": 0.004530138322565304
+        },
+        "30": {
+          "control": 1288,
+          "controlRate": 0.007763975155279503,
+          "treated": 2558,
+          "treatedRate": 0.012509773260359656,
+          "uplift": 0.004745798105080153
+        }
+      },
+      "upliftAt20": 0.004530138322565304
+    },
+    {
+      "auuc": -5.018773933004745,
+      "auucNormalized": -0.005674174076638818,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005615363562850625,
+          0.009949834221445868
+        ],
+        "qiniNormalized": [
+          -0.24564415688950483,
+          0.10966737201820725
+        ],
+        "upliftAt20": [
+          -0.0011501627304802578,
+          0.016779474175407972
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.5491907519999586,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007607513721766725,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.2209063179167012,
+      "qiniNormalized": -0.07372566247170415,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.0170316301703163,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.004782376718317452
+        },
+        "20": {
+          "control": 828,
+          "controlRate": 0.012077294685990338,
+          "treated": 1736,
+          "treatedRate": 0.020161290322580645,
+          "uplift": 0.008083995636590307
+        },
+        "30": {
+          "control": 1249,
+          "controlRate": 0.01120896717373899,
+          "treated": 2597,
+          "treatedRate": 0.01771274547554871,
+          "uplift": 0.00650377830180972
+        }
+      },
+      "upliftAt20": 0.008083995636590307
+    },
+    {
+      "auuc": -6.240620197949467,
+      "auucNormalized": -0.007055580869360509,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005031489785401327,
+          0.008958280452159077
+        ],
+        "qiniNormalized": [
+          -0.28044936531247,
+          0.08866976164769408
+        ],
+        "upliftAt20": [
+          -0.006392585478036343,
+          0.01293229035244775
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 12.309940035999716,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006904783141112836,
+      "learner": "response-propensity",
+      "learnerDetail": {
+        "learner": "response_propensity"
+      },
+      "mask": "none",
+      "modelKey": "response-propensity/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -4.047042847030116,
+      "qiniNormalized": -0.09263570110342569,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 414,
+          "controlRate": 0.016908212560386472,
+          "treated": 868,
+          "treatedRate": 0.02534562211981567,
+          "uplift": 0.008437409559429197
+        },
+        "20": {
+          "control": 826,
+          "controlRate": 0.014527845036319613,
+          "treated": 1738,
+          "treatedRate": 0.0189873417721519,
+          "uplift": 0.004459496735832286
+        },
+        "30": {
+          "control": 1252,
+          "controlRate": 0.013578274760383386,
+          "treated": 2594,
+          "treatedRate": 0.017347725520431765,
+          "uplift": 0.003769450760048379
+        }
+      },
+      "upliftAt20": 0.004459496735832286
+    },
+    {
+      "auuc": 8.957210260525063,
+      "auucNormalized": 0.010126929592312938,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004569753859111743,
+          0.008902219432845523
+        ],
+        "qiniNormalized": [
+          -0.0734160404813102,
+          0.31726440809201867
+        ],
+        "upliftAt20": [
+          -0.0018220479152111627,
+          0.012159796390979777
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 16.825841202000447,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010988112200741822,
+      "ipwPolicyTop20": 0.006793602369852636,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/lightgbm",
+      "policyPositiveShare": 0.9101544220870379,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 5.958176035596337,
+      "qiniNormalized": 0.13638101577306797,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 456,
+          "controlRate": 0.008771929824561403,
+          "treated": 826,
+          "treatedRate": 0.010895883777239709,
+          "uplift": 0.0021239539526783056
+        },
+        "20": {
+          "control": 894,
+          "controlRate": 0.005592841163310962,
+          "treated": 1670,
+          "treatedRate": 0.010778443113772455,
+          "uplift": 0.005185601950461493
+        },
+        "30": {
+          "control": 1282,
+          "controlRate": 0.00546021840873635,
+          "treated": 2564,
+          "treatedRate": 0.012870514820592824,
+          "uplift": 0.0074102964118564745
+        }
+      },
+      "upliftAt20": 0.005185601950461493
+    },
+    {
+      "auuc": -4.921183317407259,
+      "auucNormalized": -0.005563839132579094,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005555292373814141,
+          0.009665618162401336
+        ],
+        "qiniNormalized": [
+          -0.24381326408799098,
+          0.11080112614755529
+        ],
+        "upliftAt20": [
+          -0.00215562714312627,
+          0.015902298353922935
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.8695451639996463,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.007373000149782908,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/logistic",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.154639726376274,
+      "qiniNormalized": -0.07220883836108555,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.014598540145985401,
+          "treated": 871,
+          "treatedRate": 0.021814006888633754,
+          "uplift": 0.007215466742648353
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.013333333333333334,
+          "treated": 1739,
+          "treatedRate": 0.020126509488211614,
+          "uplift": 0.00679317615487828
+        },
+        "30": {
+          "control": 1248,
+          "controlRate": 0.011217948717948718,
+          "treated": 2598,
+          "treatedRate": 0.01770592763664357,
+          "uplift": 0.006487978918694853
+        }
+      },
+      "upliftAt20": 0.00679317615487828
+    },
+    {
+      "auuc": 0.30915656463161933,
+      "auucNormalized": 0.0003495292252793705,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.00491421274602698,
+          0.0092487239113871
+        ],
+        "qiniNormalized": [
+          -0.15855984069477438,
+          0.18993950359661135
+        ],
+        "upliftAt20": [
+          -0.004347866998372895,
+          0.014545823318593611
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 23.890275884000403,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006905593276410397,
+      "learner": "s-learner",
+      "learnerDetail": {
+        "learner": "s",
+        "trainRows": 51178
+      },
+      "mask": "none",
+      "modelKey": "s-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 0.28918142336231645,
+      "qiniNormalized": 0.006619283489650536,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 410,
+          "controlRate": 0.00975609756097561,
+          "treated": 872,
+          "treatedRate": 0.01834862385321101,
+          "uplift": 0.0085925262922354
+        },
+        "20": {
+          "control": 840,
+          "controlRate": 0.013095238095238096,
+          "treated": 1724,
+          "treatedRate": 0.017981438515081206,
+          "uplift": 0.00488620041984311
+        },
+        "30": {
+          "control": 1284,
+          "controlRate": 0.010903426791277258,
+          "treated": 2562,
+          "treatedRate": 0.01639344262295082,
+          "uplift": 0.0054900158316735625
+        }
+      },
+      "upliftAt20": 0.00488620041984311
+    },
+    {
+      "auuc": 6.832400662323504,
+      "auucNormalized": 0.007724641762486269,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.0042143378922969935,
+          0.008440614638625284
+        ],
+        "qiniNormalized": [
+          -0.11160319004664938,
+          0.2936222951739495
+        ],
+        "upliftAt20": [
+          -0.007757268561902989,
+          0.009002051831268594
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 2.4127133829997547,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010285381620087932,
+      "ipwPolicyTop20": 0.006207723507541874,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/lightgbm",
+      "policyPositiveShare": 0.9052409920449228,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 4.666264834485773,
+      "qiniNormalized": 0.10680952261082734,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 432,
+          "controlRate": 0.009259259259259259,
+          "treated": 850,
+          "treatedRate": 0.012941176470588235,
+          "uplift": 0.0036819172113289767
+        },
+        "20": {
+          "control": 844,
+          "controlRate": 0.008293838862559242,
+          "treated": 1720,
+          "treatedRate": 0.009883720930232558,
+          "uplift": 0.0015898820676733157
+        },
+        "30": {
+          "control": 1254,
+          "controlRate": 0.005582137161084529,
+          "treated": 2592,
+          "treatedRate": 0.01273148148148148,
+          "uplift": 0.007149344320396951
+        }
+      },
+      "upliftAt20": 0.0015898820676733157
+    },
+    {
+      "auuc": 3.9498838577205975,
+      "auucNormalized": 0.004465697975320849,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004566472811156621,
+          0.008782511987578493
+        ],
+        "qiniNormalized": [
+          -0.15366276636252754,
+          0.2666382099213744
+        ],
+        "upliftAt20": [
+          -0.005926835032825196,
+          0.011783333499397794
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.3247957809999207,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010635126639819754,
+      "ipwPolicyTop20": 0.006556658391976136,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/logistic",
+      "policyPositiveShare": 0.9720792388082983,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.6640652749286615,
+      "qiniNormalized": 0.06097972367883621,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 417,
+          "controlRate": 0.007194244604316547,
+          "treated": 865,
+          "treatedRate": 0.016184971098265895,
+          "uplift": 0.008990726493949348
+        },
+        "20": {
+          "control": 825,
+          "controlRate": 0.01090909090909091,
+          "treated": 1739,
+          "treatedRate": 0.013801035077630822,
+          "uplift": 0.0028919441685399117
+        },
+        "30": {
+          "control": 1264,
+          "controlRate": 0.00870253164556962,
+          "treated": 2582,
+          "treatedRate": 0.012393493415956624,
+          "uplift": 0.0036909617703870037
+        }
+      },
+      "upliftAt20": 0.0028919441685399117
+    },
+    {
+      "auuc": 5.758356673869386,
+      "auucNormalized": 0.006510338700063323,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004675598379015763,
+          0.009312420455880167
+        ],
+        "qiniNormalized": [
+          -0.0806124802279368,
+          0.28301658031096855
+        ],
+        "upliftAt20": [
+          -0.003784799689262087,
+          0.013444074639268113
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 11.221652830000494,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.0069080236823030805,
+      "learner": "t-learner",
+      "learnerDetail": {
+        "controlRows": 17020,
+        "learner": "t",
+        "treatedRows": 34158
+      },
+      "mask": "none",
+      "modelKey": "t-learner/tabpfn",
+      "policyPositiveShare": 1.0,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.848721729879422,
+      "qiniNormalized": 0.0880961851098278,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 418,
+          "controlRate": 0.011961722488038277,
+          "treated": 864,
+          "treatedRate": 0.017361111111111112,
+          "uplift": 0.005399388623072834
+        },
+        "20": {
+          "control": 839,
+          "controlRate": 0.009535160905840286,
+          "treated": 1725,
+          "treatedRate": 0.014492753623188406,
+          "uplift": 0.00495759271734812
+        },
+        "30": {
+          "control": 1272,
+          "controlRate": 0.007075471698113208,
+          "treated": 2574,
+          "treatedRate": 0.013597513597513598,
+          "uplift": 0.00652204189940039
+        }
+      },
+      "upliftAt20": 0.00495759271734812
+    },
+    {
+      "auuc": 7.489840686876978,
+      "auucNormalized": 0.008467936677551849,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005502906828496765,
+          0.009838653450185668
+        ],
+        "qiniNormalized": [
+          -0.10878931675576176,
+          0.32958737607040006
+        ],
+        "upliftAt20": [
+          0.0004821163011839846,
+          0.015047657132498407
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 2.024378373000218,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.01075683916994825,
+      "ipwPolicyTop20": 0.007495522815208964,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/lightgbm",
+      "policyPositiveShare": 0.8065044454843239,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 5.105152814119284,
+      "qiniNormalized": 0.11685554812524752,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 434,
+          "controlRate": 0.009216589861751152,
+          "treated": 848,
+          "treatedRate": 0.01768867924528302,
+          "uplift": 0.008472089383531866
+        },
+        "20": {
+          "control": 857,
+          "controlRate": 0.004667444574095682,
+          "treated": 1707,
+          "treatedRate": 0.012888107791446984,
+          "uplift": 0.008220663217351301
+        },
+        "30": {
+          "control": 1272,
+          "controlRate": 0.006289308176100629,
+          "treated": 2574,
+          "treatedRate": 0.012043512043512044,
+          "uplift": 0.005754203867411415
+        }
+      },
+      "upliftAt20": 0.008220663217351301
+    },
+    {
+      "auuc": 4.9240973828940025,
+      "auucNormalized": 0.0055671337449810935,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.0049735046947560636,
+          0.009311610320582605
+        ],
+        "qiniNormalized": [
+          -0.09612664611495393,
+          0.26433521806443966
+        ],
+        "upliftAt20": [
+          -0.003870507922322857,
+          0.0132140276608061
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.25621771800069837,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010634316504522194,
+      "ipwPolicyTop20": 0.007025685535943769,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/logistic",
+      "policyPositiveShare": 0.9783965060053034,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.3124688964868496,
+      "qiniNormalized": 0.07582150478948628,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 407,
+          "controlRate": 0.007371007371007371,
+          "treated": 875,
+          "treatedRate": 0.018285714285714287,
+          "uplift": 0.010914706914706916
+        },
+        "20": {
+          "control": 826,
+          "controlRate": 0.00847457627118644,
+          "treated": 1738,
+          "treatedRate": 0.01380897583429229,
+          "uplift": 0.0053343995631058485
+        },
+        "30": {
+          "control": 1279,
+          "controlRate": 0.006254886630179828,
+          "treated": 2567,
+          "treatedRate": 0.01168679392286716,
+          "uplift": 0.005431907292687332
+        }
+      },
+      "upliftAt20": 0.0053343995631058485
+    },
+    {
+      "auuc": 5.893749869796048,
+      "auucNormalized": 0.006663412851785553,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005205851154818904,
+          0.0095461643993313
+        ],
+        "qiniNormalized": [
+          -0.0927850223328181,
+          0.2701134164289486
+        ],
+        "upliftAt20": [
+          -0.0017988025058402913,
+          0.014789516766438035
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 26.393636677999893,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.0072593889726300246,
+      "learner": "x-learner",
+      "learnerDetail": {
+        "learner": "x",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "x-learner/tabpfn",
+      "policyPositiveShare": 0.9999220090469505,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.988227519801422,
+      "qiniNormalized": 0.0912894343898287,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 407,
+          "controlRate": 0.007371007371007371,
+          "treated": 875,
+          "treatedRate": 0.018285714285714287,
+          "uplift": 0.010914706914706916
+        },
+        "20": {
+          "control": 838,
+          "controlRate": 0.008353221957040573,
+          "treated": 1726,
+          "treatedRate": 0.015063731170336037,
+          "uplift": 0.0067105092132954645
+        },
+        "30": {
+          "control": 1263,
+          "controlRate": 0.0055423594615993665,
+          "treated": 2583,
+          "treatedRate": 0.014324428958575301,
+          "uplift": 0.008782069496975934
+        }
+      },
+      "upliftAt20": 0.0067105092132954645
+    },
+    {
+      "auuc": -2.2671969917907284,
+      "auucNormalized": -0.0025632695493320403,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004270267779541198,
+          0.00855204909208248
+        ],
+        "qiniNormalized": [
+          -0.24246891629419218,
+          0.18550807387323082
+        ],
+        "upliftAt20": [
+          -0.005028314150275573,
+          0.00990039800931876
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 7.989799207000033,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.009704363569562538,
+      "ipwPolicyTop20": 0.006442237079525691,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/lightgbm",
+      "policyPositiveShare": 0.8046326626111371,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -1.3978785224231738,
+      "qiniNormalized": -0.031997056091738446,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 437,
+          "controlRate": 0.011441647597254004,
+          "treated": 845,
+          "treatedRate": 0.014201183431952662,
+          "uplift": 0.002759535834698658
+        },
+        "20": {
+          "control": 838,
+          "controlRate": 0.007159904534606206,
+          "treated": 1726,
+          "treatedRate": 0.009849362688296639,
+          "uplift": 0.0026894581536904332
+        },
+        "30": {
+          "control": 1269,
+          "controlRate": 0.006304176516942475,
+          "treated": 2577,
+          "treatedRate": 0.008149010477299184,
+          "uplift": 0.0018448339603567097
+        }
+      },
+      "upliftAt20": 0.0026894581536904332
+    },
+    {
+      "auuc": 3.9966462556680145,
+      "auucNormalized": 0.004518567060427427,
+      "base": "logistic",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004855761827585618,
+          0.009250728996248564
+        ],
+        "qiniNormalized": [
+          -0.11447781593525547,
+          0.24840610131346275
+        ],
+        "upliftAt20": [
+          -0.004543588107150953,
+          0.013292044626537457
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 0.5500217830003749,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010751168222865322,
+      "ipwPolicyTop20": 0.007025685535943769,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/logistic",
+      "policyPositiveShare": 0.9793323974418967,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 2.6905027016700678,
+      "qiniNormalized": 0.06158486912802705,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 411,
+          "controlRate": 0.004866180048661801,
+          "treated": 871,
+          "treatedRate": 0.018369690011481057,
+          "uplift": 0.013503509962819255
+        },
+        "20": {
+          "control": 832,
+          "controlRate": 0.008413461538461538,
+          "treated": 1732,
+          "treatedRate": 0.013856812933025405,
+          "uplift": 0.005443351394563867
+        },
+        "30": {
+          "control": 1273,
+          "controlRate": 0.007069913589945012,
+          "treated": 2573,
+          "treatedRate": 0.011659541391371939,
+          "uplift": 0.004589627801426927
+        }
+      },
+      "upliftAt20": 0.005443351394563867
+    },
+    {
+      "auuc": -5.435611522045059,
+      "auucNormalized": -0.006145446358170959,
+      "base": "tabpfn",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.005031489785401327,
+          0.00919159907457899
+        ],
+        "qiniNormalized": [
+          -0.2771882700966327,
+          0.0898008609934678
+        ],
+        "upliftAt20": [
+          -0.004797512867975637,
+          0.014801417752309944
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 43.09449878099986,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010516654650881505,
+      "ipwPolicyTop20": 0.006905593276410397,
+      "learner": "dr-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "dr",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "dr-learner/tabpfn",
+      "policyPositiveShare": 0.9997660271408516,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": -3.5905942573205656,
+      "qiniNormalized": -0.08218771803933646,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 428,
+          "controlRate": 0.02102803738317757,
+          "treated": 854,
+          "treatedRate": 0.02224824355971897,
+          "uplift": 0.001220206176541401
+        },
+        "20": {
+          "control": 851,
+          "controlRate": 0.012925969447708578,
+          "treated": 1713,
+          "treatedRate": 0.018096906012842966,
+          "uplift": 0.005170936565134388
+        },
+        "30": {
+          "control": 1276,
+          "controlRate": 0.009404388714733543,
+          "treated": 2570,
+          "treatedRate": 0.014785992217898832,
+          "uplift": 0.005381603503165289
+        }
+      },
+      "upliftAt20": 0.005170936565134388
+    },
+    {
+      "auuc": 4.617470128581421,
+      "auucNormalized": 0.005220464131877055,
+      "base": "lightgbm",
+      "ci95": {
+        "ipwPolicyTop20": [
+          0.004800601568874096,
+          0.009195994058568259
+        ],
+        "qiniNormalized": [
+          -0.13083459688636861,
+          0.2712969606385481
+        ],
+        "upliftAt20": [
+          -0.0035576567676767167,
+          0.012437471703155302
+        ]
+      },
+      "control": "none",
+      "dataset": "hillstrom",
+      "featureCount": 19,
+      "fitSeconds": 3.4499287110002115,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "ipwPolicyPositive": 0.010407094150216428,
+      "ipwPolicyTop20": 0.006909643952898202,
+      "learner": "r-learner",
+      "learnerDetail": {
+        "crossFitFolds": 2,
+        "learner": "r",
+        "propensity": 0.6674352260737035
+      },
+      "mask": "none",
+      "modelKey": "r-learner/lightgbm",
+      "policyPositiveShare": 0.8001871782873187,
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "qiniCoefficient": 3.1712572817153983,
+      "qiniNormalized": 0.07258920964640425,
+      "seed": 9,
+      "status": "ok",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178,
+      "upliftAt": {
+        "10": {
+          "control": 420,
+          "controlRate": 0.009523809523809525,
+          "treated": 862,
+          "treatedRate": 0.012761020881670533,
+          "uplift": 0.0032372113578610084
+        },
+        "20": {
+          "control": 840,
+          "controlRate": 0.007142857142857143,
+          "treated": 1724,
+          "treatedRate": 0.012180974477958236,
+          "uplift": 0.0050381173351010935
+        },
+        "30": {
+          "control": 1280,
+          "controlRate": 0.00625,
+          "treated": 2566,
+          "treatedRate": 0.011691348402182385,
+          "uplift": 0.005441348402182385
+        }
+      },
+      "upliftAt20": 0.0050381173351010935
+    },
+    {
+      "base": "logistic",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "logistic does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/logistic",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 9,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    },
+    {
+      "base": "tabpfn",
+      "control": "none",
+      "dataset": "hillstrom",
+      "detail": "tabpfn does not support sample weights (R-learner)",
+      "featureCount": 19,
+      "ipwContactAll": 0.010516654650881505,
+      "ipwContactNone": 0.005862839299595419,
+      "learner": "r-learner",
+      "mask": "none",
+      "modelKey": "r-learner/tabpfn",
+      "propensity": 0.6674352260737035,
+      "protocol": "hashed_holdout",
+      "seed": 9,
+      "status": "unavailable",
+      "testAte": 0.004710635660840355,
+      "testRows": 12822,
+      "trainRows": 51178
+    }
+  ],
+  "dataset": "hillstrom",
+  "generatedAt": "2026-09-01T06:30:05.170718+00:00",
+  "grid": {
+    "bases": [
+      "lightgbm",
+      "logistic",
+      "tabpfn"
+    ],
+    "bootstrapSamples": 300,
+    "learners": [
+      "random",
+      "response-propensity",
+      "s-learner",
+      "t-learner",
+      "x-learner",
+      "dr-learner",
+      "r-learner"
+    ],
+    "masks": [
+      "none"
+    ],
+    "protocols": [
+      "hashed_holdout"
+    ],
+    "seeds": [
+      7,
+      8,
+      9
+    ],
+    "testCap": 0
+  },
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "kind": "uplift-ablation",
+  "profile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "schemaVersion": 1
+}

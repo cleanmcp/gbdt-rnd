@@ -1,0 +1,27 @@
+{
+  "name": "signal-engine-rnd",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=22 <23",
+    "pnpm": ">=10 <11"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @signal-engine/web dev",
+    "dev:api": "cross-env SIGNAL_ENGINE_CORPUS_MODE=fixture uv run --env-file .env.local signal-engine serve",
+    "dev:api:reload": "cross-env SIGNAL_ENGINE_CORPUS_MODE=fixture uv run --env-file .env.local signal-engine serve --reload",
+    "dev:api:public": "cross-env SIGNAL_ENGINE_CORPUS_MODE=public uv run --env-file .env.local signal-engine serve",
+    "build": "pnpm --filter @signal-engine/web build",
+    "typecheck": "pnpm --filter @signal-engine/web typecheck",
+    "test": "uv run pytest && pnpm test:web",
+    "test:web": "pnpm --filter @signal-engine/web test",
+    "test:e2e": "pnpm --filter @signal-engine/web test:e2e",
+    "check": "uv run ruff check . && uv run mypy src && pnpm typecheck && pnpm test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "prettier": "latest"
+  }
+}

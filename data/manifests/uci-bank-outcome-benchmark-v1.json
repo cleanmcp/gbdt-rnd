@@ -1,0 +1,118 @@
+{
+  "benchmarks": [
+    {
+      "brier_score": 0.1938421550094518,
+      "detail": null,
+      "fit_seconds": 5.000001692678779e-06,
+      "label_kind": "real_outcome",
+      "model_id": "heuristic-v1",
+      "pr_auc": 0.23780718336483933,
+      "precision_at_k": 0.488,
+      "roc_auc": 0.5,
+      "schema_version": 1,
+      "score_seconds": 0.10636489999887999,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    },
+    {
+      "brier_score": 0.20932562199357835,
+      "detail": null,
+      "fit_seconds": 3.0851614000021073,
+      "label_kind": "real_outcome",
+      "model_id": "lightgbm-v1",
+      "pr_auc": 0.35318721495628663,
+      "precision_at_k": 0.456,
+      "roc_auc": 0.6382564286976051,
+      "schema_version": 1,
+      "score_seconds": 2.8977226999995764,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    },
+    {
+      "brier_score": 0.21457317353903108,
+      "detail": null,
+      "fit_seconds": 0.9144769999984419,
+      "label_kind": "real_outcome",
+      "model_id": "tabpfn-local-v2",
+      "pr_auc": 0.2901736881991471,
+      "precision_at_k": 0.252,
+      "roc_auc": 0.6044411007646301,
+      "schema_version": 1,
+      "score_seconds": 11.727009300000645,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    }
+  ],
+  "contentSha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+  "dataset": "UCI Bank Marketing",
+  "executionProfile": {
+    "description": "Local CPU configuration: TabPFN capped at 600 training rows, 2 estimators.",
+    "lightgbmDevice": "cpu",
+    "name": "laptop-cpu",
+    "tabpfn": {
+      "device": "auto",
+      "ignore_pretraining_limits": false,
+      "max_training_rows": 600,
+      "n_estimators": 2,
+      "oom_floor_rows": 4000
+    }
+  },
+  "featureBoundary": "Call duration is excluded because it is only known after contact. Client attributes, campaign history, channel, calendar, prior outcome, and public macro variables are retained.",
+  "generatedAt": "2026-09-01T04:25:48.206064+00:00",
+  "hardware": {
+    "cpuCount": 20,
+    "cuda": {
+      "available": false
+    },
+    "hostname": "DESKTOP-T91T9SP",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.13.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9"
+  },
+  "limitations": "Rows are chronologically ordered but exact years are not present in the CSV; the benchmark preserves source order on an approximate calendar. No stable client identifier is published, so repeated clients cannot be grouped.",
+  "modelRuntimes": {
+    "lightgbm-v1": {
+      "calibrated": false,
+      "calibration": "time_series_cv",
+      "calibrationFraction": 0.2,
+      "calibrationNote": "calibrator rejected: non-positive Platt slope -0.064",
+      "trainingRowsUsed": 22103
+    },
+    "tabpfn-local-v2": {
+      "attempts": [
+        {
+          "phase": "fit",
+          "seconds": 0.9144520999980159,
+          "status": "ok",
+          "trainingRows": 600
+        }
+      ],
+      "cudaAvailable": false,
+      "device": "auto",
+      "ignore_pretraining_limits": false,
+      "max_training_rows": 600,
+      "n_estimators": 2,
+      "oom_floor_rows": 4000,
+      "resolvedDevice": "(device(type='cpu'),)",
+      "tabpfnVersion": "8.5.0",
+      "torchVersion": "2.13.0+cpu",
+      "trainingRowsAvailable": 22103,
+      "trainingRowsUsed": 600
+    }
+  },
+  "observations": 41188,
+  "positives": 4640,
+  "responseRate": 0.11265417111780131,
+  "schemaVersion": 1,
+  "source": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "target": "subscribed after direct-marketing contact"
+}

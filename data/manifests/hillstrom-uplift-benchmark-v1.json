@@ -1,0 +1,135 @@
+{
+  "averageTreatmentEffect": 0.005683986084614521,
+  "contentSha256": "bab6578f60db5d792f1c2372c502f029152a5249cf5ea84390f3b7f885d7234f",
+  "control": 21306,
+  "conversionRate": 0.00903125,
+  "conversions": 578,
+  "customers": 64000,
+  "dataset": "Hillstrom Email Marketing",
+  "executionProfile": {
+    "description": "Local CPU configuration: TabPFN capped at 600 training rows, 2 estimators.",
+    "lightgbmDevice": "cpu",
+    "name": "laptop-cpu",
+    "tabpfn": {
+      "device": "auto",
+      "ignore_pretraining_limits": false,
+      "max_training_rows": 600,
+      "n_estimators": 2,
+      "oom_floor_rows": 4000
+    }
+  },
+  "featureBoundary": "Only pre-campaign customer history is used. Segment is the randomized treatment; visit, conversion, and spend are outcomes.",
+  "generatedAt": "2026-09-01T04:26:24.776930+00:00",
+  "hardware": {
+    "cpuCount": 20,
+    "cuda": {
+      "available": false
+    },
+    "hostname": "DESKTOP-T91T9SP",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.13.0"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.9"
+  },
+  "models": [
+    {
+      "fitSeconds": 5.0665463999976055,
+      "ipwPolicyConversion": 0.011611613677615786,
+      "modelId": "lightgbm-v1",
+      "policyContactShare": 1.0,
+      "runtime": {
+        "control": {
+          "calibrated": true,
+          "calibration": "time_series_cv",
+          "calibrationFraction": 0.2,
+          "calibrationNote": null,
+          "plattCoefficient": 0.02350767319166939,
+          "trainingRowsUsed": 17020
+        },
+        "treated": {
+          "calibrated": true,
+          "calibration": "time_series_cv",
+          "calibrationFraction": 0.2,
+          "calibrationNote": null,
+          "plattCoefficient": 0.06413893421990971,
+          "trainingRowsUsed": 34158
+        }
+      },
+      "scoreSeconds": 1.5649996000029205,
+      "testRows": 4000,
+      "top20ObservedControlConversion": 0.007407407407407408,
+      "top20ObservedTreatedConversion": 0.013207547169811321,
+      "top20ObservedUplift": 0.005800139762403914,
+      "trainControlRows": 17020,
+      "trainTreatedRows": 34158
+    },
+    {
+      "fitSeconds": 1.5749250999979267,
+      "ipwPolicyConversion": 0.010115937833716532,
+      "modelId": "tabpfn-local-v2",
+      "policyContactShare": 0.72525,
+      "runtime": {
+        "control": {
+          "attempts": [
+            {
+              "phase": "fit",
+              "seconds": 0.8260854999971343,
+              "status": "ok",
+              "trainingRows": 600
+            }
+          ],
+          "cudaAvailable": false,
+          "device": "auto",
+          "ignore_pretraining_limits": false,
+          "max_training_rows": 600,
+          "n_estimators": 2,
+          "oom_floor_rows": 4000,
+          "resolvedDevice": "(device(type='cpu'),)",
+          "tabpfnVersion": "8.5.0",
+          "torchVersion": "2.13.0+cpu",
+          "trainingRowsAvailable": 17020,
+          "trainingRowsUsed": 600
+        },
+        "treated": {
+          "attempts": [
+            {
+              "phase": "fit",
+              "seconds": 0.7488114999978279,
+              "status": "ok",
+              "trainingRows": 600
+            }
+          ],
+          "cudaAvailable": false,
+          "device": "auto",
+          "ignore_pretraining_limits": false,
+          "max_training_rows": 600,
+          "n_estimators": 2,
+          "oom_floor_rows": 4000,
+          "resolvedDevice": "(device(type='cpu'),)",
+          "tabpfnVersion": "8.5.0",
+          "torchVersion": "2.13.0+cpu",
+          "trainingRowsAvailable": 34158,
+          "trainingRowsUsed": 600
+        }
+      },
+      "scoreSeconds": 23.232742000000144,
+      "testRows": 4000,
+      "top20ObservedControlConversion": 0.01486988847583643,
+      "top20ObservedTreatedConversion": 0.007532956685499058,
+      "top20ObservedUplift": -0.0073369317903373725,
+      "trainControlRows": 17020,
+      "trainTreatedRows": 34158
+    }
+  ],
+  "schemaVersion": 1,
+  "source": "https://blog.minethatdata.com/2008/03/minethatdata-e-mail-analytics-and-data.html",
+  "target": "incremental conversion from email versus no email",
+  "testAlwaysContactConversion": 0.011654135338345865,
+  "testNeverContactConversion": 0.005970149253731343,
+  "treated": 42694
+}

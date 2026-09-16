@@ -1,0 +1,30 @@
+{
+  "datasets": {
+    "olist": {
+      "cells": 66,
+      "reportPath": "data/manifests/remote/ablations/olist-ablation-gpu-v1.json",
+      "status": "ok"
+    },
+    "uci-bank": {
+      "cells": 66,
+      "reportPath": "data/manifests/remote/ablations/uci-bank-ablation-gpu-v1.json",
+      "status": "ok"
+    }
+  },
+  "finishedAt": "2026-09-01T04:57:02.919446+00:00",
+  "kind": "outcome-ablation-summary",
+  "profile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "schemaVersion": 1,
+  "startedAt": "2026-09-01T04:47:52.964800+00:00"
+}

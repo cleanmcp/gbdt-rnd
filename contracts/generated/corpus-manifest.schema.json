@@ -1,0 +1,105 @@
+{
+  "$defs": {
+    "CorpusSourceManifest": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "minimum": 0,
+          "title": "Bytes",
+          "type": "integer"
+        },
+        "content_sha256": {
+          "title": "Content Sha256",
+          "type": "string"
+        },
+        "landing_page": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Landing Page",
+          "type": "string"
+        },
+        "license": {
+          "title": "License",
+          "type": "string"
+        },
+        "local_path": {
+          "title": "Local Path",
+          "type": "string"
+        },
+        "retrieval_url": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieval Url"
+        },
+        "retrieved_at": {
+          "format": "date-time",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "landing_page",
+        "license",
+        "retrieved_at",
+        "content_sha256",
+        "local_path",
+        "bytes"
+      ],
+      "title": "CorpusSourceManifest",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "manifest_hash": {
+      "title": "Manifest Hash",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/CorpusSourceManifest"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "corpus_version",
+    "created_at",
+    "sources",
+    "manifest_hash"
+  ],
+  "title": "CorpusManifest",
+  "type": "object"
+}

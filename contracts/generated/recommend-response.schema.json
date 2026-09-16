@@ -1,0 +1,432 @@
+{
+  "$defs": {
+    "Action": {
+      "enum": [
+        "contact_now",
+        "wait",
+        "never",
+        "review"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "ActionEvaluation": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "$ref": "#/$defs/Action"
+        },
+        "expected_value": {
+          "title": "Expected Value",
+          "type": "number"
+        },
+        "response_probability": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Response Probability",
+          "type": "number"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "wait_days": {
+          "default": 0,
+          "maximum": 365,
+          "minimum": 0,
+          "title": "Wait Days",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "action",
+        "response_probability",
+        "expected_value"
+      ],
+      "title": "ActionEvaluation",
+      "type": "object"
+    },
+    "ModelScore": {
+      "additionalProperties": false,
+      "properties": {
+        "account_id": {
+          "title": "Account Id",
+          "type": "string"
+        },
+        "calibrated": {
+          "default": false,
+          "title": "Calibrated",
+          "type": "boolean"
+        },
+        "model_id": {
+          "title": "Model Id",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "top_factors": {
+          "default": [],
+          "items": {
+            "maxItems": 2,
+            "minItems": 2,
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "type": "array"
+          },
+          "title": "Top Factors",
+          "type": "array"
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty"
+        }
+      },
+      "required": [
+        "model_id",
+        "account_id",
+        "score"
+      ],
+      "title": "ModelScore",
+      "type": "object"
+    },
+    "Recommendation": {
+      "additionalProperties": false,
+      "properties": {
+        "account_id": {
+          "title": "Account Id",
+          "type": "string"
+        },
+        "action": {
+          "$ref": "#/$defs/Action"
+        },
+        "action_evaluations": {
+          "items": {
+            "$ref": "#/$defs/ActionEvaluation"
+          },
+          "title": "Action Evaluations",
+          "type": "array"
+        },
+        "best_window_end": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Best Window End"
+        },
+        "best_window_start": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Best Window Start"
+        },
+        "data_confidence_score": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Data Confidence Score",
+          "type": "number"
+        },
+        "decision_status": {
+          "default": "research_only",
+          "enum": [
+            "actionable",
+            "human_review",
+            "insufficient_evidence",
+            "research_only"
+          ],
+          "title": "Decision Status",
+          "type": "string"
+        },
+        "evidence_fact_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Fact Ids",
+          "type": "array"
+        },
+        "icp_fit_score": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Icp Fit Score",
+          "type": "number"
+        },
+        "model_disagreement": {
+          "default": false,
+          "title": "Model Disagreement",
+          "type": "boolean"
+        },
+        "model_scores": {
+          "items": {
+            "$ref": "#/$defs/ModelScore"
+          },
+          "title": "Model Scores",
+          "type": "array"
+        },
+        "opportunity_score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Opportunity Score",
+          "type": "number"
+        },
+        "proxy_event_score": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Proxy Event Score"
+        },
+        "rank": {
+          "minimum": 1,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "signal_relevance_score": {
+          "default": 0,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Signal Relevance Score",
+          "type": "number"
+        },
+        "story_card": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StoryCard"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "account_id",
+        "rank",
+        "action",
+        "best_window_start",
+        "best_window_end",
+        "opportunity_score",
+        "model_scores",
+        "action_evaluations",
+        "reason",
+        "evidence_fact_ids"
+      ],
+      "title": "Recommendation",
+      "type": "object"
+    },
+    "RunState": {
+      "enum": [
+        "queued",
+        "running",
+        "completed",
+        "failed",
+        "cancelled",
+        "indeterminate"
+      ],
+      "title": "RunState",
+      "type": "string"
+    },
+    "StoryCard": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "evidence_fact_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Fact Ids",
+          "type": "array"
+        },
+        "generator": {
+          "enum": [
+            "deterministic",
+            "llm"
+          ],
+          "title": "Generator",
+          "type": "string"
+        },
+        "implications": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Implications",
+          "type": "array"
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model"
+        },
+        "phase": {
+          "title": "Phase",
+          "type": "string"
+        },
+        "prompt_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Prompt Version"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "scope": {
+          "enum": [
+            "signal",
+            "account"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "semantic_hash": {
+          "title": "Semantic Hash",
+          "type": "string"
+        },
+        "story_card_id": {
+          "title": "Story Card Id",
+          "type": "string"
+        },
+        "story_type": {
+          "title": "Story Type",
+          "type": "string"
+        },
+        "subject_id": {
+          "title": "Subject Id",
+          "type": "string"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        }
+      },
+      "required": [
+        "story_card_id",
+        "scope",
+        "subject_id",
+        "story_type",
+        "phase",
+        "confidence",
+        "summary",
+        "evidence_fact_ids",
+        "semantic_hash",
+        "generator",
+        "created_at"
+      ],
+      "title": "StoryCard",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "recommendations": {
+      "items": {
+        "$ref": "#/$defs/Recommendation"
+      },
+      "title": "Recommendations",
+      "type": "array"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "state": {
+      "$ref": "#/$defs/RunState"
+    }
+  },
+  "required": [
+    "run_id",
+    "state",
+    "recommendations"
+  ],
+  "title": "RecommendResponse",
+  "type": "object"
+}

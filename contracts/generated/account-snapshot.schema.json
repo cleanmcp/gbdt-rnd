@@ -1,0 +1,77 @@
+{
+  "$defs": {
+    "CoverageStatus": {
+      "enum": [
+        "observed",
+        "not_observed",
+        "not_collected",
+        "not_applicable"
+      ],
+      "title": "CoverageStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "account_id": {
+      "title": "Account Id",
+      "type": "string"
+    },
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "coverage": {
+      "additionalProperties": {
+        "$ref": "#/$defs/CoverageStatus"
+      },
+      "title": "Coverage",
+      "type": "object"
+    },
+    "evidence_fact_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Fact Ids",
+      "type": "array"
+    },
+    "features": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Features",
+      "type": "object"
+    },
+    "goal_version": {
+      "title": "Goal Version",
+      "type": "string"
+    },
+    "icp_version": {
+      "title": "Icp Version",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "snapshot_hash": {
+      "title": "Snapshot Hash",
+      "type": "string"
+    }
+  },
+  "required": [
+    "account_id",
+    "as_of",
+    "icp_version",
+    "goal_version",
+    "features",
+    "coverage",
+    "evidence_fact_ids",
+    "snapshot_hash"
+  ],
+  "title": "AccountSnapshot",
+  "type": "object"
+}

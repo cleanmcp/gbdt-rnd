@@ -1,0 +1,50 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "format": "date-time",
+      "title": "As Of",
+      "type": "string"
+    },
+    "capacity": {
+      "maximum": 10000,
+      "minimum": 1,
+      "title": "Capacity",
+      "type": "integer"
+    },
+    "goal_version_id": {
+      "title": "Goal Version Id",
+      "type": "string"
+    },
+    "icp_version_id": {
+      "title": "Icp Version Id",
+      "type": "string"
+    },
+    "idempotency_key": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Idempotency Key",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "workspace_id": {
+      "title": "Workspace Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "workspace_id",
+    "icp_version_id",
+    "goal_version_id",
+    "as_of",
+    "capacity",
+    "idempotency_key"
+  ],
+  "title": "RecommendRequest",
+  "type": "object"
+}

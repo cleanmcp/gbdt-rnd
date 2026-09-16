@@ -1,0 +1,162 @@
+{
+  "$defs": {
+    "NumericFeature": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "reducers": {
+          "default": [
+            "latest"
+          ],
+          "items": {
+            "enum": [
+              "latest",
+              "max",
+              "mean",
+              "sum",
+              "delta",
+              "slope"
+            ],
+            "type": "string"
+          },
+          "title": "Reducers",
+          "type": "array"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "field"
+      ],
+      "title": "NumericFeature",
+      "type": "object"
+    },
+    "SignalShape": {
+      "enum": [
+        "numeric_series",
+        "state_machine",
+        "event_burst",
+        "document_versions"
+      ],
+      "title": "SignalShape",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "applicability_naics_prefixes": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Applicability Naics Prefixes",
+      "type": "array"
+    },
+    "default_half_life_days": {
+      "exclusiveMinimum": 0,
+      "title": "Default Half Life Days",
+      "type": "number"
+    },
+    "description": {
+      "title": "Description",
+      "type": "string"
+    },
+    "durable": {
+      "title": "Durable",
+      "type": "boolean"
+    },
+    "identity_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Identity Fields",
+      "type": "array"
+    },
+    "material_kinds": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Material Kinds",
+      "type": "array"
+    },
+    "numeric_features": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/NumericFeature"
+      },
+      "title": "Numeric Features",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "shape": {
+      "$ref": "#/$defs/SignalShape"
+    },
+    "signal_type": {
+      "title": "Signal Type",
+      "type": "string"
+    },
+    "source_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Source Ids",
+      "type": "array"
+    },
+    "state_field": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "State Field"
+    },
+    "terminal_states": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Terminal States",
+      "type": "array"
+    },
+    "version": {
+      "minimum": 1,
+      "title": "Version",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "signal_type",
+    "version",
+    "description",
+    "shape",
+    "source_ids",
+    "durable",
+    "identity_fields",
+    "material_kinds",
+    "default_half_life_days"
+  ],
+  "title": "SignalDefinition",
+  "type": "object"
+}

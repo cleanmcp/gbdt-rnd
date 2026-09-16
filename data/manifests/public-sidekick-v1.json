@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "corpus_version": "public-sidekick-v1",
+  "created_at": "2026-08-29T00:40:21.200612Z",
+  "sources": [
+    {
+      "source_id": "sba_7a_504",
+      "landing_page": "https://data.sba.gov/dataset/7a-504-foia",
+      "retrieval_url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_504_FY2010_Present_asof_260630.csv",
+      "license": "U.S. Government Works",
+      "retrieved_at": "2026-08-28T22:22:18.053080Z",
+      "content_sha256": "8c0e15414217254bcde2a253a8f17418b3dc65ce78dbc56cc1f1ab05c4a05ad4",
+      "local_path": "data/raw/sba_7a_504/FOIA_504_FY2010_Present_asof_260630.csv",
+      "bytes": 59412738
+    },
+    {
+      "source_id": "sba_7a_504",
+      "landing_page": "https://data.sba.gov/dataset/7a-504-foia",
+      "retrieval_url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2020_Present_asof_260630.csv",
+      "license": "U.S. Government Works",
+      "retrieved_at": "2026-08-28T22:25:20.202928Z",
+      "content_sha256": "6c1e9132b5141a19f82bdc8ccafb86c9a01662461cad41ddb36a3cf409d8a4fe",
+      "local_path": "data/raw/sba_7a_504/FOIA_7a_FY2020_Present_asof_260630.csv",
+      "bytes": 181130871
+    },
+    {
+      "source_id": "osha_ita",
+      "landing_page": "https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data",
+      "retrieval_url": "https://www.osha.gov/sites/default/files/ITA_300A_Summary_Data_2023_through_12-31-2024.zip",
+      "license": "U.S. Government Works",
+      "retrieved_at": "2026-08-28T23:06:14.916967Z",
+      "content_sha256": "25da8bc426db219a7a5fe872e73830afebdfac87c460f8cf6561658e7103b487",
+      "local_path": "data/raw/osha_ita/ITA_300A_Summary_Data_2023_through_12-31-2024.zip",
+      "bytes": 24143043
+    },
+    {
+      "source_id": "osha_ita",
+      "landing_page": "https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data",
+      "retrieval_url": "https://www.osha.gov/sites/default/files/ITA_300A_Summary_Data_2024_through_12-31-2025.zip",
+      "license": "U.S. Government Works",
+      "retrieved_at": "2026-08-28T23:09:07.271060Z",
+      "content_sha256": "4cbce7ea32dd4060f442a528670936e552d1b731925f320d9d25a168f9b60b1d",
+      "local_path": "data/raw/osha_ita/ITA_300A_Summary_Data_2024_through_12-31-2025.zip",
+      "bytes": 23855931
+    },
+    {
+      "source_id": "osha_ita",
+      "landing_page": "https://www.osha.gov/Establishment-Specific-Injury-and-Illness-Data",
+      "retrieval_url": "https://www.osha.gov/sites/default/files/ITA_300A_Summary_Data_2025_through_03-15-2026_v2.csv",
+      "license": "U.S. Government Works",
+      "retrieved_at": "2026-08-28T22:29:09.109879Z",
+      "content_sha256": "986f7025c54599c5d022fc472181a013e231b2df0c6e6b8ef5f4f9192d1ff50a",
+      "local_path": "data/raw/osha_ita/ITA_300A_Summary_Data_2025_through_03-15-2026_v2.csv",
+      "bytes": 84600899
+    }
+  ],
+  "manifest_hash": "608faef5b46cf66f39efd6351eb36d99c210bde0a389d2760822184f74cbed8f"
+}

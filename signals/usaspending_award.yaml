@@ -1,0 +1,17 @@
+schema_version: 1
+signal_type: usaspending_award
+version: 1
+description: Federal contract award or modification received by a manufacturer.
+shape: event_burst
+source_ids: [usaspending]
+durable: true
+identity_fields: [award_id, recipient_name, recipient_uei, naics_code]
+state_field: action_type
+terminal_states: [closed]
+material_kinds: [awarded, modified, renewed, closed]
+numeric_features:
+  - field: obligation_usd
+    unit: USD
+    reducers: [latest, max, sum]
+default_half_life_days: 120
+applicability_naics_prefixes: ["31", "32", "33"]

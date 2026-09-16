@@ -1,0 +1,124 @@
+{
+  "averageDaysToClose": 48.44061757719715,
+  "benchmarks": [
+    {
+      "brier_score": 0.1636504424778761,
+      "detail": null,
+      "fit_seconds": 1.5820000385247113e-06,
+      "label_kind": "real_outcome",
+      "model_id": "heuristic-v1",
+      "pr_auc": 0.13716814159292035,
+      "precision_at_k": 0.07,
+      "roc_auc": 0.5,
+      "schema_version": 1,
+      "score_seconds": 0.01638995100000784,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    },
+    {
+      "brier_score": 0.11821084462588022,
+      "detail": null,
+      "fit_seconds": 1.5685548429999585,
+      "label_kind": "real_outcome",
+      "model_id": "lightgbm-v1",
+      "pr_auc": 0.1859594888824113,
+      "precision_at_k": 0.21,
+      "roc_auc": 0.6138544251447476,
+      "schema_version": 1,
+      "score_seconds": 0.14516137099997195,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    },
+    {
+      "brier_score": 0.11987953230963669,
+      "detail": null,
+      "fit_seconds": 1.3147044140000048,
+      "label_kind": "real_outcome",
+      "model_id": "tabpfn-local-v2",
+      "pr_auc": 0.20754423313755166,
+      "precision_at_k": 0.23,
+      "roc_auc": 0.6322218775847808,
+      "schema_version": 1,
+      "score_seconds": 1.9311139490000073,
+      "status": "ok",
+      "test_rows": 904,
+      "train_rows": 2842
+    }
+  ],
+  "contentSha256": "d476efe8d16ab267ce10535859ed3dd2d6e186bbb50c9d405a1e7bc05c200171",
+  "dataset": "Olist Marketing Funnel",
+  "executionProfile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "featureBoundary": "Only fields available in the marketing-qualified-lead file are features; closed-deal fields are labels only.",
+  "generatedAt": "2026-09-01T04:47:15.471773+00:00",
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "leads": 8000,
+  "license": "Kaggle dataset terms; verify before commercial use",
+  "modelRuntimes": {
+    "lightgbm-v1": {
+      "calibrated": true,
+      "calibration": "time_series_cv",
+      "calibrationFraction": 0.2,
+      "calibrationNote": null,
+      "plattCoefficient": 0.2236426482503976,
+      "trainingRowsUsed": 2842
+    },
+    "tabpfn-local-v2": {
+      "attempts": [
+        {
+          "phase": "fit",
+          "seconds": 1.1975900819999765,
+          "status": "ok",
+          "trainingRows": 2842
+        }
+      ],
+      "cudaAvailable": true,
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000,
+      "resolvedDevice": "(device(type='cuda', index=0),)",
+      "tabpfnVersion": "8.5.0",
+      "torchVersion": "2.11.0+cu128",
+      "trainingRowsAvailable": 2842,
+      "trainingRowsUsed": 2842
+    }
+  },
+  "schemaVersion": 1,
+  "source": "https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist",
+  "target": "closed deal",
+  "winRate": 0.10525,
+  "won": 842
+}

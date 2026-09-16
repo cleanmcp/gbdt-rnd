@@ -1,0 +1,122 @@
+{
+  "benchmarks": [
+    {
+      "brier_score": 0.1938421550094518,
+      "detail": null,
+      "fit_seconds": 2.429999995001708e-06,
+      "label_kind": "real_outcome",
+      "model_id": "heuristic-v1",
+      "pr_auc": 0.23780718336483933,
+      "precision_at_k": 0.488,
+      "roc_auc": 0.5,
+      "schema_version": 1,
+      "score_seconds": 0.058911438999984966,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    },
+    {
+      "brier_score": 0.20932562199357835,
+      "detail": null,
+      "fit_seconds": 2.513679116999981,
+      "label_kind": "real_outcome",
+      "model_id": "lightgbm-v1",
+      "pr_auc": 0.35318721495628663,
+      "precision_at_k": 0.456,
+      "roc_auc": 0.6382564286976051,
+      "schema_version": 1,
+      "score_seconds": 0.34706108400001767,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    },
+    {
+      "brier_score": 0.19890860564996074,
+      "detail": null,
+      "fit_seconds": 1.4487765110000055,
+      "label_kind": "real_outcome",
+      "model_id": "tabpfn-local-v2",
+      "pr_auc": 0.4528758348078638,
+      "precision_at_k": 0.52,
+      "roc_auc": 0.7577365968910086,
+      "schema_version": 1,
+      "score_seconds": 4.509601185999998,
+      "status": "ok",
+      "test_rows": 2645,
+      "train_rows": 22103
+    }
+  ],
+  "contentSha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+  "dataset": "UCI Bank Marketing",
+  "executionProfile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "featureBoundary": "Call duration is excluded because it is only known after contact. Client attributes, campaign history, channel, calendar, prior outcome, and public macro variables are retained.",
+  "generatedAt": "2026-09-01T04:47:28.901894+00:00",
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "limitations": "Rows are chronologically ordered but exact years are not present in the CSV; the benchmark preserves source order on an approximate calendar. No stable client identifier is published, so repeated clients cannot be grouped.",
+  "modelRuntimes": {
+    "lightgbm-v1": {
+      "calibrated": false,
+      "calibration": "time_series_cv",
+      "calibrationFraction": 0.2,
+      "calibrationNote": "calibrator rejected: non-positive Platt slope -0.064",
+      "trainingRowsUsed": 22103
+    },
+    "tabpfn-local-v2": {
+      "attempts": [
+        {
+          "phase": "fit",
+          "seconds": 1.4487573709999992,
+          "status": "ok",
+          "trainingRows": 22103
+        }
+      ],
+      "cudaAvailable": true,
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000,
+      "resolvedDevice": "(device(type='cuda', index=0),)",
+      "tabpfnVersion": "8.5.0",
+      "torchVersion": "2.11.0+cu128",
+      "trainingRowsAvailable": 22103,
+      "trainingRowsUsed": 22103
+    }
+  },
+  "observations": 41188,
+  "positives": 4640,
+  "responseRate": 0.11265417111780131,
+  "schemaVersion": 1,
+  "source": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "target": "subscribed after direct-marketing contact"
+}

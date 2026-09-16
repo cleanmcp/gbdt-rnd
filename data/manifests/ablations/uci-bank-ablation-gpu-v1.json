@@ -1,0 +1,3490 @@
+{
+  "aggregates": [
+    {
+      "brierMean": 0.21740105455608474,
+      "brierStd": 5.312191961658039e-09,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.22472572821199155,
+          0.26880450946389606
+        ],
+        "precisionAtK": [
+          0.1899,
+          0.292
+        ],
+        "rocAuc": [
+          0.48579701382409085,
+          0.5353728390354385
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.002614677333307706,
+      "fitSecondsStd": 0.0004847430527011159,
+      "mask": "none",
+      "modelKey": "positive-rate",
+      "ok": 3,
+      "prAucMean": 0.23819354483340502,
+      "prAucStd": 0.0058208062202269265,
+      "precisionAtKMean": 0.2373333333333333,
+      "precisionAtKStd": 0.010498677165349078,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.4979078343048931,
+      "rocAucStd": 0.013936177995843088,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.23690452112340718,
+      "brierStd": 0.0,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.2421893905667476,
+          0.29892780827775944
+        ],
+        "precisionAtK": [
+          0.332,
+          0.452
+        ],
+        "rocAuc": [
+          0.45034000565285826,
+          0.5032163649166468
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.6964461273333313,
+      "fitSecondsStd": 0.07697814887689414,
+      "mask": "none",
+      "modelKey": "logistic",
+      "ok": 3,
+      "prAucMean": 0.2683897188098526,
+      "prAucStd": 0.0,
+      "precisionAtKMean": 0.4000000000000001,
+      "precisionAtKStd": 5.551115123125783e-17,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.47709815908345315,
+      "rocAucStd": 5.551115123125783e-17,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.17683031126293494,
+      "brierStd": 0.0004535585455475795,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.30144891430293197,
+          0.36607663227110093
+        ],
+        "precisionAtK": [
+          0.352,
+          0.468
+        ],
+        "rocAuc": [
+          0.600438412513613,
+          0.6489202905716017
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 1.9519001290000044,
+      "fitSecondsStd": 0.05839572387466517,
+      "mask": "none",
+      "modelKey": "random-forest",
+      "ok": 3,
+      "prAucMean": 0.33913483967013186,
+      "prAucStd": 0.005149805648795045,
+      "precisionAtKMean": 0.4093333333333333,
+      "precisionAtKStd": 0.00679869268479036,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6329165299753535,
+      "rocAucStd": 0.005410772639389645,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "xgboost",
+      "ok": 0,
+      "protocol": "point_in_time",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "catboost",
+      "ok": 0,
+      "protocol": "point_in_time",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "brierMean": 0.20866148228164436,
+      "brierStd": 0.0,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.2801424852623285,
+          0.3465035855678912
+        ],
+        "precisionAtK": [
+          0.3,
+          0.4060999999999999
+        ],
+        "rocAuc": [
+          0.5581312459870122,
+          0.6098192763119742
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 4.264875432666694,
+      "fitSecondsStd": 2.9640877891775688,
+      "mask": "none",
+      "modelKey": "lightgbm-default",
+      "ok": 3,
+      "prAucMean": 0.3100857756729446,
+      "prAucStd": 0.0,
+      "precisionAtKMean": 0.35200000000000004,
+      "precisionAtKStd": 5.551115123125783e-17,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.5853967149923032,
+      "rocAucStd": 0.0,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.2054996022335531,
+      "brierStd": 0.002944970843669547,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.32077153124013164,
+          0.3922626884889887
+        ],
+        "precisionAtK": [
+          0.39390000000000003,
+          0.516
+        ],
+        "rocAuc": [
+          0.612224946240967,
+          0.6630867974356479
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 6.680816518666688,
+      "fitSecondsStd": 3.835216404056037,
+      "mask": "none",
+      "modelKey": "lightgbm",
+      "ok": 3,
+      "prAucMean": 0.3595737429747076,
+      "prAucStd": 0.004551721327013995,
+      "precisionAtKMean": 0.44533333333333336,
+      "precisionAtKStd": 0.009977753031397186,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6470880018674136,
+      "rocAucStd": 0.006925947982943213,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.21163172976434397,
+      "brierStd": 0.0019267546271158843,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.19957628115446602,
+          0.2377433288190494
+        ],
+        "precisionAtK": [
+          0.13790000000000002,
+          0.232
+        ],
+        "rocAuc": [
+          0.43854001707380785,
+          0.4891572970258733
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.801752798666674,
+      "fitSecondsStd": 0.013752288316464764,
+      "mask": "none",
+      "modelKey": "lightgbm-holdout",
+      "ok": 3,
+      "prAucMean": 0.22381646287676107,
+      "prAucStd": 0.004932281566689276,
+      "precisionAtKMean": 0.20400000000000004,
+      "precisionAtKStd": 0.018184242262647813,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.4750020503696974,
+      "rocAucStd": 0.008930698467785514,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.2054996022335531,
+      "brierStd": 0.002944970843669547,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.32077153124013164,
+          0.3922626884889887
+        ],
+        "precisionAtK": [
+          0.39390000000000003,
+          0.516
+        ],
+        "rocAuc": [
+          0.612224946240967,
+          0.6630867974356479
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.7995969096666613,
+      "fitSecondsStd": 0.012302795580954382,
+      "mask": "none",
+      "modelKey": "lightgbm-full-train",
+      "ok": 3,
+      "prAucMean": 0.3595737429747076,
+      "prAucStd": 0.004551721327013995,
+      "precisionAtKMean": 0.44533333333333336,
+      "precisionAtKStd": 0.009977753031397186,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6470880018674136,
+      "rocAucStd": 0.006925947982943213,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.2135290844049066,
+      "brierStd": 0.0005767065383001488,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.31241179943500286,
+          0.38839673948129205
+        ],
+        "precisionAtK": [
+          0.3539,
+          0.4820999999999999
+        ],
+        "rocAuc": [
+          0.602594446579406,
+          0.654234974593866
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.7297146139999882,
+      "fitSecondsStd": 0.006114230277903916,
+      "mask": "none",
+      "modelKey": "lightgbm-regularized",
+      "ok": 3,
+      "prAucMean": 0.3570670678135088,
+      "prAucStd": 0.007448821468370106,
+      "precisionAtKMean": 0.43733333333333335,
+      "precisionAtKStd": 0.009428090415820642,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.6466048506489682,
+      "rocAucStd": 0.012183504027513083,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.19961593783967665,
+      "brierStd": 0.0031593498249151623,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.42121481077140527,
+          0.49401234545571554
+        ],
+        "precisionAtK": [
+          0.456,
+          0.5740999999999998
+        ],
+        "rocAuc": [
+          0.7373369744831401,
+          0.7748987538858205
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 1.9988269583333438,
+      "fitSecondsStd": 1.0042108383136228,
+      "mask": "none",
+      "modelKey": "tabpfn",
+      "ok": 3,
+      "prAucMean": 0.4361587598890986,
+      "prAucStd": 0.012514835216571978,
+      "precisionAtKMean": 0.492,
+      "precisionAtKStd": 0.0340978982734518,
+      "protocol": "point_in_time",
+      "rocAucMean": 0.7568725500710793,
+      "rocAucStd": 0.0020137223444993747,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.0999589694881644,
+      "brierStd": 3.1970834832065554e-09,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.10248858262754629,
+          0.121659683153711
+        ],
+        "precisionAtK": [
+          0.084,
+          0.1740999999999999
+        ],
+        "rocAuc": [
+          0.4692346125880033,
+          0.5082291784020635
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 0.007750886000015574,
+      "fitSecondsStd": 2.9831570483969153e-05,
+      "mask": "none",
+      "modelKey": "positive-rate",
+      "ok": 3,
+      "prAucMean": 0.11744634135540115,
+      "prAucStd": 0.004979687832292427,
+      "precisionAtKMean": 0.132,
+      "precisionAtKStd": 0.0032659863237109073,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.5092771180244351,
+      "rocAucStd": 0.01607903721665418,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.16097721765217662,
+      "brierStd": 0.0003809252703330403,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.4210065524316985,
+          0.48737666991239237
+        ],
+        "precisionAtK": [
+          0.664,
+          0.768
+        ],
+        "rocAuc": [
+          0.7740617011388262,
+          0.8077466334308199
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 2.029715303000027,
+      "fitSecondsStd": 0.27622329233151227,
+      "mask": "none",
+      "modelKey": "logistic",
+      "ok": 3,
+      "prAucMean": 0.46227467653686743,
+      "prAucStd": 0.01027595689076316,
+      "precisionAtKMean": 0.7213333333333333,
+      "precisionAtKStd": 0.0131993265821489,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.7983397654370489,
+      "rocAucStd": 0.005357583065917959,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.11207539879492684,
+      "brierStd": 0.0008236260530649538,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.43975355197385635,
+          0.5056331668753767
+        ],
+        "precisionAtK": [
+          0.6558,
+          0.784
+        ],
+        "rocAuc": [
+          0.7725403791909076,
+          0.8066503854387775
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 2.3365737290000275,
+      "fitSecondsStd": 0.030629033627608316,
+      "mask": "none",
+      "modelKey": "random-forest",
+      "ok": 3,
+      "prAucMean": 0.48834919015684636,
+      "prAucStd": 0.014014450385278416,
+      "precisionAtKMean": 0.7239999999999999,
+      "precisionAtKStd": 0.005656854249492385,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.8027436435680929,
+      "rocAucStd": 0.009527413310909123,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "xgboost",
+      "ok": 0,
+      "protocol": "random_stratified",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "mask": "none",
+      "modelKey": "catboost",
+      "ok": 0,
+      "protocol": "random_stratified",
+      "seeds": 3,
+      "status": "unavailable"
+    },
+    {
+      "brierMean": 0.0750719035294997,
+      "brierStd": 0.0012958958193727227,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.4433050225151436,
+          0.5109845573015883
+        ],
+        "precisionAtK": [
+          0.6659,
+          0.788
+        ],
+        "rocAuc": [
+          0.7838443676600488,
+          0.8195235788910682
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 4.028360625999956,
+      "fitSecondsStd": 2.2218691518948654,
+      "mask": "none",
+      "modelKey": "lightgbm-default",
+      "ok": 3,
+      "prAucMean": 0.49307773634719454,
+      "prAucStd": 0.013631708456584086,
+      "precisionAtKMean": 0.7399999999999999,
+      "precisionAtKStd": 0.0065319726474218145,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.8104032521188106,
+      "rocAucStd": 0.006811929007112661,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.09180088683778169,
+      "brierStd": 0.001066646013882093,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.44586643804949044,
+          0.5112308400929306
+        ],
+        "precisionAtK": [
+          0.6539,
+          0.776
+        ],
+        "rocAuc": [
+          0.7820468739678411,
+          0.8171551629229384
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 2.52264233599999,
+      "fitSecondsStd": 0.011972430289152269,
+      "mask": "none",
+      "modelKey": "lightgbm",
+      "ok": 3,
+      "prAucMean": 0.4969178817121042,
+      "prAucStd": 0.015623340020922864,
+      "precisionAtKMean": 0.7399999999999999,
+      "precisionAtKStd": 0.014236104336041762,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.8097887380694058,
+      "rocAucStd": 0.008219183880534733,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.13419547665478673,
+      "brierStd": 0.0040319778061076806,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.2364435639898885,
+          0.29370571127912387
+        ],
+        "precisionAtK": [
+          0.412,
+          0.532
+        ],
+        "rocAuc": [
+          0.609036727093462,
+          0.6544781392360264
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 1.1186942839999954,
+      "fitSecondsStd": 0.013503677966025416,
+      "mask": "none",
+      "modelKey": "lightgbm-holdout",
+      "ok": 3,
+      "prAucMean": 0.26666149655868254,
+      "prAucStd": 0.01870018368820366,
+      "precisionAtKMean": 0.4706666666666666,
+      "precisionAtKStd": 0.013199326582148873,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.6414951029529695,
+      "rocAucStd": 0.01992881190134136,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.14278071659535785,
+      "brierStd": 0.0003013313028632923,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.44586643804949044,
+          0.5112308400929306
+        ],
+        "precisionAtK": [
+          0.6539,
+          0.776
+        ],
+        "rocAuc": [
+          0.7820468739678411,
+          0.8171551629229384
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 10.34691304300001,
+      "fitSecondsStd": 6.531071193906735,
+      "mask": "none",
+      "modelKey": "lightgbm-full-train",
+      "ok": 3,
+      "prAucMean": 0.4969178817121042,
+      "prAucStd": 0.015623340020922864,
+      "precisionAtKMean": 0.7399999999999999,
+      "precisionAtKStd": 0.014236104336041762,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.8097887380694058,
+      "rocAucStd": 0.008219183880534733,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.07565116778282412,
+      "brierStd": 0.001207173630491662,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.4399255090789597,
+          0.5068421078357067
+        ],
+        "precisionAtK": [
+          0.652,
+          0.7740999999999999
+        ],
+        "rocAuc": [
+          0.7823569898270635,
+          0.8176029791749738
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 1.0707922506666516,
+      "fitSecondsStd": 0.004237035350806582,
+      "mask": "none",
+      "modelKey": "lightgbm-regularized",
+      "ok": 3,
+      "prAucMean": 0.48914377216398924,
+      "prAucStd": 0.012902711197335236,
+      "precisionAtKMean": 0.7239999999999999,
+      "precisionAtKStd": 0.008640987597877155,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.8087502162051668,
+      "rocAucStd": 0.0056365299900410695,
+      "seeds": 3,
+      "status": "ok"
+    },
+    {
+      "brierMean": 0.07514337442828105,
+      "brierStd": 0.001011702544058702,
+      "ci95FirstSeed": {
+        "prAuc": [
+          0.45169422207207527,
+          0.5171658763455345
+        ],
+        "precisionAtK": [
+          0.672,
+          0.7841999999999999
+        ],
+        "rocAuc": [
+          0.7844060093654114,
+          0.8188862044521942
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "fitSecondsMean": 1.6545569743332937,
+      "fitSecondsStd": 0.033795366404535315,
+      "mask": "none",
+      "modelKey": "tabpfn",
+      "ok": 3,
+      "prAucMean": 0.49463776945584187,
+      "prAucStd": 0.008573275727473628,
+      "precisionAtKMean": 0.7239999999999999,
+      "precisionAtKStd": 0.0032659863237109073,
+      "protocol": "random_stratified",
+      "rocAucMean": 0.812371677319685,
+      "rocAucStd": 0.007193106927850296,
+      "seeds": 3,
+      "status": "ok"
+    }
+  ],
+  "cells": [
+    {
+      "brier": 0.2174010490744395,
+      "ci95": {
+        "prAuc": [
+          0.22472572821199155,
+          0.26880450946389606
+        ],
+        "precisionAtK": [
+          0.1899,
+          0.292
+        ],
+        "rocAuc": [
+          0.48579701382409085,
+          0.5353728390354385
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.0019415180000237342,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.24291841664990876,
+      "precisionAtK": 0.232,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5099159032982563,
+      "runtime": {
+        "trainingPrevalence": 0.047685834502103785
+      },
+      "scoreSeconds": 0.017123558999969646,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.23690452112340718,
+      "ci95": {
+        "prAuc": [
+          0.2421893905667476,
+          0.29892780827775944
+        ],
+        "precisionAtK": [
+          0.332,
+          0.452
+        ],
+        "rocAuc": [
+          0.45034000565285826,
+          0.5032163649166468
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.638757634000001,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.2683897188098526,
+      "precisionAtK": 0.4,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.4770981590834532,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.20713869299999033,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.17735543703435766,
+      "ci95": {
+        "prAuc": [
+          0.30144891430293197,
+          0.36607663227110093
+        ],
+        "precisionAtK": [
+          0.352,
+          0.468
+        ],
+        "rocAuc": [
+          0.600438412513613,
+          0.6489202905716017
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.031819036999991,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.33286669108657563,
+      "precisionAtK": 0.412,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.625742470411588,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.16561789399997906,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20866148228164436,
+      "ci95": {
+        "prAuc": [
+          0.2801424852623285,
+          0.3465035855678912
+        ],
+        "precisionAtK": [
+          0.3,
+          0.4060999999999999
+        ],
+        "rocAuc": [
+          0.5581312459870122,
+          0.6098192763119742
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 4.3465742860000205,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.3100857756729446,
+      "precisionAtK": 0.352,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5853967149923032,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.054507397999998375,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20932562199357835,
+      "ci95": {
+        "prAuc": [
+          0.32077153124013164,
+          0.3922626884889887
+        ],
+        "precisionAtK": [
+          0.39390000000000003,
+          0.516
+        ],
+        "rocAuc": [
+          0.612224946240967,
+          0.6630867974356479
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 11.433264181000027,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.35318721495628663,
+      "precisionAtK": 0.456,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6382564286976051,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.064",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.3194700399999988,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.21283978183854035,
+      "ci95": {
+        "prAuc": [
+          0.19957628115446602,
+          0.2377433288190494
+        ],
+        "precisionAtK": [
+          0.13790000000000002,
+          0.232
+        ],
+        "rocAuc": [
+          0.43854001707380785,
+          0.4891572970258733
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.8150659599999699,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.21710550553524205,
+      "precisionAtK": 0.184,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.46333032086708553,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.160",
+        "trainingRowsUsed": 17682
+      },
+      "scoreSeconds": 0.3030921879999937,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20932562199357835,
+      "ci95": {
+        "prAuc": [
+          0.32077153124013164,
+          0.3922626884889887
+        ],
+        "precisionAtK": [
+          0.39390000000000003,
+          0.516
+        ],
+        "rocAuc": [
+          0.612224946240967,
+          0.6630867974356479
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.8169506049999882,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.35318721495628663,
+      "precisionAtK": 0.456,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6382564286976051,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.4164374090000251,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.21434382379749323,
+      "ci95": {
+        "prAuc": [
+          0.31241179943500286,
+          0.38839673948129205
+        ],
+        "precisionAtK": [
+          0.3539,
+          0.4820999999999999
+        ],
+        "rocAuc": [
+          0.602594446579406,
+          0.654234974593866
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.7353627339999775,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.3465406998250579,
+      "precisionAtK": 0.424,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6294425991117167,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.055783658999985164,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.19890860564996074,
+      "ci95": {
+        "prAuc": [
+          0.42121481077140527,
+          0.49401234545571554
+        ],
+        "precisionAtK": [
+          0.456,
+          0.5740999999999998
+        ],
+        "rocAuc": [
+          0.7373369744831401,
+          0.7748987538858205
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 3.418907724999997,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.4528758348078638,
+      "precisionAtK": 0.52,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.7577365968910086,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 2.142258437999999,
+            "status": "ok",
+            "trainingRows": 22103
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 22103,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 5.231550783000046,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.21740105284800312,
+      "ci95": {
+        "prAuc": [
+          0.2201660634671336,
+          0.2672232056297032
+        ],
+        "precisionAtK": [
+          0.1859,
+          0.304
+        ],
+        "rocAuc": [
+          0.4787781734116792,
+          0.53470656132748
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.002838979999978619,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.24166886254434222,
+      "precisionAtK": 0.252,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5054382113205642,
+      "runtime": {
+        "trainingPrevalence": 0.047685834502103785
+      },
+      "scoreSeconds": 0.0173154550000163,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.23690452112340718,
+      "ci95": {
+        "prAuc": [
+          0.24243616261503825,
+          0.2970687813231203
+        ],
+        "precisionAtK": [
+          0.336,
+          0.46
+        ],
+        "rocAuc": [
+          0.4489535713614564,
+          0.509615584289562
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.8052433689999816,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.2683897188098526,
+      "precisionAtK": 0.4,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.4770981590834532,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05154578499997342,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.17624875742986046,
+      "ci95": {
+        "prAuc": [
+          0.3176066785623801,
+          0.381653153125349
+        ],
+        "precisionAtK": [
+          0.36,
+          0.476
+        ],
+        "rocAuc": [
+          0.6152243990049011,
+          0.663136060657899
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.9299633539999945,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.34548037505172385,
+      "precisionAtK": 0.416,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6388088456103161,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.1748810150000395,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20866148228164436,
+      "ci95": {
+        "prAuc": [
+          0.28164603102731256,
+          0.34258056352651794
+        ],
+        "precisionAtK": [
+          0.292,
+          0.4100999999999999
+        ],
+        "rocAuc": [
+          0.562935021668947,
+          0.6119599883067998
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.5944642409999688,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.3100857756729446,
+      "precisionAtK": 0.352,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5853967149923032,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05354478199996038,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20501153428288985,
+      "ci95": {
+        "prAuc": [
+          0.33226092101825777,
+          0.40139766231158563
+        ],
+        "precisionAtK": [
+          0.3779,
+          0.496
+        ],
+        "rocAuc": [
+          0.6315512002664264,
+          0.6801716902748218
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.0409654630000205,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.3634644634059505,
+      "precisionAtK": 0.432,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6551719787013905,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.034",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.35294550600002594,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.2089125127833376,
+      "ci95": {
+        "prAuc": [
+          0.20967038619616699,
+          0.2521114774683238
+        ],
+        "precisionAtK": [
+          0.1739,
+          0.27809999999999996
+        ],
+        "rocAuc": [
+          0.46216723700035905,
+          0.511420317994022
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.78281786499997,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.22881917888618436,
+      "precisionAtK": 0.228,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.4850169234360411,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.158",
+        "trainingRowsUsed": 17682
+      },
+      "scoreSeconds": 0.2997703119999642,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20501153428288985,
+      "ci95": {
+        "prAuc": [
+          0.33226092101825777,
+          0.40139766231158563
+        ],
+        "precisionAtK": [
+          0.3779,
+          0.496
+        ],
+        "rocAuc": [
+          0.6315512002664264,
+          0.6801716902748218
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.789836035999997,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.3634644634059505,
+      "precisionAtK": 0.432,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6551719787013905,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.2553975440000045,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.2131538929404304,
+      "ci95": {
+        "prAuc": [
+          0.3267233259488044,
+          0.3975119954618113
+        ],
+        "precisionAtK": [
+          0.376,
+          0.508
+        ],
+        "rocAuc": [
+          0.6312653538468181,
+          0.6784761863298144
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.7325606310000126,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.3626825224852893,
+      "precisionAtK": 0.444,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6538632908118203,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05491187600000558,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.1961490021685387,
+      "ci95": {
+        "prAuc": [
+          0.38930857815450715,
+          0.45981114766272246
+        ],
+        "precisionAtK": [
+          0.3739,
+          0.5001999999999999
+        ],
+        "rocAuc": [
+          0.7335647243342284,
+          0.7758489993772296
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.3024640670000736,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.4227667141733188,
+      "precisionAtK": 0.444,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.7540904875463698,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 1.3024409160000232,
+            "status": "ok",
+            "trainingRows": 22103
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 22103,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 4.68305210799997,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.21740106174581164,
+      "ci95": {
+        "prAuc": [
+          0.21042416583298046,
+          0.25514367708155306
+        ],
+        "precisionAtK": [
+          0.164,
+          0.276
+        ],
+        "rocAuc": [
+          0.4523119928242088,
+          0.4996716700895487
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.0030635339999207645,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.22999335530596407,
+      "precisionAtK": 0.228,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.4783693882958589,
+      "runtime": {
+        "trainingPrevalence": 0.047685834502103785
+      },
+      "scoreSeconds": 0.017896325000037905,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.23690452112340718,
+      "ci95": {
+        "prAuc": [
+          0.24034547145230747,
+          0.3005404103083236
+        ],
+        "precisionAtK": [
+          0.332,
+          0.46
+        ],
+        "rocAuc": [
+          0.4463704706602381,
+          0.5048519232666137
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.6453373790000114,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.2683897188098526,
+      "precisionAtK": 0.4,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.4770981590834532,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05221126100002493,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.17688673932458673,
+      "ci95": {
+        "prAuc": [
+          0.30677808634743425,
+          0.37317221106413445
+        ],
+        "precisionAtK": [
+          0.33390000000000003,
+          0.46
+        ],
+        "rocAuc": [
+          0.6088157485832627,
+          0.6581321807508094
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.8939179960000274,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.3390574528720961,
+      "precisionAtK": 0.4,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6341982739041563,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.17714999999998327,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "point_in_time",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "point_in_time",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20866148228164436,
+      "ci95": {
+        "prAuc": [
+          0.2791478640985437,
+          0.3466244007924541
+        ],
+        "precisionAtK": [
+          0.296,
+          0.412
+        ],
+        "rocAuc": [
+          0.5612055065021789,
+          0.6080554112414723
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 7.853587771000093,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.3100857756729446,
+      "precisionAtK": 0.352,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.5853967149923032,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05350927100005265,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20216165042419112,
+      "ci95": {
+        "prAuc": [
+          0.3325545033053665,
+          0.3963194096262823
+        ],
+        "precisionAtK": [
+          0.4,
+          0.5140999999999999
+        ],
+        "rocAuc": [
+          0.6243885290573749,
+          0.6711050681451144
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 6.568219912000018,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.36206955056188556,
+      "precisionAtK": 0.448,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6478355982032451,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.038",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.3523499709999669,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.2131428946711539,
+      "ci95": {
+        "prAuc": [
+          0.2075078550505836,
+          0.2520113266406077
+        ],
+        "precisionAtK": [
+          0.16,
+          0.256
+        ],
+        "rocAuc": [
+          0.4495153726512208,
+          0.49843782514435864
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.8073745710000821,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.22552470420885684,
+      "precisionAtK": 0.2,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.47665890680596557,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": "calibrator rejected: non-positive Platt slope -0.153",
+        "trainingRowsUsed": 17682
+      },
+      "scoreSeconds": 0.29666779700005463,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.20216165042419112,
+      "ci95": {
+        "prAuc": [
+          0.3325545033053665,
+          0.3963194096262823
+        ],
+        "precisionAtK": [
+          0.4,
+          0.5140999999999999
+        ],
+        "rocAuc": [
+          0.6243885290573749,
+          0.6711050681451144
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.7920040879999988,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.36206955056188556,
+      "precisionAtK": 0.448,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6478355982032451,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.25462934800009407,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.21308953647679613,
+      "ci95": {
+        "prAuc": [
+          0.3328887059791373,
+          0.4019494983512531
+        ],
+        "precisionAtK": [
+          0.384,
+          0.5020999999999999
+        ],
+        "rocAuc": [
+          0.6327970832638137,
+          0.6831790109736866
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.7212204769999744,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.36197798113017904,
+      "precisionAtK": 0.444,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.6565086620233679,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 0.05536297999992712,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.2037902057005305,
+      "ci95": {
+        "prAuc": [
+          0.40239958374312207,
+          0.4723205550572202
+        ],
+        "precisionAtK": [
+          0.452,
+          0.576
+        ],
+        "rocAuc": [
+          0.7381533954548536,
+          0.7803739736781949
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.2751090829999612,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.43283373068611325,
+      "precisionAtK": 0.512,
+      "precisionK": 250,
+      "protocol": "point_in_time",
+      "rocAuc": 0.7587905657758599,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 1.2750923020000755,
+            "status": "ok",
+            "trainingRows": 22103
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 22103,
+        "trainingRowsUsed": 22103
+      },
+      "scoreSeconds": 4.495452617000069,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 629,
+      "testPrevalence": 0.23780718336483933,
+      "testRows": 2645,
+      "trainPositives": 1054,
+      "trainPrevalence": 0.047685834502103785,
+      "trainRows": 22103
+    },
+    {
+      "brier": 0.09995897379022105,
+      "ci95": {
+        "prAuc": [
+          0.10248858262754629,
+          0.121659683153711
+        ],
+        "precisionAtK": [
+          0.084,
+          0.1740999999999999
+        ],
+        "rocAuc": [
+          0.4692346125880033,
+          0.5082291784020635
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.007777072999942902,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.11072819028666293,
+      "precisionAtK": 0.132,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.4876027465918204,
+      "runtime": {
+        "trainingPrevalence": 0.11265553869499241
+      },
+      "scoreSeconds": 0.05395524800007934,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.16043923936435459,
+      "ci95": {
+        "prAuc": [
+          0.4210065524316985,
+          0.48737666991239237
+        ],
+        "precisionAtK": [
+          0.664,
+          0.768
+        ],
+        "rocAuc": [
+          0.7740617011388262,
+          0.8077466334308199
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.7723257689999627,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.4523392974752628,
+      "precisionAtK": 0.724,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.7909034624274729,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.17254008200006865,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.11323979159062113,
+      "ci95": {
+        "prAuc": [
+          0.43975355197385635,
+          0.5056331668753767
+        ],
+        "precisionAtK": [
+          0.6558,
+          0.784
+        ],
+        "rocAuc": [
+          0.7725403791909076,
+          0.8066503854387775
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.378753070000016,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.47314942000496296,
+      "precisionAtK": 0.728,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.7903110848389076,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.30495711200001097,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 7,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.0766055113436736,
+      "ci95": {
+        "prAuc": [
+          0.4433050225151436,
+          0.5109845573015883
+        ],
+        "precisionAtK": [
+          0.6659,
+          0.788
+        ],
+        "rocAuc": [
+          0.7838443676600488,
+          0.8195235788910682
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.0259170909999966,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.47783026265693296,
+      "precisionAtK": 0.732,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8028584042879381,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.1719675479999978,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.09033163694317947,
+      "ci95": {
+        "prAuc": [
+          0.44586643804949044,
+          0.5112308400929306
+        ],
+        "precisionAtK": [
+          0.6539,
+          0.776
+        ],
+        "rocAuc": [
+          0.7820468739678411,
+          0.8171551629229384
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.5281922989998975,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.4790476217159994,
+      "precisionAtK": 0.728,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.80009110099533,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.28455408090595496,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 1.0583373140000276,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.132292137852449,
+      "ci95": {
+        "prAuc": [
+          0.2364435639898885,
+          0.29370571127912387
+        ],
+        "precisionAtK": [
+          0.412,
+          0.532
+        ],
+        "rocAuc": [
+          0.609036727093462,
+          0.6544781392360264
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.136891797999965,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.26492495176392516,
+      "precisionAtK": 0.468,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6323745371243927,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.36925862254686376,
+        "trainingRowsUsed": 26360
+      },
+      "scoreSeconds": 0.8137603889999809,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.1429529109107143,
+      "ci95": {
+        "prAuc": [
+          0.44586643804949044,
+          0.5112308400929306
+        ],
+        "precisionAtK": [
+          0.6539,
+          0.776
+        ],
+        "rocAuc": [
+          0.7820468739678411,
+          0.8171551629229384
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 14.05702283000005,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.4790476217159994,
+      "precisionAtK": 0.728,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.80009110099533,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.7839528599999994,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07714871826382683,
+      "ci95": {
+        "prAuc": [
+          0.4399255090789597,
+          0.5068421078357067
+        ],
+        "precisionAtK": [
+          0.652,
+          0.7740999999999999
+        ],
+        "rocAuc": [
+          0.7823569898270635,
+          0.8176029791749738
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.0649378360000128,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.47439850994774946,
+      "precisionAtK": 0.716,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8007834243360535,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.1770170470000494,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07633003802441439,
+      "ci95": {
+        "prAuc": [
+          0.45169422207207527,
+          0.5171658763455345
+        ],
+        "precisionAtK": [
+          0.672,
+          0.7841999999999999
+        ],
+        "rocAuc": [
+          0.7844060093654114,
+          0.8188862044521942
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.6275121179999132,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.48552843023957787,
+      "precisionAtK": 0.728,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8026467197745177,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 1.6274922079999214,
+            "status": "ok",
+            "trainingRows": 32950
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 32950,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 8.497666744999947,
+      "seed": 7,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.09995896854181271,
+      "ci95": {
+        "prAuc": [
+          0.10983855951235373,
+          0.12997936213004724
+        ],
+        "precisionAtK": [
+          0.084,
+          0.16
+        ],
+        "rocAuc": [
+          0.49720014128589185,
+          0.532831721075645
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.007709147000014127,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.11897627200107758,
+      "precisionAtK": 0.128,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.5141586867305062,
+      "runtime": {
+        "trainingPrevalence": 0.11265553869499241
+      },
+      "scoreSeconds": 0.05297200400002566,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.1612219042500996,
+      "ci95": {
+        "prAuc": [
+          0.4228572360567463,
+          0.49250752827889827
+        ],
+        "precisionAtK": [
+          0.6459,
+          0.756
+        ],
+        "rocAuc": [
+          0.7850326613464371,
+          0.8223763816089426
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.412893727000096,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.4580576441226184,
+      "precisionAtK": 0.704,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.800800303080334,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.20301684300000034,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.11151931515129057,
+      "ci95": {
+        "prAuc": [
+          0.4497986989513112,
+          0.5205595981203347
+        ],
+        "precisionAtK": [
+          0.6499,
+          0.776
+        ],
+        "rocAuc": [
+          0.7880604922358446,
+          0.8239003101509381
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.3069468490000418,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.48493397333132643,
+      "precisionAtK": 0.716,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8044620324071889,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.3058470400000033,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 8,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07517403820840723,
+      "ci95": {
+        "prAuc": [
+          0.45576221056217703,
+          0.525989084774582
+        ],
+        "precisionAtK": [
+          0.68,
+          0.7900999999999999
+        ],
+        "rocAuc": [
+          0.7929616458965079,
+          0.826941401048918
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 6.332111773999941,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.4904852545808946,
+      "precisionAtK": 0.74,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.808988189301382,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.17349613599992608,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.09223957405716625,
+      "ci95": {
+        "prAuc": [
+          0.45820941519696207,
+          0.5298890603580264
+        ],
+        "precisionAtK": [
+          0.672,
+          0.784
+        ],
+        "rocAuc": [
+          0.7925950341782214,
+          0.8294562247243403
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.5060143020000396,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.4946003015535868,
+      "precisionAtK": 0.732,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8090878402283126,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.2247118316371849,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 1.024858166999934,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.13980206212351837,
+      "ci95": {
+        "prAuc": [
+          0.2192061594311428,
+          0.26955606630755935
+        ],
+        "precisionAtK": [
+          0.3859,
+          0.512
+        ],
+        "rocAuc": [
+          0.6031370328841541,
+          0.6465334027235917
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.1146116849999999,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.24467624375554373,
+      "precisionAtK": 0.456,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6229610624321902,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.33891907883987044,
+        "trainingRowsUsed": 26360
+      },
+      "scoreSeconds": 0.7848346659999379,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.14235703586366108,
+      "ci95": {
+        "prAuc": [
+          0.45820941519696207,
+          0.5298890603580264
+        ],
+        "precisionAtK": [
+          0.672,
+          0.784
+        ],
+        "rocAuc": [
+          0.7925950341782214,
+          0.8294562247243403
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.166651637999962,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.4946003015535868,
+      "precisionAtK": 0.732,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8090878402283126,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.7645764009999994,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07561225814852443,
+      "ci95": {
+        "prAuc": [
+          0.453190406715634,
+          0.5230034009157519
+        ],
+        "precisionAtK": [
+          0.664,
+          0.772
+        ],
+        "rocAuc": [
+          0.7974177073211577,
+          0.8319438049546136
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.0726135310000018,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.4872076511541554,
+      "precisionAtK": 0.72,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8125025797207416,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.17525160500008496,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07524227466406658,
+      "ci95": {
+        "prAuc": [
+          0.4557961267478826,
+          0.5266609049010826
+        ],
+        "precisionAtK": [
+          0.66,
+          0.788
+        ],
+        "rocAuc": [
+          0.7994628976250492,
+          0.833171248590779
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.633952843999964,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.49226304231308643,
+      "precisionAtK": 0.724,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8146495707344688,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 1.6339329350000753,
+            "status": "ok",
+            "trainingRows": 32950
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 32950,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 8.519132649000085,
+      "seed": 8,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.09995896613245948,
+      "ci95": {
+        "prAuc": [
+          0.11301939810898194,
+          0.1359519137869931
+        ],
+        "precisionAtK": [
+          0.092,
+          0.176
+        ],
+        "rocAuc": [
+          0.5074837003455451,
+          0.5455726598863458
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 0.007766438000089693,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "positive-rate",
+      "modelKey": "positive-rate",
+      "prAuc": 0.12263456177846294,
+      "precisionAtK": 0.136,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.5260699207509788,
+      "runtime": {
+        "trainingPrevalence": 0.11265553869499241
+      },
+      "scoreSeconds": 0.05339949099993646,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.16127050934207568,
+      "ci95": {
+        "prAuc": [
+          0.4416418786867065,
+          0.511940873169932
+        ],
+        "precisionAtK": [
+          0.6819000000000001,
+          0.796
+        ],
+        "rocAuc": [
+          0.7859796692141927,
+          0.8210120173394796
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.903926413000022,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "logistic-v1",
+      "modelKey": "logistic",
+      "prAuc": 0.47642708801272093,
+      "precisionAtK": 0.736,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8033155308033398,
+      "runtime": {
+        "estimator": "Pipeline",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.19965157900003305,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.11146708964286885,
+      "ci95": {
+        "prAuc": [
+          0.4725459294828498,
+          0.5411313685540939
+        ],
+        "precisionAtK": [
+          0.6699,
+          0.788
+        ],
+        "rocAuc": [
+          0.7949410495652103,
+          0.8307806102846446
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.324021268000024,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "random-forest-v1",
+      "modelKey": "random-forest",
+      "prAuc": 0.5069641771342496,
+      "precisionAtK": 0.728,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.813457813458182,
+      "runtime": {
+        "estimator": "RandomForestClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.3030986069999244,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "xgboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "xgboost-v1",
+      "modelKey": "xgboost",
+      "protocol": "random_stratified",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": "catboost-v1 needs an optional dependency: install the `baselines` extra",
+      "featureCount": 63,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "catboost-v1",
+      "modelKey": "catboost",
+      "protocol": "random_stratified",
+      "seed": 9,
+      "status": "unavailable",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07343616103641826,
+      "ci95": {
+        "prAuc": [
+          0.4774661828613715,
+          0.5461779853099086
+        ],
+        "precisionAtK": [
+          0.692,
+          0.796
+        ],
+        "rocAuc": [
+          0.8027125847559294,
+          0.8356233998291955
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 4.7270530129999315,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-default-v1",
+      "modelKey": "lightgbm-default",
+      "prAuc": 0.5109176918037561,
+      "precisionAtK": 0.748,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8193631627671116,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.17204753699991215,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.0928314495129993,
+      "ci95": {
+        "prAuc": [
+          0.4841925378137526,
+          0.5510584538886889
+        ],
+        "precisionAtK": [
+          0.7,
+          0.812
+        ],
+        "rocAuc": [
+          0.8017689692013952,
+          0.8371516976354668
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 2.5337204070000325,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-v1",
+      "modelKey": "lightgbm",
+      "prAuc": 0.5171057218667263,
+      "precisionAtK": 0.76,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8201872729845747,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "time_series_cv",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.19481393039835773,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.972027277000052,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.13049222998839283,
+      "ci95": {
+        "prAuc": [
+          0.26244523895007205,
+          0.31901903799531633
+        ],
+        "precisionAtK": [
+          0.4299,
+          0.5540999999999999
+        ],
+        "rocAuc": [
+          0.646769128595402,
+          0.6885197510740856
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.104579369000021,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-holdout-v1",
+      "modelKey": "lightgbm-holdout",
+      "prAuc": 0.2903832941565787,
+      "precisionAtK": 0.488,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.6691497093023255,
+      "runtime": {
+        "calibrated": true,
+        "calibration": "holdout",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "plattCoefficient": 0.3101239341242589,
+        "trainingRowsUsed": 26360
+      },
+      "scoreSeconds": 0.825216884999918,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.14303220301169814,
+      "ci95": {
+        "prAuc": [
+          0.4841925378137526,
+          0.5510584538886889
+        ],
+        "precisionAtK": [
+          0.7,
+          0.812
+        ],
+        "rocAuc": [
+          0.8017689692013952,
+          0.8371516976354668
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 15.817064661000018,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-full-train-v1",
+      "modelKey": "lightgbm-full-train",
+      "prAuc": 0.5171057218667263,
+      "precisionAtK": 0.76,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8201872729845747,
+      "runtime": {
+        "calibrated": false,
+        "calibration": "none",
+        "calibrationFraction": 0.2,
+        "calibrationNote": null,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.8683570270000018,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.0741925269361211,
+      "ci95": {
+        "prAuc": [
+          0.4714888902481348,
+          0.5406713141428223
+        ],
+        "precisionAtK": [
+          0.6899,
+          0.796
+        ],
+        "rocAuc": [
+          0.7947873252963609,
+          0.8307635441622968
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.07482538499994,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "lightgbm-regularized-v1",
+      "modelKey": "lightgbm-regularized",
+      "prAuc": 0.5058251553900629,
+      "precisionAtK": 0.736,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8129646445587055,
+      "runtime": {
+        "estimator": "LGBMClassifier",
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 0.1894476659999782,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    },
+    {
+      "brier": 0.07385781059636215,
+      "ci95": {
+        "prAuc": [
+          0.47286254736594946,
+          0.5404392880417905
+        ],
+        "precisionAtK": [
+          0.656,
+          0.768
+        ],
+        "rocAuc": [
+          0.8026826778406564,
+          0.8360492741817351
+        ]
+      },
+      "control": "none",
+      "dataset": "uci-bank",
+      "detail": null,
+      "featureCount": 63,
+      "fitSeconds": 1.7022059610000042,
+      "mask": "none",
+      "maskedFeatureCount": 63,
+      "model": "tabpfn-local-v2",
+      "modelKey": "tabpfn",
+      "prAuc": 0.5061218358148613,
+      "precisionAtK": 0.72,
+      "precisionK": 250,
+      "protocol": "random_stratified",
+      "rocAuc": 0.8198187414500684,
+      "runtime": {
+        "attempts": [
+          {
+            "phase": "fit",
+            "seconds": 1.702187112000047,
+            "status": "ok",
+            "trainingRows": 32950
+          }
+        ],
+        "cudaAvailable": true,
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "max_training_rows": 50000,
+        "n_estimators": 8,
+        "oom_floor_rows": 4000,
+        "resolvedDevice": "(device(type='cuda', index=0),)",
+        "tabpfnVersion": "8.5.0",
+        "torchVersion": "2.11.0+cu128",
+        "trainingRowsAvailable": 32950,
+        "trainingRowsUsed": 32950
+      },
+      "scoreSeconds": 8.516226216000064,
+      "seed": 9,
+      "status": "ok",
+      "testPositives": 928,
+      "testPrevalence": 0.11264870114105366,
+      "testRows": 8238,
+      "trainPositives": 3712,
+      "trainPrevalence": 0.11265553869499241,
+      "trainRows": 32950
+    }
+  ],
+  "dataset": "uci-bank",
+  "generatedAt": "2026-09-01T04:53:37.205196+00:00",
+  "grid": {
+    "bootstrapSamples": 300,
+    "controls": [
+      "none"
+    ],
+    "masks": [
+      "none"
+    ],
+    "models": [
+      "positive-rate",
+      "logistic",
+      "random-forest",
+      "xgboost",
+      "catboost",
+      "lightgbm-default",
+      "lightgbm",
+      "lightgbm-holdout",
+      "lightgbm-full-train",
+      "lightgbm-regularized",
+      "tabpfn"
+    ],
+    "precisionK": 250,
+    "protocols": [
+      "point_in_time",
+      "random_stratified"
+    ],
+    "seeds": [
+      7,
+      8,
+      9
+    ]
+  },
+  "hardware": {
+    "cpuCount": 30,
+    "cuda": {
+      "available": true,
+      "deviceCount": 1,
+      "deviceName": "NVIDIA A100-SXM4-40GB",
+      "torchCudaVersion": "12.8",
+      "totalMemoryGib": 39.5
+    },
+    "hostname": "132-145-197-209",
+    "packages": {
+      "lightgbm": "4.7.0",
+      "numpy": "2.5.2",
+      "scikit-learn": "1.9.0",
+      "tabpfn": "8.5.0",
+      "torch": "2.11.0+cu128"
+    },
+    "platform": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.13.15"
+  },
+  "kind": "outcome-ablation",
+  "profile": {
+    "description": "CUDA configuration: TabPFN uses the full point-in-time training partition (capped at 50,000 rows) with 8 estimators; LightGBM stays on CPU.",
+    "lightgbmDevice": "cpu",
+    "name": "gpu-full",
+    "tabpfn": {
+      "device": "cuda",
+      "ignore_pretraining_limits": true,
+      "max_training_rows": 50000,
+      "n_estimators": 8,
+      "oom_floor_rows": 4000
+    }
+  },
+  "schemaVersion": 1
+}
